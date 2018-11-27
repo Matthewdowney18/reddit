@@ -54,7 +54,7 @@ class Seq2SeqModelAttention(torch.nn.Module):
 
         self.M = nn.Linear(self.combined_hidden_size, self.combined_hidden_size)
 
-        self.bias = nn.parameter(torch.zeros(1))
+        self.bias = nn.Parameter(torch.zeros(1))
 
     def unfreeze_embeddings(self):
         self.emb = nn.Embedding.from_pretrained(
@@ -210,8 +210,10 @@ class Seq2SeqModelAttention(torch.nn.Module):
         _, z_1 = self.encode_sentence(sentence_1)
         _, z_2 = self.encode_sentence(sentence_2)
 
-        outputs = self.classify(torch.cat((z_1, z_2), dim=1))
-        negative = variable(torch.ones(outputs.size()))
-        negative = negative - outputs
-        outputs = torch.stack((outputs, negative), dim=-2)
+        transformed = self.M(z_1)
+        z_1 = z_1.view(-1, 1, self.combined_hidden_size)
+        z_2 = z_2.view(-1, self.combined_hidden_size, 1)
+        outputs = torch.sigmoid(torch.bmm(z_1, z_2) + self.bias)
+        neg_prob = variable(torch.ones(outputs.size())) - outputs
+        outputs = torch.cat((neg_prob, outputs), 1)
         return outputs

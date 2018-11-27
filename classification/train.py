@@ -22,8 +22,8 @@ def main():
     val_len = 200
     weight_decay = 0.00001
     use_old_model = True
-    model_group = "/auto_encoder"
-    model_name = "/autoencoder_1"
+    model_group = "/classifier"
+    model_name = "/classifier_1"
     project_file = "/home/mattd/PycharmProjects/reddit"
     dataset_filename = "RR_negative.csv"
     # embedding_filename = 'embeddings_20_1.npy'
@@ -118,6 +118,7 @@ def main():
                 targets = targets.view(-1)
                 outputs = outputs.view(targets.size(0), -1)
                 loss = criterion(outputs, targets)
+                print(loss.item())
 
                 if phase == 'train':
                     loss.backward()

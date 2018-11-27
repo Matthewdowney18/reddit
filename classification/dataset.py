@@ -70,11 +70,20 @@ class PairsDataset(torch.utils.data.Dataset):
     UNK_TOKEN = '<unk>'
 
     def __init__(self, filename, max_len=64, min_count=300):
-
-        sentence_1, sentence_2, self.labels = self._read_file(filename, max_len)
-        self.sentence_1 = [word_tokenize(s.lower())[:max_len] for s in sentence_1]
-        self.sentence_2 = [word_tokenize(s.lower())[:max_len] for s in sentence_2]
+        exclude = set(string.punctuation)
+        sentence_1, sentence_2, labels = self._read_file(filename, max_len)
+        self.sentence_1 = [[word for word in word_tokenize(s.lower())[:max_len] if
+                       word not in exclude] for s in sentence_1]
+        self.sentence_2 = [[word for word in word_tokenize(s.lower())[:max_len] if
+                       word not in exclude] for s in sentence_2]
         self.sentence = self.sentence_2 + self.sentence_1
+
+        self.labels = []
+        for label in labels:
+            if label == 'positive':
+                self.labels.append(1)
+            else:
+                self.labels.append(0)
 
         self.max_len = max_len
 
