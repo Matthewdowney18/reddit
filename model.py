@@ -1,9 +1,8 @@
-import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from classification.utils import get_sequences_lengths, variable, argmax
+from utils import get_sequences_lengths, variable
 
 
 class Seq2SeqModelAttention(torch.nn.Module):

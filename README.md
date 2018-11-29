@@ -1,2 +1,3 @@
 reddit
-classifacation and generation experiments on the reddit dataset
+classification and generation experiments on the reddit dataset
+ 

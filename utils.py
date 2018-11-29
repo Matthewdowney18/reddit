@@ -57,10 +57,12 @@ def get_sentence_from_indices(indices, vocab, eos_token, join=True):
 
     return tokens
 
+
 def get_pretrained_embeddings(embeddings_dir, dataset):
     embeddings = np.load(embeddings_dir)
     emb_tensor = torch.FloatTensor(embeddings)
     return emb_tensor
+
 
 def get_description(description_filename):
     if os.path.exists(description_filename):
@@ -71,6 +73,7 @@ def get_description(description_filename):
         return description
     else:
         return ['none']
+
 
 def save_checkpoint(model, loss, optimizer, filename, description_filename,
                     epoch, train_loss, val_loss):
@@ -86,8 +89,7 @@ def save_checkpoint(model, loss, optimizer, filename, description_filename,
     torch.save(state, filename)
 
 
-
-def load_checkpoint(filename, model, optimizer):
+def load_checkpoint(filename, model, optimizer, use_autoencoder_model=False):
     if os.path.isfile(filename):
         checkpoint = torch.load(filename)
         model.load_state_dict(checkpoint['state_dict'])
@@ -104,15 +106,21 @@ def load_checkpoint(filename, model, optimizer):
         else:
             train_loss = []
             val_loss = []
+        if use_autoencoder_model:
+            epoch = 0
+            train_loss = []
+            val_loss = []
+            loss = 500
+        found_model = True
     else:
-        print("=> no checkpoint found at '{}'".format(filename))
         loss = 500
         description = ['none']
         epoch = 0
         train_loss = []
         val_loss = []
-
-    return model, optimizer, loss, description, epoch, train_loss, val_loss
+        found_model = False
+    return model, optimizer, loss, description, epoch, train_loss, val_loss,\
+           found_model
 
 
 def freeze_layer(layer, bool):
@@ -121,6 +129,7 @@ def freeze_layer(layer, bool):
         param.requires_grad = not bool
     layer.training = not bool
     return layer
+
 
 def accuracy(targets, predicted):
     batch_size = targets.size()
