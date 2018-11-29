@@ -3,30 +3,39 @@ import torch
 import torch.utils.data
 import time
 
-from classification.dataset import SentenceDataset, PairsDataset
-from classification.model import Seq2SeqModelAttention
-from classification.utils import variable, cuda, argmax, get_sentence_from_indices, \
+from dataset import SentenceDataset, PairsDataset
+from model import Seq2SeqModelAttention
+from utils import variable, cuda, argmax, get_sentence_from_indices, \
     get_pretrained_embeddings, save_checkpoint, load_checkpoint, freeze_layer, \
     accuracy
 
 
 def main():
-    nb_epochs = 300
-    batch_size = 400
+    nb_epochs = 50
+    batch_size = 300
     hidden_size = 256
     embedding_dim = 300
     pretrained_embeddings = None
-    max_len = 10
-    min_count = 1
     max_grad_norm = 5
-    val_len = 200
+    max_len = 20
+    min_count = 2
     weight_decay = 0.00001
-    use_old_model = True
-    model_group = "/auto_encoder"
-    model_name = "/autoencoder_1"
+    model_group = "/classifier"
+    model_name = "/classifier_1"
     project_file = "/home/mattd/PycharmProjects/reddit"
-    dataset_filename = "RR_negative.csv"
-    #embedding_filename = 'embeddings_20_1.npy'
+    dataset_path = '/home/mattd/datasets/AskReddit/'
+    # embedding_filename = 'embeddings_20_1.npy's
+
+    string = 'nb_epochs: {}\nbatch_size: {}\nhidden_size: {}\nembedding_dim: ' \
+             '{}\npretrained_embeddings: {}\nmax_len: {}\nmin_countmin_count: '\
+             '{}\nweight_decay: {}\nmodel_group: {}\nmodel_name: {}\n'.format(
+                nb_epochs, batch_size, hidden_size, embedding_dim,
+                pretrained_embeddings, max_len, min_count, weight_decay,
+                model_group, model_name)
+    print(string)
+    output = string + '\n'
+
+    # embedding_filename = 'embeddings_20_1.npy's'
 
     model_filename = '{}{}s{}'.format(
         project_file, model_group, model_name)
@@ -37,21 +46,20 @@ def main():
     output_file = '{}{}_outputs{}'.format(
         project_file, model_group, model_name)
 
-    #eng_fr_filename = '/mnt/data1/datasets/yelp/merged/train'
-    eng_fr_filename = '/home/mattd/PycharmProjects/agreement_encoder' \
-                      '/RR_negative.csv'
+    string = ''
 
-    dataset = SentenceDataset(eng_fr_filename, max_len, min_count)
-    string = 'Dataset: {}'.format(len(dataset))
-    print(string)
-    output = string + '\n'
+    # eng_fr_filename = '/mnt/data1/datasets/yelp/merged/train'
+    dataset_train_filename = "{}train.csv".format(dataset_path)
+    dataset_val_filename = "{}validation.csv".format(dataset_path)
 
-    train_len = len(dataset) - val_len
-    dataset_train, dataset_val = torch.utils.data.dataset.random_split(dataset, [train_len, val_len])
+    dataset_train = SentenceDataset(dataset_train_filename, max_len, min_count)
+    dataset_val = SentenceDataset(dataset_val_filename, max_len, min_count,
+                               dataset_train.vocab)
 
     string = 'Train {}, val: {}'.format(len(dataset_train), len(dataset_val))
     print(string)
-    output = output + string + '\n'
+    output += string + '\n'
+
 
     #embeddings_dir = '{}/{}'.format(project_file, embedding_filename)
     #pretrained_embeddings = cuda(
@@ -61,9 +69,9 @@ def main():
     data_loader_train = torch.utils.data.DataLoader(dataset_train, batch_size, shuffle=True)
     data_loader_val = torch.utils.data.DataLoader(dataset_val, batch_size, shuffle=False)
 
-    vocab_size = len(dataset.vocab)
-    padding_idx = dataset.vocab[SentenceDataset.PAD_TOKEN]
-    init_idx = dataset.vocab[SentenceDataset.INIT_TOKEN]
+    vocab_size = len(dataset_val.vocab)
+    padding_idx = dataset_val.vocab[SentenceDataset.PAD_TOKEN]
+    init_idx = dataset_val.vocab[SentenceDataset.INIT_TOKEN]
 
     model = Seq2SeqModelAttention(hidden_size, padding_idx, init_idx,
         max_len, vocab_size, embedding_dim, pretrained_embeddings)
@@ -72,7 +80,8 @@ def main():
 
     parameters = list(model.parameters())
     optimizer = torch.optim.Adam(parameters, amsgrad=True, weight_decay=weight_decay)
-    criterion = torch.nn.CrossEntropyLoss(ignore_index=dataset.vocab[SentenceDataset.PAD_TOKEN])
+    criterion = torch.nn.CrossEntropyLoss(ignore_index=dataset_val.vocab[
+        SentenceDataset.PAD_TOKEN])
 
     model, optimizer, lowest_loss, description, last_epoch, \
     train_loss, val_loss = load_checkpoint(model_filename, model, optimizer)
@@ -178,13 +187,13 @@ def main():
                 outputs = argmax(outputs_var).squeeze(0).data.cpu().numpy()
 
                 string = '> {}\n'.format(get_sentence_from_indices(
-                    inputs, dataset.vocab, SentenceDataset.EOS_TOKEN))
+                    inputs, dataset_val.vocab, SentenceDataset.EOS_TOKEN))
 
                 string = string + u'= {}\n'.format(get_sentence_from_indices(
-                    targets, dataset.vocab, SentenceDataset.EOS_TOKEN))
+                    targets, dataset_val.vocab, SentenceDataset.EOS_TOKEN))
 
                 string = string + u'< {}'.format(get_sentence_from_indices(
-                    outputs, dataset.vocab, SentenceDataset.EOS_TOKEN))
+                    outputs, dataset_val.vocab, SentenceDataset.EOS_TOKEN))
                 print(string, end='\n')
                 output = output + string + '\n' + '\n'
         outfile = open(output_file, 'w')

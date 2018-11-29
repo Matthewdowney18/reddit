@@ -4,7 +4,34 @@ from collections import Counter
 import numpy as np
 import torch.utils.data
 from nltk import word_tokenize
+import re
 import string
+
+
+def process_sentence(sentence, max_len):
+    exclude = set(string.punctuation)
+    sentence = [[word for word in word_tokenize(s.lower())[:max_len] if
+                        word not in exclude] for s in sentence]
+    return sentence
+
+
+def _read_file(filename, max_len):
+    with open(filename, 'r', encoding='utf8') as f:
+        csv_reader = csv.reader(f, delimiter=',')
+        sentence_1 = []
+        sentence_2 = []
+        labels = []
+        i = True
+        for row in csv_reader:
+            if i is True:
+                i = False
+                continue
+            if row[0].count(' ') < max_len or row[1].count(' ') < max_len:
+                sentence_1.append(row[0])
+                sentence_2.append(row[1])
+                labels.append(row[2])
+            i = True
+    return sentence_1, sentence_2, labels
 
 
 class Vocab(object):
@@ -69,57 +96,25 @@ class PairsDataset(torch.utils.data.Dataset):
     INIT_TOKEN = '<s>'
     UNK_TOKEN = '<unk>'
 
-    def __init__(self, filename, max_len=64, min_count=300):
-        exclude = set(string.punctuation)
-        sentence_1, sentence_2, labels = self._read_file(filename, max_len)
-        self.sentence_1 = [[word for word in word_tokenize(s.lower())[:max_len] if
-                       word not in exclude] for s in sentence_1]
-        self.sentence_2 = [[word for word in word_tokenize(s.lower())[:max_len] if
-                       word not in exclude] for s in sentence_2]
-        self.sentence = self.sentence_2 + self.sentence_1
+    def __init__(self, filename, max_len=64, min_count=300, vocab=None):
+        sentence_1, sentence_2, self.labels = _read_file(filename, max_len)
+        self.sentence_1 = process_sentence(sentence_1, max_len)
+        self.sentence_2 = process_sentence(sentence_2, max_len)
 
-        self.labels = []
-        for label in labels:
-            if label == 'positive':
-                self.labels.append(1)
-            else:
-                self.labels.append(0)
+        self.sentence = self.sentence_2 + self.sentence_1
 
         self.max_len = max_len
 
-        self.vocab = Vocab(special_tokens=[PairsDataset.PAD_TOKEN,
-                                           PairsDataset.EOS_TOKEN,
-                                           PairsDataset.UNK_TOKEN,
-                                           PairsDataset.INIT_TOKEN])
+        if vocab is None:
+            self.vocab = Vocab(special_tokens=[PairsDataset.PAD_TOKEN,
+                                               PairsDataset.EOS_TOKEN,
+                                               PairsDataset.UNK_TOKEN,
+                                               PairsDataset.INIT_TOKEN])
+        else:
+            self.vocab = vocab
 
         self.vocab.add_documents(self.sentence)
         self.vocab.prune_vocab(min_count=min_count)
-
-
-    def _read_file3(self, filename):
-        with open(filename, 'r', encoding='utf8') as f:
-            sentence = []
-            for line in f:
-                if line.count(' '):
-                    sentence.append(line[:-2])
-        return sentence
-
-    def _read_file(self, filename, max_len):
-        with open(filename, 'r', encoding='utf8') as f:
-            csv_reader = csv.reader(f, delimiter=',')
-            sentence_1 = []
-            sentence_2 = []
-            labels = []
-            i = True
-            for row in csv_reader:
-                if i is True:
-                    i = False
-                    continue
-                if row[1].count(' ') < max_len or row[2].count(' ') < max_len:
-                    sentence_1.append(row[1])
-                    sentence_2.append(row[2])
-                    labels.append(row[4])
-        return sentence_1, sentence_2, labels
 
     def _process_sentence(self, sentence):
         sentence = sentence[:self.max_len - 1]
@@ -154,43 +149,25 @@ class SentenceDataset(torch.utils.data.Dataset):
     INIT_TOKEN = '<s>'
     UNK_TOKEN = '<unk>'
 
-    def __init__(self, filename, max_len=64, min_count=300):
-        exclude = set(string.punctuation)
-        sentence_1, sentence_2 = self._read_file(filename, max_len)
-        sentence_1 = [[word for word in word_tokenize(s.lower())[:max_len] if
-                       word not in exclude] for s in sentence_1]
-        sentence_2 = [[word for word in word_tokenize(s.lower())[:max_len] if
-                       word not in exclude] for s in sentence_2]
-        self.sentence = sentence_2 + sentence_1
-        for sentence in self.sentence:
-            print(sentence)
+    def __init__(self, filename, max_len=64, min_count=300, vocab=None):
+        sentence_1, sentence_2, self.labels = _read_file(filename, max_len)
+        self.sentence_1 = process_sentence(sentence_1, max_len)
+        self.sentence_2 = process_sentence(sentence_2, max_len)
+
+        self.sentence = self.sentence_2 + self.sentence_1
 
         self.max_len = max_len
 
-        self.vocab = Vocab(special_tokens=[SentenceDataset.PAD_TOKEN,
-                                           SentenceDataset.EOS_TOKEN,
-                                           SentenceDataset.UNK_TOKEN,
-                                           SentenceDataset.INIT_TOKEN])
+        if vocab is None:
+            self.vocab = Vocab(special_tokens=[PairsDataset.PAD_TOKEN,
+                                               PairsDataset.EOS_TOKEN,
+                                               PairsDataset.UNK_TOKEN,
+                                               PairsDataset.INIT_TOKEN])
+        else:
+            self.vocab = vocab
 
         self.vocab.add_documents(self.sentence)
         self.vocab.prune_vocab(min_count=min_count)
-
-
-
-    def _read_file(self, filename, max_len):
-        with open(filename, 'r', encoding='utf8') as f:
-            csv_reader = csv.reader(f, delimiter=',')
-            sentence_1 = []
-            sentence_2 = []
-            i = True
-            for row in csv_reader:
-                if i is True:
-                    i = False
-                    continue
-                if row[1].count(' ') < max_len or row[2].count(' ') < max_len:
-                    sentence_1.append(row[1])
-                    sentence_2.append(row[2])
-        return sentence_1, sentence_2
 
     def _process_sentence(self, sentence):
         sentence = sentence[:self.max_len - 1]

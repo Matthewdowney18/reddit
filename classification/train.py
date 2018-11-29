@@ -16,16 +16,16 @@ def main():
     hidden_size = 256
     embedding_dim = 300
     pretrained_embeddings = None
-    max_len = 10
+    max_len = 50
     min_count = 1
     max_grad_norm = 5
-    val_len = 200
+    #val_len = 200
     weight_decay = 0.00001
     use_old_model = True
     model_group = "/classifier"
     model_name = "/classifier_1"
     project_file = "/home/mattd/PycharmProjects/reddit"
-    dataset_filename = "RR_negative.csv"
+    dataset_path = '/home/mattd/datasets/AskReddit/'
     # embedding_filename = 'embeddings_20_1.npy'
 
     model_filename = '{}{}s{}'.format(
@@ -38,20 +38,17 @@ def main():
         project_file, model_group, model_name)
 
     # eng_fr_filename = '/mnt/data1/datasets/yelp/merged/train'
-    eng_fr_filename = '/home/mattd/PycharmProjects/agreement_encoder' \
-                      '/RR_negative.csv'
+    dataset_train_filename = "{}train.csv".format(dataset_path)
+    dataset_val_filename = "{}validation.csv".format(dataset_path)
 
-    dataset = PairsDataset(eng_fr_filename, max_len, min_count)
-    string = 'Dataset: {}'.format(len(dataset))
-    print(string)
-    output = string + '\n'
-
-    train_len = len(dataset) - val_len
-    dataset_train, dataset_val = torch.utils.data.dataset.random_split(dataset, [train_len, val_len])
+    dataset_train = PairsDataset(dataset_train_filename, max_len, min_count)
+    dataset_val = PairsDataset(dataset_val_filename, max_len, min_count,
+                               dataset_train.vocab)
+    dataset_train.vocab = dataset_val.vocab
 
     string = 'Train {}, val: {}'.format(len(dataset_train), len(dataset_val))
     print(string)
-    output = output + string + '\n'
+    output = string + '\n'
 
     #embeddings_dir = '/home/mattd/pycharm/encoder' \
     #                 '/embeddings_3min.npy'
@@ -62,9 +59,9 @@ def main():
     data_loader_train = torch.utils.data.DataLoader(dataset_train, batch_size, shuffle=True)
     data_loader_val = torch.utils.data.DataLoader(dataset_val, batch_size, shuffle=False)
 
-    vocab_size = len(dataset.vocab)
-    padding_idx = dataset.vocab[PairsDataset.PAD_TOKEN]
-    init_idx = dataset.vocab[PairsDataset.INIT_TOKEN]
+    vocab_size = len(dataset_train.vocab)
+    padding_idx = dataset_train.vocab[PairsDataset.PAD_TOKEN]
+    init_idx = dataset_train.vocab[PairsDataset.INIT_TOKEN]
 
     model = Seq2SeqModelAttention(hidden_size, padding_idx, init_idx,
         max_len, vocab_size, embedding_dim, pretrained_embeddings)
@@ -73,7 +70,7 @@ def main():
 
     parameters = list(model.parameters())
     optimizer = torch.optim.Adam(parameters, amsgrad=True, weight_decay=weight_decay)
-    criterion = torch.nn.CrossEntropyLoss(ignore_index=dataset.vocab[
+    criterion = torch.nn.CrossEntropyLoss(ignore_index=dataset_val.vocab[
         PairsDataset.PAD_TOKEN])
 
     model, optimizer, lowest_loss, description, last_epoch, \
@@ -164,10 +161,10 @@ def main():
                 outputs = outputs_var.squeeze(0).data.cpu().numpy()
 
                 string = '> {}\n'.format(get_sentence_from_indices(
-                    sentence_1, dataset.vocab, PairsDataset.EOS_TOKEN))
+                    sentence_1, dataset_val.vocab, PairsDataset.EOS_TOKEN))
 
                 string = string + u'> {}\n'.format(get_sentence_from_indices(
-                    sentence_2, dataset.vocab, PairsDataset.EOS_TOKEN))
+                    sentence_2, dataset_val.vocab, PairsDataset.EOS_TOKEN))
 
                 string = string + u'target:{}  output:{}'.format(targets,
                          outputs)
