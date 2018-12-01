@@ -2,10 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from utils import get_sequences_lengths, variable
+from utils import get_sequences_lengths, variable, add_negatve_class
 
 
-class Seq2SeqModelAttention(torch.nn.Module):
+class Seq2SeqModel(torch.nn.Module):
     def __init__(self,  hidden_size, padding_idx,init_idx,max_len,
                  vocab_size, embedding_dim, embeddings=None):
         """
@@ -213,6 +213,5 @@ class Seq2SeqModelAttention(torch.nn.Module):
         z_1 = z_1.view(-1, 1, self.combined_hidden_size)
         z_2 = z_2.view(-1, self.combined_hidden_size, 1)
         outputs = torch.sigmoid(torch.bmm(z_1, z_2) + self.bias)
-        neg_prob = variable(torch.ones(outputs.size())) - outputs
-        outputs = torch.cat((neg_prob, outputs), 1)
+        outputs = add_negatve_class(outputs)
         return outputs

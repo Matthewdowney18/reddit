@@ -3,6 +3,7 @@ import torch
 from torch.autograd import Variable
 import os
 from torch.nn import Parameter
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 
 def get_sequences_lengths(sequences, masking=0, dim=1):
@@ -58,7 +59,7 @@ def get_sentence_from_indices(indices, vocab, eos_token, join=True):
     return tokens
 
 
-def get_pretrained_embeddings(embeddings_dir, dataset):
+def get_pretrained_embeddings(embeddings_dir):
     embeddings = np.load(embeddings_dir)
     emb_tensor = torch.FloatTensor(embeddings)
     return emb_tensor
@@ -93,7 +94,6 @@ def load_checkpoint(filename, model, optimizer, use_autoencoder_model=False):
     if os.path.isfile(filename):
         checkpoint = torch.load(filename)
         model.load_state_dict(checkpoint['state_dict'])
-        optimizer.load_state_dict(checkpoint['optimizer'])
         loss = checkpoint['loss']
         description = checkpoint['description']
         if 'epoch' in checkpoint:
@@ -111,6 +111,8 @@ def load_checkpoint(filename, model, optimizer, use_autoencoder_model=False):
             train_loss = []
             val_loss = []
             loss = 500
+        else:
+            optimizer.load_state_dict(checkpoint['optimizer'])
         found_model = True
     else:
         loss = 500
@@ -131,7 +133,7 @@ def freeze_layer(layer, bool):
     return layer
 
 
-def accuracy(targets, predicted):
+def encoder_accuracy(targets, predicted):
     batch_size = targets.size()
     sentence_acc = [1] * batch_size[0]
     token_acc = []
@@ -148,3 +150,17 @@ def accuracy(targets, predicted):
     token_accuracy = sum(token_acc) / len(
         token_acc)
     return sentence_accuracy, token_accuracy
+
+
+def add_negatve_class(outputs):
+    neg_prob = variable(torch.ones(outputs.size())) - outputs
+    outputs = torch.cat((neg_prob, outputs), 1)
+    return outputs
+
+
+def classifier_accuracy(targets, predicted):
+    accuracy = accuracy_score(targets, predicted)
+    precision = precision_score(targets, predicted)
+    recall = recall_score(targets, predicted)
+    f1 = f1_score(targets, predicted)
+    return accuracy, precision, recall, f1
