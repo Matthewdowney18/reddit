@@ -12,7 +12,7 @@ from utils import variable, cuda, argmax, get_sentence_from_indices, \
 
 
 def main():
-    nb_epochs = 100
+    nb_epochs = 500
     batch_size = 500
     hidden_size = 256
     embedding_dim = 300
@@ -20,12 +20,12 @@ def main():
     max_grad_norm = 5
     max_len = 15
     min_count = 2
-    weight_decay = 0.00001
-    learning_rate = 0.001
-    use_autoencoder_model = False
+    weight_decay = 0.0001
+    learning_rate = 0.0005
+    use_autoencoder_model = True
     model_group = "/classifier"
-    model_name = "/classifier_1"
-    model_version = 1
+    model_name = "/classifier_2"
+    model_version = 0
     autoencoder_name = "/auto_encoder_3_1"
     project_file = "/home/mattd/PycharmProjects/reddit"
     dataset_path = '/home/mattd/datasets/AskReddit/'
@@ -126,6 +126,9 @@ def main():
 
     for epoch in range(last_epoch, last_epoch+nb_epochs):
         start = time.clock()
+        string = 'Epoch: {}\n'.format(epoch)
+        print(string, end='')
+        output = output + '\n' + string
 
         #if epoch == 6:
         #    model.unfreeze_embeddings()
@@ -136,8 +139,13 @@ def main():
         for phase, data_loader in zip(phases, data_loaders):
             if phase == 'train':
                 model.train()
+                string = 'Train: \n'
             else:
                 model.eval()
+                string = 'Validation \n'
+
+            print(string, end='')
+            output = output + '\n' + string
 
             epoch_loss = []
             epoch_accuracy = []
@@ -170,8 +178,8 @@ def main():
                     if (len(data_loader) / intervals)*j <= i+1:
                         train_loss.append(average_epoch_loss)
                         string = (
-                            'Epoch {:03d} Example {:03d} | {} loss: {:.3f}'.format(
-                             epoch, i, phase, average_epoch_loss))
+                            'Example {:03d} | {} loss: {:.3f}'.format(
+                              i, phase, average_epoch_loss))
                         print(string, end='\n')
                         output = output + string + '\n'
                         j += 1
@@ -179,8 +187,9 @@ def main():
                     # get result metrics
                     accuracy, precision, recall, f1 = classifier_accuracy(
                         targets.cpu().numpy(), torch.argmax(
-                            outputs.view(batch_size, -1), -1).cpu().numpy())
-                    print('{},{},{},{}'.format(accuracy, precision, recall, f1))
+                            outputs.view(-1, 2), -1).cpu().numpy())
+                    #print('{},{},{},{}'.format(accuracy, precision, recall,
+                    # f1))
                     epoch_accuracy.append(accuracy)
                     epoch_precision.append(precision)
                     epoch_recall.append(recall)
@@ -202,6 +211,18 @@ def main():
                         new_model_filename,
                         description_filename, epoch, train_loss, val_loss)
                     lowest_loss = average_epoch_loss
+
+                average_epoch_accuracy = np.mean(epoch_accuracy)
+                average_epoch_precision = np.mean(epoch_precision)
+                average_epoch_recall = np.mean(epoch_recall)
+                average_epoch_f1 = np.mean(epoch_f1)
+
+                string = "Accuracy: {:.3f}\nPrecision: {:.3f}\nRecall: {:.3f}\n" \
+                         "F1: {:.3f}\n".format(
+                    average_epoch_accuracy, average_epoch_precision,
+                    average_epoch_recall, average_epoch_f1)
+                print(string, end='\n')
+                output = output + string + '\n'
 
                 random_idx = np.random.randint(len(dataset_val))
                 sentence_1, sentence_2, labels = dataset_val[random_idx]
