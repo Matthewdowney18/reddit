@@ -5,36 +5,36 @@ import time
 from tqdm import tqdm
 
 from dataset import SentenceDataset
-from model import Seq2SeqModelAttention
+from model import Seq2SeqModel
 from utils import variable, cuda, argmax, get_sentence_from_indices, \
     get_pretrained_embeddings, save_checkpoint, load_checkpoint, freeze_layer, \
-    accuracy
+    encoder_accuracy
 
 
 def main():
     nb_epochs = 50
-    batch_size = 300
+    batch_size = 500
     hidden_size = 256
     embedding_dim = 300
-    pretrained_embeddings = None
+    pretrained_embeddings = "/embeddings_min2_max15.npy"
     max_grad_norm = 5
-    max_len = 20
+    max_len = 15
     min_count = 2
     weight_decay = 0.00001
     learning_rate = 0.001
     model_group = "/auto_encoder"
-    autoencoder_name = "/auto_encoder_1"
+    autoencoder_name = "/auto_encoder_3"
+    autoencoder_version = 1
     project_file = "/home/mattd/PycharmProjects/reddit"
-    dataset_path = '/home/mattd/datasets/AskReddit/'
-    # embedding_filename = 'embeddings_20_1.npy's
+    dataset_path = "/home/mattd/PycharmProjects/reddit/data/"
 
     string = 'nb_epochs: {}\nbatch_size: {}\nhidden_size: {}\nembedding_dim: ' \
              '{}\npretrained_embeddings: {}\nmax_len: {}\nmin_countmin_count: '\
              '{}\nweight_decay: {}\nlearning_rate: {}\nmodel_group: ' \
-             '{}\nautoencoder_name: {}\n'.format(
+             '{}\nautoencoder_name: {}\nautoencoder_version: {}\n'.format(
                 nb_epochs, batch_size, hidden_size, embedding_dim,
                 pretrained_embeddings, max_len, min_count, weight_decay,
-                learning_rate, model_group, autoencoder_name)
+                learning_rate, model_group, autoencoder_name,autoencoder_version)
     print(string)
     output = string + '\n'
 
@@ -43,11 +43,13 @@ def main():
     model_filename = '{}{}s{}'.format(
         project_file, model_group, autoencoder_name)
 
+    new_model_filename = '{}_{}'.format(model_filename, autoencoder_version)
+
+    output_file = '{}{}_outputs{}_{}'.format(
+        project_file, model_group, autoencoder_name, autoencoder_version)
+
     description_filename = \
         '{}/description/description_1.txt'.format(project_file)
-
-    output_file = '{}{}_outputs{}'.format(
-        project_file, model_group, autoencoder_name)
 
     # eng_fr_filename = '/mnt/data1/datasets/yelp/merged/train'
     dataset_train_filename = "{}train.csv".format(dataset_path)
@@ -61,11 +63,12 @@ def main():
     print(string)
     output += string + '\n'
 
-
-    #embeddings_dir = '{}/{}'.format(project_file, embedding_filename)
-    #pretrained_embeddings = cuda(
-    #    get_pretrained_embeddings(embeddings_dir, dataset))
-    #embedding_dim = pretrained_embeddings.shape[1]
+    # getting pretrained embeddings
+    if pretrained_embeddings is not None:
+        embeddings_dir = '{}{}'.format(project_file, pretrained_embeddings)
+        pretrained_embeddings = cuda(
+            get_pretrained_embeddings(embeddings_dir))
+        embedding_dim = pretrained_embeddings.shape[1]
 
     data_loader_train = torch.utils.data.DataLoader(dataset_train, batch_size, shuffle=True)
     data_loader_val = torch.utils.data.DataLoader(dataset_val, batch_size, shuffle=False)
@@ -74,7 +77,7 @@ def main():
     padding_idx = dataset_val.vocab[SentenceDataset.PAD_TOKEN]
     init_idx = dataset_val.vocab[SentenceDataset.INIT_TOKEN]
 
-    model = Seq2SeqModelAttention(hidden_size, padding_idx, init_idx,
+    model = Seq2SeqModel(hidden_size, padding_idx, init_idx,
         max_len, vocab_size, embedding_dim, pretrained_embeddings)
 
     model = cuda(model)
@@ -90,7 +93,8 @@ def main():
 
     if found_model:
         string = 'Loaded Model:\nlowest_validation_loss: {}\ndescription: {}' \
-                 '\nlast_epoch'.format(lowest_loss, description, last_epoch)
+                 '\nlast_epoch:{}\n'.format(lowest_loss, description,
+                                            last_epoch)
     else:
         string = 'No model found at {}\n'.format(model_filename)
 
@@ -146,7 +150,7 @@ def main():
                     loss.backward()
                     torch.nn.utils.clip_grad_norm_(parameters, max_grad_norm)
                     optimizer.step()
-                    if (len(data_loader) / intervals)*j <= i:
+                    if (len(data_loader) / intervals)*j <= i+1:
                         train_loss.append(average_epoch_loss)
                         string = (
                             'Epoch {:03d} Example {:03d} | {} loss: {:.3f}'.format(
@@ -158,16 +162,14 @@ def main():
                 else:
                     predicted = torch.argmax(
                         outputs.view(-1, max_len, vocab_size), -1)
-                    batch_sentence_accuracy, batch_token_accuracy = accuracy(
+                    batch_sentence_accuracy, batch_token_accuracy = encoder_accuracy(
                         targets.view(-1, max_len), predicted)
                     epoch_sentenence_accuracy.append(batch_sentence_accuracy)
                     epoch_token_accuracy.append(batch_token_accuracy)
 
             if phase == 'val':
-                averege_epoch_sentenence_accuracy = sum(epoch_sentenence_accuracy) / \
-                    len(epoch_sentenence_accuracy)
-                averege_epoch_token_accuracy = sum(epoch_token_accuracy) / \
-                    len(epoch_token_accuracy)
+                averege_epoch_sentenence_accuracy = np.mean(epoch_sentenence_accuracy)
+                averege_epoch_token_accuracy = np.mean(epoch_token_accuracy)
 
                 time_taken = time.clock() - start
 
@@ -184,7 +186,7 @@ def main():
 
                 if average_epoch_loss < lowest_loss:
                     save_checkpoint(
-                        model, average_epoch_loss, optimizer, model_filename,
+                        model, average_epoch_loss, optimizer, new_model_filename,
                         description_filename, epoch, train_loss, val_loss)
                     lowest_loss = average_epoch_loss
 

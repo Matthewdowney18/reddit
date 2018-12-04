@@ -12,23 +12,24 @@ from utils import variable, cuda, argmax, get_sentence_from_indices, \
 
 
 def main():
-    nb_epochs = 500
+    num_training_examples = -1
+    nb_epochs = 1000
     batch_size = 500
     hidden_size = 256
     embedding_dim = 300
-    pretrained_embeddings = "/embeddings_min2_max15.npy"
+    pretrained_embeddings = "/embeddings_min2_max20.npy"
     max_grad_norm = 5
-    max_len = 15
+    max_len = 20
     min_count = 2
-    weight_decay = 0.0001
-    learning_rate = 0.0005
+    weight_decay = 0.00001
+    learning_rate = 0.005
     use_autoencoder_model = True
     model_group = "/classifier"
-    model_name = "/classifier_2"
+    model_name = "/classifier_6"
     model_version = 0
-    autoencoder_name = "/auto_encoder_3_1"
+    autoencoder_name = "/auto_encoder_2_1"
     project_file = "/home/mattd/PycharmProjects/reddit"
-    dataset_path = '/home/mattd/datasets/AskReddit/'
+    dataset_path = "/home/mattd/PycharmProjects/reddit/data/"
 
 
     if use_autoencoder_model:
@@ -66,11 +67,15 @@ def main():
     dataset_train_filename = "{}train.csv".format(dataset_path)
     dataset_val_filename = "{}validation.csv".format(dataset_path)
 
-    dataset_train = PairsDataset(dataset_train_filename, max_len, min_count)
+    dataset_train = PairsDataset(
+        dataset_train_filename, max_len, min_count)
     dataset_val = PairsDataset(dataset_val_filename, max_len, min_count,
                                dataset_train.vocab)
 
-    string = 'Train {}, val: {}'.format(len(dataset_train), len(dataset_val))
+    dataset_train.prune_examples(num_training_examples)
+
+    string = 'Vocab size {}\n'.format(len(dataset_train.vocab))
+    string += 'Train {}, val: {}'.format(len(dataset_train), len(dataset_val))
     print(string)
     output += string + '\n'
 

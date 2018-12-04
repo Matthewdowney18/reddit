@@ -3,16 +3,7 @@ from collections import Counter
 
 import numpy as np
 import torch.utils.data
-from nltk import word_tokenize
-import re
-import string
-
-
-def process_sentence(sentence, max_len):
-    exclude = set(string.punctuation)
-    sentence = [[word for word in word_tokenize(s.lower())[:max_len] if
-                        word not in exclude] for s in sentence]
-    return sentence
+import random
 
 
 def _read_file(filename, max_len):
@@ -26,10 +17,10 @@ def _read_file(filename, max_len):
             if i is True:
                 i = False
                 continue
-            if row[0].count(' ') < max_len or row[1].count(' ') < max_len:
+            if row[0].count(' ') < max_len and row[1].count(' ') < max_len:
                 sentence_1.append(row[0])
                 sentence_2.append(row[1])
-                labels.append(row[2])
+                labels.append(int(row[2]))
             i = True
     return sentence_1, sentence_2, labels
 
@@ -97,9 +88,8 @@ class PairsDataset(torch.utils.data.Dataset):
     UNK_TOKEN = '<unk>'
 
     def __init__(self, filename, max_len=64, min_count=300, vocab=None):
-        sentence_1, sentence_2, self.labels = _read_file(filename, max_len)
-        self.sentence_1 = process_sentence(sentence_1, max_len)
-        self.sentence_2 = process_sentence(sentence_2, max_len)
+        self.sentence_1, self.sentence_2, self.labels = _read_file(
+            filename, max_len - 1)
 
         self.sentence = self.sentence_2 + self.sentence_1
 
@@ -133,6 +123,12 @@ class PairsDataset(torch.utils.data.Dataset):
 
         return sentence
 
+    def prune_examples(self, num_examples):
+        examples = zip(self.sentence_1, self.sentence_2, self.labels)
+        random.shuffle(examples)
+        self.sentence_1, self.sentence_2, self.labels = zip(*examples[:num_examples])
+        self.sentence = self.sentence_1 + self.sentence_2
+
     def __getitem__(self, index):
         sentence_1 = self._process_sentence(self.sentence_1[index])
         sentence_2 = self._process_sentence(self.sentence_2[index])
@@ -150,9 +146,8 @@ class SentenceDataset(torch.utils.data.Dataset):
     UNK_TOKEN = '<unk>'
 
     def __init__(self, filename, max_len=64, min_count=300, vocab=None):
-        sentence_1, sentence_2, self.labels = _read_file(filename, max_len)
-        self.sentence_1 = process_sentence(sentence_1, max_len)
-        self.sentence_2 = process_sentence(sentence_2, max_len)
+        self.sentence_1, self.sentence_2, self.labels = _read_file(filename,
+                                                               max_len)
 
         self.sentence = self.sentence_2 + self.sentence_1
 
