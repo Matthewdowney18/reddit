@@ -12,17 +12,13 @@ def _read_file(filename, max_len):
         sentence_1 = []
         sentence_2 = []
         labels = []
-        i = True
         for row in csv_reader:
-            if i is True:
-                i = False
-                continue
-            if row[0].count(' ') < max_len and row[1].count(' ') < max_len:
-                sentence_1.append(row[0])
-                sentence_2.append(row[1])
+            if row[0].count(' ') < max_len or row[1].count(' ') < max_len:
+                sentence_1.append(row[0].split(' '))
+                sentence_2.append(row[1].split(' '))
                 labels.append(int(row[2]))
-            i = True
     return sentence_1, sentence_2, labels
+
 
 
 class Vocab(object):
@@ -81,6 +77,7 @@ class Vocab(object):
     def __str__(self):
         return 'Vocab: {} tokens'.format(self.nb_tokens)
 
+
 class PairsDataset(torch.utils.data.Dataset):
     PAD_TOKEN = '<pad>'
     EOS_TOKEN = '</s>'
@@ -124,9 +121,10 @@ class PairsDataset(torch.utils.data.Dataset):
         return sentence
 
     def prune_examples(self, num_examples):
-        examples = zip(self.sentence_1, self.sentence_2, self.labels)
+        examples = list(zip(self.sentence_1, self.sentence_2, self.labels))
         random.shuffle(examples)
-        self.sentence_1, self.sentence_2, self.labels = zip(*examples[:num_examples])
+        examples = examples[:num_examples]
+        self.sentence_1, self.sentence_2, self.labels = zip(*examples)
         self.sentence = self.sentence_1 + self.sentence_2
 
     def __getitem__(self, index):
