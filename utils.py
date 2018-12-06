@@ -77,7 +77,7 @@ def get_description(description_filename):
 
 
 def save_checkpoint(model, loss, optimizer, filename, description_filename,
-                    epoch, train_loss, val_loss):
+                    epoch, train_loss, val_loss, metrics):
     state = {
             'state_dict': model.state_dict(),
             'loss': loss,
@@ -85,7 +85,8 @@ def save_checkpoint(model, loss, optimizer, filename, description_filename,
             'description' : get_description(description_filename),
             'epoch' : epoch,
             'train_loss' : train_loss,
-            'val_loss' : val_loss
+            'val_loss' : val_loss,
+            'metrics' : metrics
         }
     torch.save(state, filename)
 
@@ -106,6 +107,8 @@ def load_checkpoint(filename, model, optimizer, use_autoencoder_model=False):
         else:
             train_loss = []
             val_loss = []
+        if "metrics" in checkpoint:
+            metrics = checkpoint["metrics"]
         if use_autoencoder_model:
             epoch = 0
             train_loss = []
@@ -122,7 +125,7 @@ def load_checkpoint(filename, model, optimizer, use_autoencoder_model=False):
         val_loss = []
         found_model = False
     return model, optimizer, loss, description, epoch, train_loss, val_loss,\
-           found_model
+           found_model, metrics
 
 
 def freeze_layer(layer, bool):

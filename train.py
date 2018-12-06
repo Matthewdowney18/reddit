@@ -111,7 +111,7 @@ def main():
     criterion = torch.nn.CrossEntropyLoss()
 
     model, optimizer, lowest_loss, description, last_epoch, train_loss,\
-        val_loss, found_model = load_checkpoint(model_filename, model,
+        val_loss, found_model, metrics = load_checkpoint(model_filename, model,
         optimizer, use_autoencoder_model)
 
     #print previous model info
@@ -218,17 +218,21 @@ def main():
                 print(string, end='\n')
                 output = output + '\n' + string + '\n'
 
-                if average_epoch_loss < lowest_loss:
-                    save_checkpoint(
-                        model, average_epoch_loss, optimizer,
-                        new_model_filename,
-                        description_filename, epoch, train_loss, val_loss)
-                    lowest_loss = average_epoch_loss
-
                 average_epoch_accuracy = np.mean(epoch_accuracy)
                 average_epoch_precision = np.mean(epoch_precision)
                 average_epoch_recall = np.mean(epoch_recall)
                 average_epoch_f1 = np.mean(epoch_f1)
+                metrics = {"accuracy": average_epoch_accuracy,
+                           "precision": average_epoch_precision,
+                           "recall": average_epoch_recall,
+                           "f1": average_epoch_f1}
+
+                if average_epoch_loss < lowest_loss:
+                    save_checkpoint(
+                        model, average_epoch_loss, optimizer,
+                        new_model_filename,description_filename,
+                        epoch, train_loss, val_loss, metrics)
+                    lowest_loss = average_epoch_loss
 
                 if average_epoch_accuracy > highest_acc:
                     highest_acc = average_epoch_accuracy
