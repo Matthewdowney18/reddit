@@ -12,20 +12,21 @@ from utils import variable, cuda, argmax, get_sentence_from_indices, \
 
 
 def main():
-    num_training_examples = -1
-    nb_epochs = 1000
-    batch_size = 500
+    num_training_examples = 300000
+    nb_epochs = 100
+    batch_size = 1000
     hidden_size = 256
     embedding_dim = 300
-    pretrained_embeddings = "/embeddings_min2_max20.npy"
+    pretrained_embeddings = "/embeddings_2/embeddings_min2_max30.npy"
+    #pretrained_embeddings = None
     max_grad_norm = 5
-    max_len = 20
+    max_len = 30
     min_count = 2
     weight_decay = 0.00001
     learning_rate = 0.005
-    use_autoencoder_model = True
-    model_group = "/classifier"
-    model_name = "/classifier_6"
+    use_autoencoder_model = False
+    model_group = "/classifier_example"
+    model_name = "/classifier_0_{}".format(num_training_examples)
     model_version = 0
     autoencoder_name = "/auto_encoder_2_1"
     project_file = "/home/mattd/PycharmProjects/reddit"
@@ -55,11 +56,12 @@ def main():
              '{}\nweight_decay: {}\nlearning_rate: {}\nmodel_group: ' \
              '{}\nmodel_name: {}\nautoencoder_location: {}\n' \
              'load model_version: {}\nmodel_filename: {}\nnew_model_filename: ' \
-             '{}\noutput_file: {}\n'.format(
-        nb_epochs, batch_size, hidden_size, embedding_dim,
-        pretrained_embeddings, max_len, min_count, weight_decay,
-        learning_rate, model_group, model_name, autoencoder_name,
-        model_version, model_filename, new_model_filename, output_file)
+             '{}\noutput_file: {}\nnum_training_examples: {}\n'.format(
+                nb_epochs, batch_size, hidden_size, embedding_dim,
+                pretrained_embeddings, max_len, min_count, weight_decay,
+                learning_rate, model_group, model_name, autoencoder_name,
+                model_version, model_filename, new_model_filename, output_file,
+                num_training_examples)
     print(string)
     output = string + '\n'
 
@@ -72,10 +74,14 @@ def main():
     dataset_val = PairsDataset(dataset_val_filename, max_len, min_count,
                                dataset_train.vocab)
 
-    dataset_train.prune_examples(num_training_examples)
-
     string = 'Vocab size {}\n'.format(len(dataset_train.vocab))
-    string += 'Train {}, val: {}'.format(len(dataset_train), len(dataset_val))
+    string += 'Train {} '.format(len(dataset_train))
+
+    if num_training_examples != -1:
+        dataset_train.prune_examples(num_training_examples)
+        string += '> {}'.format(len(dataset_train))
+
+    string += '\nVal: {}'.format(len(dataset_val))
     print(string)
     output += string + '\n'
 
@@ -95,7 +101,7 @@ def main():
     init_idx = dataset_train.vocab[PairsDataset.INIT_TOKEN]
 
     model = Seq2SeqModel(hidden_size, padding_idx, init_idx,
-                         max_len, vocab_size, embedding_dim, pretrained_embeddings)
+            max_len, vocab_size, embedding_dim, pretrained_embeddings)
 
     model = cuda(model)
 
@@ -127,7 +133,8 @@ def main():
     phases = ['train', 'val', ]
     data_loaders = [data_loader_train, data_loader_val, ]
 
-    intervals = 6
+    intervals = 2
+    highest_acc = 0
 
     for epoch in range(last_epoch, last_epoch+nb_epochs):
         start = time.clock()
@@ -181,7 +188,6 @@ def main():
                     torch.nn.utils.clip_grad_norm_(parameters, max_grad_norm)
                     optimizer.step()
                     if (len(data_loader) / intervals)*j <= i+1:
-                        train_loss.append(average_epoch_loss)
                         string = (
                             'Example {:03d} | {} loss: {:.3f}'.format(
                               i, phase, average_epoch_loss))
@@ -207,6 +213,8 @@ def main():
                 val_loss.append(average_epoch_loss)
                 string = ' {} loss: {:.3f} | time: {:.3f}'.format(
                     phase, average_epoch_loss, time_taken)
+                string += ' | lowest loss: {:.3f} highest accuracy: {' \
+                          ':.3f}'.format(lowest_loss, highest_acc)
                 print(string, end='\n')
                 output = output + '\n' + string + '\n'
 
@@ -221,6 +229,9 @@ def main():
                 average_epoch_precision = np.mean(epoch_precision)
                 average_epoch_recall = np.mean(epoch_recall)
                 average_epoch_f1 = np.mean(epoch_f1)
+
+                if average_epoch_accuracy > highest_acc:
+                    highest_acc = average_epoch_accuracy
 
                 string = "Accuracy: {:.3f}\nPrecision: {:.3f}\nRecall: {:.3f}\n" \
                          "F1: {:.3f}\n".format(
@@ -251,6 +262,8 @@ def main():
                     targets, float(outputs[0]), float(outputs[1]))
                 print(string, end='\n\n')
                 output = output + string + '\n' + '\n'
+            else:
+                train_loss.append(average_epoch_loss)
         outfile = open(output_file, 'w')
         outfile.write(output)
         outfile.close()
