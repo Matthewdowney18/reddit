@@ -11,13 +11,11 @@ def _read_file(filename, max_len):
         csv_reader = csv.reader(f, delimiter=',')
         sentence_1 = []
         sentence_2 = []
-        labels = []
         for row in csv_reader:
             if row[0].count(' ') < max_len or row[1].count(' ') < max_len:
                 sentence_1.append(row[0].split(' '))
                 sentence_2.append(row[1].split(' '))
-                labels.append(int(row[2]))
-    return sentence_1, sentence_2, labels
+    return sentence_1, sentence_2
 
 
 
@@ -78,65 +76,6 @@ class Vocab(object):
         return 'Vocab: {} tokens'.format(self.nb_tokens)
 
 
-class PairsDataset(torch.utils.data.Dataset):
-    PAD_TOKEN = '<pad>'
-    EOS_TOKEN = '</s>'
-    INIT_TOKEN = '<s>'
-    UNK_TOKEN = '<unk>'
-
-    def __init__(self, filename, max_len=64, min_count=300, vocab=None):
-        self.sentence_1, self.sentence_2, self.labels = _read_file(
-            filename, max_len - 1)
-
-        self.sentence = self.sentence_2 + self.sentence_1
-
-        self.max_len = max_len
-
-        if vocab is None:
-            self.vocab = Vocab(special_tokens=[PairsDataset.PAD_TOKEN,
-                                               PairsDataset.EOS_TOKEN,
-                                               PairsDataset.UNK_TOKEN,
-                                               PairsDataset.INIT_TOKEN])
-        else:
-            self.vocab = vocab
-
-        self.vocab.add_documents(self.sentence)
-        self.vocab.prune_vocab(min_count=min_count)
-
-    def _process_sentence(self, sentence):
-        sentence = sentence[:self.max_len - 1]
-        sentence.append(SentenceDataset.EOS_TOKEN)
-
-        needed_pads = self.max_len - len(sentence)
-        if needed_pads > 0:
-            sentence = sentence + [SentenceDataset.PAD_TOKEN] * needed_pads
-
-        sentence = [
-            self.vocab[token] if token in self.vocab else self.vocab[SentenceDataset.UNK_TOKEN]
-            for token in sentence
-        ]
-
-        sentence = np.array(sentence, dtype=np.long)
-
-        return sentence
-
-    def prune_examples(self, num_examples):
-        examples = list(zip(self.sentence_1, self.sentence_2, self.labels))
-        random.shuffle(examples)
-        examples = examples[:num_examples]
-        self.sentence_1, self.sentence_2, self.labels = zip(*examples)
-        self.sentence = self.sentence_1 + self.sentence_2
-
-    def __getitem__(self, index):
-        sentence_1 = self._process_sentence(self.sentence_1[index])
-        sentence_2 = self._process_sentence(self.sentence_2[index])
-        label = self.labels[index]
-        return sentence_1, sentence_2, label
-
-    def __len__(self):
-        return len(self.sentence_1)
-
-
 class SentenceDataset(torch.utils.data.Dataset):
     PAD_TOKEN = '<pad>'
     EOS_TOKEN = '</s>'
@@ -144,23 +83,28 @@ class SentenceDataset(torch.utils.data.Dataset):
     UNK_TOKEN = '<unk>'
 
     def __init__(self, filename, max_len=64, min_count=300, vocab=None):
-        self.sentence_1, self.sentence_2, self.labels = _read_file(filename,
-                                                               max_len)
-
-        self.sentence = self.sentence_2 + self.sentence_1
+        self.sentence_1, self.sentence_2 = _read_file(filename, max_len-1)
 
         self.max_len = max_len
 
         if vocab is None:
-            self.vocab = Vocab(special_tokens=[PairsDataset.PAD_TOKEN,
-                                               PairsDataset.EOS_TOKEN,
-                                               PairsDataset.UNK_TOKEN,
-                                               PairsDataset.INIT_TOKEN])
+            self.vocab = Vocab(special_tokens=[SentenceDataset.PAD_TOKEN,
+                                               SentenceDataset.EOS_TOKEN,
+                                               SentenceDataset.UNK_TOKEN,
+                                               SentenceDataset.INIT_TOKEN])
         else:
             self.vocab = vocab
 
-        self.vocab.add_documents(self.sentence)
+        self.vocab.add_documents(self.sentence_1)
+        self.vocab.add_documents(self.sentence_2)
         self.vocab.prune_vocab(min_count=min_count)
+
+    def prune_examples(self, num_examples):
+        examples = list(zip(self.sentence_1, self.sentence_2))
+        random.shuffle(examples)
+        examples = examples[:num_examples]
+        self.sentence_1, self.sentence_2 = zip(*examples)
+        self.sentence = self.sentence_1 + self.sentence_2
 
     def _process_sentence(self, sentence):
         sentence = sentence[:self.max_len - 1]
@@ -180,8 +124,9 @@ class SentenceDataset(torch.utils.data.Dataset):
         return sentence
 
     def __getitem__(self, index):
-        sentence = self._process_sentence(self.sentence[index])
-        return sentence
+        sentence_1 = self._process_sentence(self.sentence_1[index])
+        sentence_2 = self._process_sentence(self.sentence_2[index])
+        return sentence_1, sentence_2
 
     def __len__(self):
-        return len(self.sentence)
+        return len(self.sentence_1)

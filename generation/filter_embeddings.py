@@ -2,7 +2,7 @@ from vecto import embeddings
 import numpy as np
 import pickle
 
-from dataset import SentenceDataset, PairsDataset
+from dataset import SentenceDataset
 
 
 def get_vectors(filename):
@@ -17,18 +17,18 @@ def get_vectors(filename):
 
 
 def main():
-    max_len = 30
+    max_len = 15
     min_count = 2
 
     embeddings_dir = '/home/mattd/embeddings/reddit_2/'
     #dataset_path = '/home/mattd/datasets/AskReddit/'
-    dataset_path = "/home/mattd/PycharmProjects/reddit/data/"
+    dataset_path = "/home/mattd/PycharmProjects/reddit/generation/data/"
     dataset_train_filename = "{}train.csv".format(dataset_path)
     dataset_val_filename = "{}validation.csv".format(dataset_path)
-    save_dir = "/home/mattd/PycharmProjects/reddit/embeddings/"
+    save_dir = "/home/mattd/PycharmProjects/reddit/generation/embeddings/"
 
-    dataset_train = PairsDataset(dataset_train_filename, max_len, min_count)
-    dataset_val = PairsDataset(dataset_val_filename, max_len, min_count,
+    dataset_train = SentenceDataset(dataset_train_filename, max_len, min_count)
+    dataset_val = SentenceDataset(dataset_val_filename, max_len, min_count,
                                   dataset_train.vocab)
     #dataset.add_file(eng_fr_filename2)
 
