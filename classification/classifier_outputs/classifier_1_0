@@ -1,0 +1,1222 @@
+nb_epochs: 100
+batch_size: 500
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: /embeddings_min2_max15.npy
+max_len: 15
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.001
+model_group: /classifier
+model_name: /classifier_1
+autoencoder_location: /auto_encoder_3_1
+load model_version: 0
+model_filename: /home/mattd/PycharmProjects/reddit/auto_encoders/auto_encoder_3_1
+new_model_filename: /home/mattd/PycharmProjects/reddit/classifiers/classifier_1_0
+output_file: /home/mattd/PycharmProjects/reddit/classifier_outputs/classifier_1_0
+
+Train 228831, val: 57061
+Loaded Model:
+lowest_validation_loss: 500
+description: ['none']
+last_epoch:0
+Epoch 000 Example 076 | train loss: 0.788
+Epoch 000 Example 152 | train loss: 0.734
+Epoch 000 Example 228 | train loss: 0.709
+Epoch 000 Example 305 | train loss: 0.693
+Epoch 000 Example 381 | train loss: 0.682
+Epoch 000 Example 457 | train loss: 0.674
+
+ val loss: 0.627 | time: 88.748
+> be honest when is the last time you felt really used
+> when my ex girlfriend told me she only stayed around for the last few
+target:1|  P false:0.152, P true: 0.848
+
+Epoch 001 Example 076 | train loss: 0.588
+Epoch 001 Example 152 | train loss: 0.589
+Epoch 001 Example 228 | train loss: 0.590
+Epoch 001 Example 305 | train loss: 0.591
+Epoch 001 Example 381 | train loss: 0.591
+Epoch 001 Example 457 | train loss: 0.591
+
+ val loss: 0.610 | time: 88.923
+> serious do you think it is the sign of westerners racist nature when
+> me not think op english writes good hard understand to was post
+target:1|  P false:0.002, P true: 0.998
+
+Epoch 002 Example 076 | train loss: 0.539
+Epoch 002 Example 152 | train loss: 0.541
+Epoch 002 Example 228 | train loss: 0.542
+Epoch 002 Example 305 | train loss: 0.544
+Epoch 002 Example 381 | train loss: 0.546
+Epoch 002 Example 457 | train loss: 0.548
+
+ val loss: 0.606 | time: 88.825
+> if my brother 's so great what 's the point of me
+> what boggles my mind is why do n't companies that produce tv shows be
+target:0|  P false:0.848, P true: 0.152
+
+Epoch 003 Example 076 | train loss: 0.502
+Epoch 003 Example 152 | train loss: 0.505
+Epoch 003 Example 228 | train loss: 0.510
+Epoch 003 Example 305 | train loss: 0.513
+Epoch 003 Example 381 | train loss: 0.515
+Epoch 003 Example 457 | train loss: 0.517
+
+ val loss: 0.607 | time: 88.778
+> reddit what 's your story when you 've tried to impress someone and failed
+> this is just another fat movement perpetuated by tubblers and has since been picked
+target:0|  P false:0.975, P true: 0.025
+
+Epoch 004 Example 076 | train loss: 0.481
+Epoch 004 Example 152 | train loss: 0.485
+Epoch 004 Example 228 | train loss: 0.487
+Epoch 004 Example 305 | train loss: 0.489
+Epoch 004 Example 381 | train loss: 0.492
+Epoch 004 Example 457 | train loss: 0.494
+
+ val loss: 0.607 | time: 88.828
+> what happened to that black girl that was raped and then attacked on twitter
+> because when it 's black on black crime it goes <unk> 's an everyday
+target:1|  P false:1.000, P true: 0.000
+
+Epoch 005 Example 076 | train loss: 0.461
+Epoch 005 Example 152 | train loss: 0.465
+Epoch 005 Example 228 | train loss: 0.467
+Epoch 005 Example 305 | train loss: 0.470
+Epoch 005 Example 381 | train loss: 0.473
+Epoch 005 Example 457 | train loss: 0.475
+
+ val loss: 0.606 | time: 88.788
+> what happened when you found out your child was n't biologically yours
+> my so was lead to believe a child was his prior to us meeting
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 006 Example 076 | train loss: 0.449
+Epoch 006 Example 152 | train loss: 0.452
+Epoch 006 Example 228 | train loss: 0.455
+Epoch 006 Example 305 | train loss: 0.458
+Epoch 006 Example 381 | train loss: 0.459
+Epoch 006 Example 457 | train loss: 0.461
+
+ val loss: 0.607 | time: 89.056
+> help me decide whether i 'm going to kill my coworkers tomorrow
+> getting a package in the mail any package any thing i love
+target:0|  P false:0.000, P true: 1.000
+
+Epoch 007 Example 076 | train loss: 0.437
+Epoch 007 Example 152 | train loss: 0.439
+Epoch 007 Example 228 | train loss: 0.442
+Epoch 007 Example 305 | train loss: 0.445
+Epoch 007 Example 381 | train loss: 0.447
+Epoch 007 Example 457 | train loss: 0.450
+
+ val loss: 0.606 | time: 88.869
+> i think my friend is taking advantage of a girl do i tell her
+> tell me more about the girl who will give anyone a handjob hot
+target:1|  P false:0.003, P true: 0.997
+
+Epoch 008 Example 076 | train loss: 0.432
+Epoch 008 Example 152 | train loss: 0.433
+Epoch 008 Example 228 | train loss: 0.434
+Epoch 008 Example 305 | train loss: 0.436
+Epoch 008 Example 381 | train loss: 0.438
+Epoch 008 Example 457 | train loss: 0.441
+
+ val loss: 0.605 | time: 88.908
+> reddit what accent do you have when speaking english please share
+> i would curse my mother in law with worms in her anus for the
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 009 Example 076 | train loss: 0.423
+Epoch 009 Example 152 | train loss: 0.425
+Epoch 009 Example 228 | train loss: 0.427
+Epoch 009 Example 305 | train loss: 0.429
+Epoch 009 Example 381 | train loss: 0.431
+Epoch 009 Example 457 | train loss: 0.433
+
+ val loss: 0.607 | time: 88.775
+> what 's the biggest overshare you 've gotten from a simple/innocent question
+> i really liked mindless self indulgence as a teen looking back now i
+target:0|  P false:0.990, P true: 0.010
+
+Epoch 010 Example 076 | train loss: 0.416
+Epoch 010 Example 152 | train loss: 0.419
+Epoch 010 Example 228 | train loss: 0.422
+Epoch 010 Example 305 | train loss: 0.423
+Epoch 010 Example 381 | train loss: 0.425
+Epoch 010 Example 457 | train loss: 0.427
+
+ val loss: 0.606 | time: 88.978
+> reddit can we write stories together it might not work but i think its
+> with my finger on the trigger i had only one thought in my head
+target:1|  P false:0.711, P true: 0.289
+
+Epoch 011 Example 076 | train loss: 0.414
+Epoch 011 Example 152 | train loss: 0.415
+Epoch 011 Example 228 | train loss: 0.416
+Epoch 011 Example 305 | train loss: 0.418
+Epoch 011 Example 381 | train loss: 0.419
+Epoch 011 Example 457 | train loss: 0.421
+
+ val loss: 0.606 | time: 88.891
+> what is the most awkward thing a teacher of yours has done/said
+> 19 everything is downhill from here sorry to break it to you
+target:0|  P false:0.997, P true: 0.003
+
+Epoch 012 Example 076 | train loss: 0.406
+Epoch 012 Example 152 | train loss: 0.410
+Epoch 012 Example 228 | train loss: 0.412
+Epoch 012 Example 305 | train loss: 0.413
+Epoch 012 Example 381 | train loss: 0.415
+Epoch 012 Example 457 | train loss: 0.416
+
+ val loss: 0.606 | time: 88.893
+> females of reddit what is the worst thing a guy can say to a
+> `` are you on your period '' when in a bad mood
+target:1|  P false:0.036, P true: 0.964
+
+Epoch 013 Example 076 | train loss: 0.405
+Epoch 013 Example 152 | train loss: 0.406
+Epoch 013 Example 228 | train loss: 0.407
+Epoch 013 Example 305 | train loss: 0.409
+Epoch 013 Example 381 | train loss: 0.410
+Epoch 013 Example 457 | train loss: 0.412
+
+ val loss: 0.606 | time: 88.873
+> women of reddit what is the perfect penis size and length of sex for
+> mine did but the schools my husband went to did not kids would get
+target:0|  P false:0.989, P true: 0.011
+
+Epoch 014 Example 076 | train loss: 0.403
+Epoch 014 Example 152 | train loss: 0.403
+Epoch 014 Example 228 | train loss: 0.405
+Epoch 014 Example 305 | train loss: 0.406
+Epoch 014 Example 381 | train loss: 0.407
+Epoch 014 Example 457 | train loss: 0.409
+
+ val loss: 0.607 | time: 88.871
+> serious what principles/wisdom from your industry should everyone else know about
+> you said `` when i first heard this i was like ``
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 015 Example 076 | train loss: 0.398
+Epoch 015 Example 152 | train loss: 0.399
+Epoch 015 Example 228 | train loss: 0.400
+Epoch 015 Example 305 | train loss: 0.401
+Epoch 015 Example 381 | train loss: 0.403
+Epoch 015 Example 457 | train loss: 0.405
+
+ val loss: 0.608 | time: 89.007
+> which bill congress passed since 911 which had benefited american public
+> had a girlfriend who was bpd she did not like it when i broke
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 016 Example 076 | train loss: 0.393
+Epoch 016 Example 152 | train loss: 0.395
+Epoch 016 Example 228 | train loss: 0.397
+Epoch 016 Example 305 | train loss: 0.399
+Epoch 016 Example 381 | train loss: 0.400
+Epoch 016 Example 457 | train loss: 0.402
+
+ val loss: 0.608 | time: 88.904
+> girls who have little mustaches why do n't you shave it
+> alpha xi delta it 's a sorority ui baseball team adi http
+target:0|  P false:0.126, P true: 0.874
+
+Epoch 017 Example 076 | train loss: 0.393
+Epoch 017 Example 152 | train loss: 0.394
+Epoch 017 Example 228 | train loss: 0.396
+Epoch 017 Example 305 | train loss: 0.397
+Epoch 017 Example 381 | train loss: 0.398
+Epoch 017 Example 457 | train loss: 0.399
+
+ val loss: 0.607 | time: 88.804
+> reddit what are some of the greatest quotes you know
+> it 's a cliche but hit the gym seriously it will help you
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 018 Example 076 | train loss: 0.389
+Epoch 018 Example 152 | train loss: 0.391
+Epoch 018 Example 228 | train loss: 0.393
+Epoch 018 Example 305 | train loss: 0.394
+Epoch 018 Example 381 | train loss: 0.395
+Epoch 018 Example 457 | train loss: 0.397
+
+ val loss: 0.606 | time: 88.745
+> what odd pronunciation of a word while technically correct drives you nuts
+> i ca n't understand why americans pronounce <unk> and eliminate the 'i
+target:1|  P false:0.003, P true: 0.997
+
+Epoch 019 Example 076 | train loss: 0.387
+Epoch 019 Example 152 | train loss: 0.389
+Epoch 019 Example 228 | train loss: 0.390
+Epoch 019 Example 305 | train loss: 0.391
+Epoch 019 Example 381 | train loss: 0.393
+Epoch 019 Example 457 | train loss: 0.394
+
+ val loss: 0.606 | time: 88.793
+> reddit would you suck your own dick if you could
+> just ask everything about him.. ask where is he from if you do n't
+target:0|  P false:0.000, P true: 1.000
+
+Epoch 020 Example 076 | train loss: 0.386
+Epoch 020 Example 152 | train loss: 0.387
+Epoch 020 Example 228 | train loss: 0.389
+Epoch 020 Example 305 | train loss: 0.390
+Epoch 020 Example 381 | train loss: 0.391
+Epoch 020 Example 457 | train loss: 0.393
+
+ val loss: 0.605 | time: 88.984
+> is it irresponsible to own a husky in the midwest
+> just that they are annoying dogs that are hard to discipline unless they are
+target:1|  P false:0.018, P true: 0.982
+
+Epoch 021 Example 076 | train loss: 0.385
+Epoch 021 Example 152 | train loss: 0.386
+Epoch 021 Example 228 | train loss: 0.388
+Epoch 021 Example 305 | train loss: 0.389
+Epoch 021 Example 381 | train loss: 0.390
+Epoch 021 Example 457 | train loss: 0.391
+
+ val loss: 0.607 | time: 88.824
+> what programming language would you choose for a new web amp mobile application
+> this probably actually belongs in /r/programming i would choose c asp.net 4.5
+target:1|  P false:0.004, P true: 0.996
+
+Epoch 022 Example 076 | train loss: 0.382
+Epoch 022 Example 152 | train loss: 0.383
+Epoch 022 Example 228 | train loss: 0.385
+Epoch 022 Example 305 | train loss: 0.386
+Epoch 022 Example 381 | train loss: 0.388
+Epoch 022 Example 457 | train loss: 0.389
+
+ val loss: 0.606 | time: 88.768
+> is there anybody who actually likes the <unk> vote replacements
+> i quit teeball because i was terrible i struck out
+target:0|  P false:0.000, P true: 1.000
+
+Epoch 023 Example 076 | train loss: 0.381
+Epoch 023 Example 152 | train loss: 0.382
+Epoch 023 Example 228 | train loss: 0.383
+Epoch 023 Example 305 | train loss: 0.384
+Epoch 023 Example 381 | train loss: 0.385
+Epoch 023 Example 457 | train loss: 0.386
+
+ val loss: 0.607 | time: 88.851
+> how does the way you speak depict/contrast who you are
+> he 's 8. some kids are little shits does n't mean he 's going
+target:0|  P false:0.000, P true: 1.000
+
+Epoch 024 Example 076 | train loss: 0.379
+Epoch 024 Example 152 | train loss: 0.381
+Epoch 024 Example 228 | train loss: 0.382
+Epoch 024 Example 305 | train loss: 0.383
+Epoch 024 Example 381 | train loss: 0.384
+Epoch 024 Example 457 | train loss: 0.385
+
+ val loss: 0.607 | time: 88.924
+> in your opinion who was the best/worst presidents of the us
+> i 'm not american so i do n't know the ins and the outs
+target:1|  P false:0.001, P true: 0.999
+
+Epoch 025 Example 076 | train loss: 0.378
+Epoch 025 Example 152 | train loss: 0.380
+Epoch 025 Example 228 | train loss: 0.380
+Epoch 025 Example 305 | train loss: 0.382
+Epoch 025 Example 381 | train loss: 0.383
+Epoch 025 Example 457 | train loss: 0.384
+
+ val loss: 0.607 | time: 88.942
+> do you think ketchup is okay to put on a hot dog
+> you might be able to find a computer surplus store that has one but
+target:0|  P false:0.022, P true: 0.978
+
+Epoch 026 Example 076 | train loss: 0.377
+Epoch 026 Example 152 | train loss: 0.378
+Epoch 026 Example 228 | train loss: 0.379
+Epoch 026 Example 305 | train loss: 0.380
+Epoch 026 Example 381 | train loss: 0.381
+Epoch 026 Example 457 | train loss: 0.382
+
+ val loss: 0.609 | time: 88.909
+> what 's something cool that you will definitely get your money 's worth for
+> i have a cousin who fits this description to our grandmother she was the
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 027 Example 076 | train loss: 0.376
+Epoch 027 Example 152 | train loss: 0.377
+Epoch 027 Example 228 | train loss: 0.377
+Epoch 027 Example 305 | train loss: 0.379
+Epoch 027 Example 381 | train loss: 0.380
+Epoch 027 Example 457 | train loss: 0.381
+
+ val loss: 0.607 | time: 88.755
+> what 's the most random thing that 's ever happened to you
+> if they have similar military capabilities as us and are invading they 'd get
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 028 Example 076 | train loss: 0.376
+Epoch 028 Example 152 | train loss: 0.377
+Epoch 028 Example 228 | train loss: 0.377
+Epoch 028 Example 305 | train loss: 0.378
+Epoch 028 Example 381 | train loss: 0.379
+Epoch 028 Example 457 | train loss: 0.380
+
+ val loss: 0.607 | time: 88.772
+> is asking someone out on a date at their workplace inappropriate
+> is there a reason you ca n't see this person outside of their work
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 029 Example 076 | train loss: 0.374
+Epoch 029 Example 152 | train loss: 0.375
+Epoch 029 Example 228 | train loss: 0.376
+Epoch 029 Example 305 | train loss: 0.376
+Epoch 029 Example 381 | train loss: 0.377
+Epoch 029 Example 457 | train loss: 0.378
+
+ val loss: 0.609 | time: 89.038
+> what 's the best christmas gift you 've ever had from your spouse
+> when i was a wee lass in sunday school it was explained to be
+target:0|  P false:0.001, P true: 0.999
+
+Epoch 030 Example 076 | train loss: 0.371
+Epoch 030 Example 152 | train loss: 0.373
+Epoch 030 Example 228 | train loss: 0.374
+Epoch 030 Example 305 | train loss: 0.375
+Epoch 030 Example 381 | train loss: 0.376
+Epoch 030 Example 457 | train loss: 0.377
+
+ val loss: 0.608 | time: 88.924
+> what are some of the things in life that you will 'spare no expense
+> toilet paper you always get the expensive fluffy stuff always
+target:1|  P false:0.003, P true: 0.997
+
+Epoch 031 Example 076 | train loss: 0.371
+Epoch 031 Example 152 | train loss: 0.373
+Epoch 031 Example 228 | train loss: 0.374
+Epoch 031 Example 305 | train loss: 0.374
+Epoch 031 Example 381 | train loss: 0.375
+Epoch 031 Example 457 | train loss: 0.376
+
+ val loss: 0.610 | time: 88.868
+> dear reddit how did you know he/she was too clingy
+> she started talking about what our kids would be like on our first date
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 032 Example 076 | train loss: 0.373
+Epoch 032 Example 152 | train loss: 0.373
+Epoch 032 Example 228 | train loss: 0.373
+Epoch 032 Example 305 | train loss: 0.374
+Epoch 032 Example 381 | train loss: 0.374
+Epoch 032 Example 457 | train loss: 0.375
+
+ val loss: 0.610 | time: 88.876
+> this is going to sound insane ... but i want to start a real
+> i am trusting that never seems to work out very well
+target:0|  P false:0.032, P true: 0.968
+
+Epoch 033 Example 076 | train loss: 0.370
+Epoch 033 Example 152 | train loss: 0.371
+Epoch 033 Example 228 | train loss: 0.371
+Epoch 033 Example 305 | train loss: 0.372
+Epoch 033 Example 381 | train loss: 0.372
+Epoch 033 Example 457 | train loss: 0.374
+
+ val loss: 0.608 | time: 88.911
+> what do you think of this voting system taxes are replaced with donations and
+> yelling `` i 'm spartacus '' but then all these dudes copied me
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 034 Example 076 | train loss: 0.369
+Epoch 034 Example 152 | train loss: 0.369
+Epoch 034 Example 228 | train loss: 0.370
+Epoch 034 Example 305 | train loss: 0.371
+Epoch 034 Example 381 | train loss: 0.372
+Epoch 034 Example 457 | train loss: 0.373
+
+ val loss: 0.608 | time: 88.950
+> why is being fat such a big deal to some folks
+> i would imagine recreation drugs would be treated similarly as alcohol prescription drugs are
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 035 Example 076 | train loss: 0.368
+Epoch 035 Example 152 | train loss: 0.369
+Epoch 035 Example 228 | train loss: 0.370
+Epoch 035 Example 305 | train loss: 0.370
+Epoch 035 Example 381 | train loss: 0.371
+Epoch 035 Example 457 | train loss: 0.372
+
+ val loss: 0.607 | time: 88.819
+> why do we chastise people for being homophobic is it different than any other
+> less driving to soccer practices interrupting things more naked fridays best way
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 036 Example 076 | train loss: 0.368
+Epoch 036 Example 152 | train loss: 0.369
+Epoch 036 Example 228 | train loss: 0.369
+Epoch 036 Example 305 | train loss: 0.370
+Epoch 036 Example 381 | train loss: 0.371
+Epoch 036 Example 457 | train loss: 0.371
+
+ val loss: 0.608 | time: 88.892
+> alright reddit what is the single worst company you have ever had the displeasure
+> satan killing the pope it would make religious and non-religious go apeshit
+target:0|  P false:0.998, P true: 0.002
+
+Epoch 037 Example 076 | train loss: 0.365
+Epoch 037 Example 152 | train loss: 0.367
+Epoch 037 Example 228 | train loss: 0.368
+Epoch 037 Example 305 | train loss: 0.369
+Epoch 037 Example 381 | train loss: 0.369
+Epoch 037 Example 457 | train loss: 0.370
+
+ val loss: 0.609 | time: 88.820
+> serious does emma watson know about her status on reddit
+> there 's absolutely no point in saying anything unless you 're into them too
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 038 Example 076 | train loss: 0.364
+Epoch 038 Example 152 | train loss: 0.365
+Epoch 038 Example 228 | train loss: 0.367
+Epoch 038 Example 305 | train loss: 0.367
+Epoch 038 Example 381 | train loss: 0.368
+Epoch 038 Example 457 | train loss: 0.369
+
+ val loss: 0.610 | time: 88.814
+> why do some people still believe obama was not born in hawaii
+> ask yourself this question in the couple hundred years this country has existed how
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 039 Example 076 | train loss: 0.364
+Epoch 039 Example 152 | train loss: 0.366
+Epoch 039 Example 228 | train loss: 0.367
+Epoch 039 Example 305 | train loss: 0.367
+Epoch 039 Example 381 | train loss: 0.369
+Epoch 039 Example 457 | train loss: 0.369
+
+ val loss: 0.609 | time: 88.982
+> what 's the best relationship advice you can give to the opposite sex
+> `` we are n't stupid we just say what we mean so we
+target:1|  P false:0.992, P true: 0.008
+
+Epoch 040 Example 076 | train loss: 0.364
+Epoch 040 Example 152 | train loss: 0.365
+Epoch 040 Example 228 | train loss: 0.366
+Epoch 040 Example 305 | train loss: 0.367
+Epoch 040 Example 381 | train loss: 0.367
+Epoch 040 Example 457 | train loss: 0.368
+
+ val loss: 0.609 | time: 88.821
+> how many girls go on reddit compared to guys am i one of only
+> pics or did n't happen ... what someone was going to say it
+target:1|  P false:1.000, P true: 0.000
+
+Epoch 041 Example 076 | train loss: 0.365
+Epoch 041 Example 152 | train loss: 0.365
+Epoch 041 Example 228 | train loss: 0.366
+Epoch 041 Example 305 | train loss: 0.366
+Epoch 041 Example 381 | train loss: 0.367
+Epoch 041 Example 457 | train loss: 0.367
+
+ val loss: 0.609 | time: 88.893
+> hey reddit what small steps can someone take to become a better person
+> be less of a cunt and more of a friendly cocksucker
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 042 Example 076 | train loss: 0.364
+Epoch 042 Example 152 | train loss: 0.365
+Epoch 042 Example 228 | train loss: 0.365
+Epoch 042 Example 305 | train loss: 0.365
+Epoch 042 Example 381 | train loss: 0.366
+Epoch 042 Example 457 | train loss: 0.366
+
+ val loss: 0.612 | time: 88.844
+> what is your go-to food if you feel like cheating on your diet
+> until a few months ago i used dial up exclusively now i use dial
+target:0|  P false:0.970, P true: 0.030
+
+Epoch 043 Example 076 | train loss: 0.363
+Epoch 043 Example 152 | train loss: 0.364
+Epoch 043 Example 228 | train loss: 0.364
+Epoch 043 Example 305 | train loss: 0.365
+Epoch 043 Example 381 | train loss: 0.365
+Epoch 043 Example 457 | train loss: 0.366
+
+ val loss: 0.610 | time: 88.778
+> ive been kinda sad lately and i discovered today that ill be spending my
+> i 'll take you out for your birthday do you put out on the
+target:1|  P false:0.554, P true: 0.446
+
+Epoch 044 Example 076 | train loss: 0.362
+Epoch 044 Example 152 | train loss: 0.362
+Epoch 044 Example 228 | train loss: 0.364
+Epoch 044 Example 305 | train loss: 0.364
+Epoch 044 Example 381 | train loss: 0.365
+Epoch 044 Example 457 | train loss: 0.366
+
+ val loss: 0.609 | time: 89.033
+> reddit what 's one thing you see in porn that always pisses you off
+> when they cut to the guys face or they show her gaping ass hole
+target:1|  P false:0.001, P true: 0.999
+
+Epoch 045 Example 076 | train loss: 0.361
+Epoch 045 Example 152 | train loss: 0.362
+Epoch 045 Example 228 | train loss: 0.362
+Epoch 045 Example 305 | train loss: 0.363
+Epoch 045 Example 381 | train loss: 0.364
+Epoch 045 Example 457 | train loss: 0.364
+
+ val loss: 0.609 | time: 88.847
+> how come it is my cake day and i do n't get a cake
+> you said `` 80 of the population will eventually have low back
+target:0|  P false:0.971, P true: 0.029
+
+Epoch 046 Example 076 | train loss: 0.362
+Epoch 046 Example 152 | train loss: 0.361
+Epoch 046 Example 228 | train loss: 0.362
+Epoch 046 Example 305 | train loss: 0.362
+Epoch 046 Example 381 | train loss: 0.363
+Epoch 046 Example 457 | train loss: 0.364
+
+ val loss: 0.610 | time: 88.894
+> we are planning on making an app to help with sign language communication and
+> probably the obama administration it would be useful during the next memorial service he
+target:1|  P false:0.992, P true: 0.008
+
+Epoch 047 Example 076 | train loss: 0.360
+Epoch 047 Example 152 | train loss: 0.361
+Epoch 047 Example 228 | train loss: 0.362
+Epoch 047 Example 305 | train loss: 0.362
+Epoch 047 Example 381 | train loss: 0.363
+Epoch 047 Example 457 | train loss: 0.364
+
+ val loss: 0.611 | time: 88.800
+> serious how do feminism and masculinity benefit when we include men
+> my weekly `` fails of the week '' on youtube always cheer me up
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 048 Example 076 | train loss: 0.359
+Epoch 048 Example 152 | train loss: 0.361
+Epoch 048 Example 228 | train loss: 0.362
+Epoch 048 Example 305 | train loss: 0.362
+Epoch 048 Example 381 | train loss: 0.362
+Epoch 048 Example 457 | train loss: 0.363
+
+ val loss: 0.610 | time: 88.996
+> when i make tea should i pour the boiling water directly onto the teabag
+> just put the tea bag in hot water somehow it 's not string theory
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 049 Example 076 | train loss: 0.360
+Epoch 049 Example 152 | train loss: 0.360
+Epoch 049 Example 228 | train loss: 0.361
+Epoch 049 Example 305 | train loss: 0.361
+Epoch 049 Example 381 | train loss: 0.362
+Epoch 049 Example 457 | train loss: 0.363
+
+ val loss: 0.609 | time: 88.966
+> why have i become so sweaty over the past few years
+> i 'm no doctor but i sound like one with wikipedia it 's
+target:1|  P false:0.001, P true: 0.999
+
+Epoch 050 Example 076 | train loss: 0.360
+Epoch 050 Example 152 | train loss: 0.360
+Epoch 050 Example 228 | train loss: 0.360
+Epoch 050 Example 305 | train loss: 0.361
+Epoch 050 Example 381 | train loss: 0.361
+Epoch 050 Example 457 | train loss: 0.362
+
+ val loss: 0.608 | time: 88.868
+> post apocalyptic survivors what 's one thing that you 'll never get used to
+> not using tp to wipe all the time could you imagine how awesome it
+target:1|  P false:0.001, P true: 0.999
+
+Epoch 051 Example 076 | train loss: 0.356
+Epoch 051 Example 152 | train loss: 0.358
+Epoch 051 Example 228 | train loss: 0.360
+Epoch 051 Example 305 | train loss: 0.361
+Epoch 051 Example 381 | train loss: 0.361
+Epoch 051 Example 457 | train loss: 0.362
+
+ val loss: 0.610 | time: 88.815
+> what does it feel like when you fall asleep what sensations do you get
+> *worst wooooooors-**t** not `` worse '' woooooorsssssssss **ttttttttttt** t.
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 052 Example 076 | train loss: 0.357
+Epoch 052 Example 152 | train loss: 0.358
+Epoch 052 Example 228 | train loss: 0.359
+Epoch 052 Example 305 | train loss: 0.359
+Epoch 052 Example 381 | train loss: 0.360
+Epoch 052 Example 457 | train loss: 0.361
+
+ val loss: 0.607 | time: 88.879
+> hi i 'll be off to college next year could reddit please suggest
+> <unk> <unk> engineering cs hard sciences social science useful ones liberal <unk> shit
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 053 Example 076 | train loss: 0.356
+Epoch 053 Example 152 | train loss: 0.358
+Epoch 053 Example 228 | train loss: 0.358
+Epoch 053 Example 305 | train loss: 0.359
+Epoch 053 Example 381 | train loss: 0.360
+Epoch 053 Example 457 | train loss: 0.361
+
+ val loss: 0.609 | time: 89.048
+> i am an australian graduate engineer looking to move to canada for work does
+> i think most of the stuff is happening in the <unk> area now
+target:1|  P false:0.001, P true: 0.999
+
+Epoch 054 Example 076 | train loss: 0.358
+Epoch 054 Example 152 | train loss: 0.358
+Epoch 054 Example 228 | train loss: 0.359
+Epoch 054 Example 305 | train loss: 0.359
+Epoch 054 Example 381 | train loss: 0.360
+Epoch 054 Example 457 | train loss: 0.360
+
+ val loss: 0.611 | time: 88.837
+> should i drink alcohol before going on my first date
+> he died for our sins and taught us to love one another
+target:0|  P false:0.996, P true: 0.004
+
+Epoch 055 Example 076 | train loss: 0.357
+Epoch 055 Example 152 | train loss: 0.357
+Epoch 055 Example 228 | train loss: 0.358
+Epoch 055 Example 305 | train loss: 0.359
+Epoch 055 Example 381 | train loss: 0.359
+Epoch 055 Example 457 | train loss: 0.360
+
+ val loss: 0.608 | time: 88.824
+> serious has any defense research had a significant positive effect on
+> from what i understand a lot of computer <unk> are designed for the military
+target:1|  P false:0.032, P true: 0.968
+
+Epoch 056 Example 076 | train loss: 0.357
+Epoch 056 Example 152 | train loss: 0.358
+Epoch 056 Example 228 | train loss: 0.358
+Epoch 056 Example 305 | train loss: 0.359
+Epoch 056 Example 381 | train loss: 0.359
+Epoch 056 Example 457 | train loss: 0.360
+
+ val loss: 0.608 | time: 88.891
+> if you could have lunch with 5 people dead or alive who would it
+> i ran into russell simmons 3 times in the same week once
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 057 Example 076 | train loss: 0.357
+Epoch 057 Example 152 | train loss: 0.357
+Epoch 057 Example 228 | train loss: 0.357
+Epoch 057 Example 305 | train loss: 0.358
+Epoch 057 Example 381 | train loss: 0.358
+Epoch 057 Example 457 | train loss: 0.359
+
+ val loss: 0.607 | time: 88.893
+> okay time for a classic if you could have one superpower what would it
+> <unk> a page more of my story woof the cool scratch of
+target:0|  P false:0.990, P true: 0.010
+
+Epoch 058 Example 076 | train loss: 0.356
+Epoch 058 Example 152 | train loss: 0.356
+Epoch 058 Example 228 | train loss: 0.356
+Epoch 058 Example 305 | train loss: 0.357
+Epoch 058 Example 381 | train loss: 0.358
+Epoch 058 Example 457 | train loss: 0.358
+
+ val loss: 0.609 | time: 89.012
+> has anyone pretended to be somebody else over the phone through <unk> or in
+> how would pretending to be someone else spare someone 's feelings
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 059 Example 076 | train loss: 0.354
+Epoch 059 Example 152 | train loss: 0.356
+Epoch 059 Example 228 | train loss: 0.356
+Epoch 059 Example 305 | train loss: 0.357
+Epoch 059 Example 381 | train loss: 0.358
+Epoch 059 Example 457 | train loss: 0.358
+
+ val loss: 0.611 | time: 88.787
+> dear reddit if you could go back in time and change one event what
+> depends how cold it is i 'm pretty sure there 's a name for
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 060 Example 076 | train loss: 0.355
+Epoch 060 Example 152 | train loss: 0.356
+Epoch 060 Example 228 | train loss: 0.356
+Epoch 060 Example 305 | train loss: 0.356
+Epoch 060 Example 381 | train loss: 0.357
+Epoch 060 Example 457 | train loss: 0.358
+
+ val loss: 0.610 | time: 88.900
+> my gf 's ex is moving in with them any advice
+> i actually did get an honorary cherokee name last year i ca n't remember
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 061 Example 076 | train loss: 0.355
+Epoch 061 Example 152 | train loss: 0.355
+Epoch 061 Example 228 | train loss: 0.356
+Epoch 061 Example 305 | train loss: 0.356
+Epoch 061 Example 381 | train loss: 0.357
+Epoch 061 Example 457 | train loss: 0.357
+
+ val loss: 0.611 | time: 88.806
+> what do you do if you are n't passionate about anything at all
+> do you feel moderately passionate towards multiple things and just not sufficiently passionate about
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 062 Example 076 | train loss: 0.353
+Epoch 062 Example 152 | train loss: 0.354
+Epoch 062 Example 228 | train loss: 0.355
+Epoch 062 Example 305 | train loss: 0.356
+Epoch 062 Example 381 | train loss: 0.357
+Epoch 062 Example 457 | train loss: 0.357
+
+ val loss: 0.613 | time: 88.912
+> how do you deal with rejection from someone you really loved
+> staplers with staple removers attached http //www.estatesalerelics.com/uploads/1/1/6/4/11645770/5214449_orig.jpg 97
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 063 Example 076 | train loss: 0.353
+Epoch 063 Example 152 | train loss: 0.354
+Epoch 063 Example 228 | train loss: 0.355
+Epoch 063 Example 305 | train loss: 0.355
+Epoch 063 Example 381 | train loss: 0.356
+Epoch 063 Example 457 | train loss: 0.356
+
+ val loss: 0.611 | time: 89.017
+> adults of reddit what is something you do n't understand that teenagers do
+> if you cant drink it and you cant smoke it then fuck it
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 064 Example 076 | train loss: 0.353
+Epoch 064 Example 152 | train loss: 0.354
+Epoch 064 Example 228 | train loss: 0.354
+Epoch 064 Example 305 | train loss: 0.355
+Epoch 064 Example 381 | train loss: 0.356
+Epoch 064 Example 457 | train loss: 0.356
+
+ val loss: 0.610 | time: 88.825
+> why does the majority of popular electronic music come from northern europe
+> send internet through a transparent proxy server with settings that <unk> bandwidth when necessary
+target:0|  P false:0.038, P true: 0.962
+
+Epoch 065 Example 076 | train loss: 0.355
+Epoch 065 Example 152 | train loss: 0.355
+Epoch 065 Example 228 | train loss: 0.354
+Epoch 065 Example 305 | train loss: 0.354
+Epoch 065 Example 381 | train loss: 0.355
+Epoch 065 Example 457 | train loss: 0.356
+
+ val loss: 0.611 | time: 88.826
+> females of reddit what is one thing men will never understand about being female
+> `` get a fucking clue you idiot '' by stop asking stupid questions
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 066 Example 076 | train loss: 0.353
+Epoch 066 Example 152 | train loss: 0.354
+Epoch 066 Example 228 | train loss: 0.355
+Epoch 066 Example 305 | train loss: 0.355
+Epoch 066 Example 381 | train loss: 0.355
+Epoch 066 Example 457 | train loss: 0.356
+
+ val loss: 0.609 | time: 88.888
+> um can we get ford to make this plant in america
+> i do n't agree with your friend but is it worth losing your friendship
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 067 Example 076 | train loss: 0.353
+Epoch 067 Example 152 | train loss: 0.353
+Epoch 067 Example 228 | train loss: 0.354
+Epoch 067 Example 305 | train loss: 0.354
+Epoch 067 Example 381 | train loss: 0.355
+Epoch 067 Example 457 | train loss: 0.355
+
+ val loss: 0.610 | time: 88.932
+> why are n't there any good role models for children these days
+> first step is to take off your <unk> glasses older people are so busy
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 068 Example 076 | train loss: 0.352
+Epoch 068 Example 152 | train loss: 0.352
+Epoch 068 Example 228 | train loss: 0.353
+Epoch 068 Example 305 | train loss: 0.354
+Epoch 068 Example 381 | train loss: 0.355
+Epoch 068 Example 457 | train loss: 0.355
+
+ val loss: 0.611 | time: 88.815
+> if your username was your battlefield nickname why would you be the most feared
+> i really wish table tennis and badminton were bigger in america
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 069 Example 076 | train loss: 0.353
+Epoch 069 Example 152 | train loss: 0.352
+Epoch 069 Example 228 | train loss: 0.353
+Epoch 069 Example 305 | train loss: 0.353
+Epoch 069 Example 381 | train loss: 0.354
+Epoch 069 Example 457 | train loss: 0.355
+
+ val loss: 0.610 | time: 88.839
+> what if the usa was the only country to successfully develop nukes
+> nobody to be honest i really do n't care as much about looks as
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 070 Example 076 | train loss: 0.354
+Epoch 070 Example 152 | train loss: 0.353
+Epoch 070 Example 228 | train loss: 0.353
+Epoch 070 Example 305 | train loss: 0.354
+Epoch 070 Example 381 | train loss: 0.354
+Epoch 070 Example 457 | train loss: 0.355
+
+ val loss: 0.610 | time: 88.816
+> if you could teach everyone in the world one thing what would it be
+> ask your insurance company not us we do n't know yet
+target:0|  P false:0.999, P true: 0.001
+
+Epoch 071 Example 076 | train loss: 0.352
+Epoch 071 Example 152 | train loss: 0.353
+Epoch 071 Example 228 | train loss: 0.353
+Epoch 071 Example 305 | train loss: 0.354
+Epoch 071 Example 381 | train loss: 0.355
+Epoch 071 Example 457 | train loss: 0.355
+
+ val loss: 0.611 | time: 88.812
+> how many of you suffer from road rage and like it
+> i love my road rage though it sometimes manifests in weird ways my
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 072 Example 076 | train loss: 0.351
+Epoch 072 Example 152 | train loss: 0.352
+Epoch 072 Example 228 | train loss: 0.352
+Epoch 072 Example 305 | train loss: 0.353
+Epoch 072 Example 381 | train loss: 0.354
+Epoch 072 Example 457 | train loss: 0.354
+
+ val loss: 0.608 | time: 89.052
+> so i have 1300 what should i do with it
+> i talk to customers a <unk> `` so are you working hard or hardly
+target:0|  P false:0.000, P true: 1.000
+
+Epoch 073 Example 076 | train loss: 0.352
+Epoch 073 Example 152 | train loss: 0.351
+Epoch 073 Example 228 | train loss: 0.352
+Epoch 073 Example 305 | train loss: 0.353
+Epoch 073 Example 381 | train loss: 0.353
+Epoch 073 Example 457 | train loss: 0.353
+
+ val loss: 0.611 | time: 88.865
+> i 'm taking a flight tomorrow and need something awesome to do
+> you need help figuring out how to entertain yourself on a plane flight you
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 074 Example 076 | train loss: 0.351
+Epoch 074 Example 152 | train loss: 0.352
+Epoch 074 Example 228 | train loss: 0.352
+Epoch 074 Example 305 | train loss: 0.353
+Epoch 074 Example 381 | train loss: 0.353
+Epoch 074 Example 457 | train loss: 0.353
+
+ val loss: 0.611 | time: 88.801
+> last year my friend was shot 4x by his bff the trial is next
+> would you be able to post a link to something verifying this is legitimate
+target:1|  P false:0.992, P true: 0.008
+
+Epoch 075 Example 076 | train loss: 0.350
+Epoch 075 Example 152 | train loss: 0.352
+Epoch 075 Example 228 | train loss: 0.352
+Epoch 075 Example 305 | train loss: 0.353
+Epoch 075 Example 381 | train loss: 0.353
+Epoch 075 Example 457 | train loss: 0.353
+
+ val loss: 0.611 | time: 88.765
+> for those who live alone whats your favorite thing about living alone
+> i can watch porn with the volume turned up whenever i feel like it
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 076 Example 076 | train loss: 0.350
+Epoch 076 Example 152 | train loss: 0.351
+Epoch 076 Example 228 | train loss: 0.351
+Epoch 076 Example 305 | train loss: 0.352
+Epoch 076 Example 381 | train loss: 0.352
+Epoch 076 Example 457 | train loss: 0.353
+
+ val loss: 0.610 | time: 88.862
+> do you think leading couple roles in big movies sleep with each other to
+> made more friends i spent too much time on the internet
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 077 Example 076 | train loss: 0.349
+Epoch 077 Example 152 | train loss: 0.351
+Epoch 077 Example 228 | train loss: 0.351
+Epoch 077 Example 305 | train loss: 0.352
+Epoch 077 Example 381 | train loss: 0.353
+Epoch 077 Example 457 | train loss: 0.353
+
+ val loss: 0.609 | time: 88.970
+> reddit are there any celebrities that you would take a bullet for
+> vote a democracy does n't work if the people do n't speak up
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 078 Example 076 | train loss: 0.351
+Epoch 078 Example 152 | train loss: 0.351
+Epoch 078 Example 228 | train loss: 0.351
+Epoch 078 Example 305 | train loss: 0.351
+Epoch 078 Example 381 | train loss: 0.352
+Epoch 078 Example 457 | train loss: 0.352
+
+ val loss: 0.611 | time: 88.874
+> pet owners of reddit what is your favorite part about your pet
+> my dog she has an awesome personality and does the thing i got her
+target:1|  P false:0.005, P true: 0.995
+
+Epoch 079 Example 076 | train loss: 0.349
+Epoch 079 Example 152 | train loss: 0.349
+Epoch 079 Example 228 | train loss: 0.350
+Epoch 079 Example 305 | train loss: 0.351
+Epoch 079 Example 381 | train loss: 0.351
+Epoch 079 Example 457 | train loss: 0.352
+
+ val loss: 0.612 | time: 88.808
+> reddit what is one 'unattractive quality in a person that you actually find endearing
+> i am attracted to sociopathic women something about a woman in control of her
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 080 Example 076 | train loss: 0.349
+Epoch 080 Example 152 | train loss: 0.350
+Epoch 080 Example 228 | train loss: 0.351
+Epoch 080 Example 305 | train loss: 0.351
+Epoch 080 Example 381 | train loss: 0.351
+Epoch 080 Example 457 | train loss: 0.352
+
+ val loss: 0.610 | time: 88.827
+> what question would you ask if you could ask anyone anything
+> i 'd ask that <unk> guy i met in sydney if i could have
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 081 Example 076 | train loss: 0.349
+Epoch 081 Example 152 | train loss: 0.349
+Epoch 081 Example 228 | train loss: 0.350
+Epoch 081 Example 305 | train loss: 0.351
+Epoch 081 Example 381 | train loss: 0.351
+Epoch 081 Example 457 | train loss: 0.351
+
+ val loss: 0.611 | time: 88.851
+> what is the most advantageous second language to english to learn why
+> russian is in high demand because of current global issues also arabic but there
+target:1|  P false:0.053, P true: 0.947
+
+Epoch 082 Example 076 | train loss: 0.347
+Epoch 082 Example 152 | train loss: 0.348
+Epoch 082 Example 228 | train loss: 0.349
+Epoch 082 Example 305 | train loss: 0.350
+Epoch 082 Example 381 | train loss: 0.351
+Epoch 082 Example 457 | train loss: 0.351
+
+ val loss: 0.610 | time: 88.941
+> what are song lyrics that can be substituted with the word cheese or cheese
+> replace any song of `` i love you '' with `` i love cheese
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 083 Example 076 | train loss: 0.350
+Epoch 083 Example 152 | train loss: 0.349
+Epoch 083 Example 228 | train loss: 0.349
+Epoch 083 Example 305 | train loss: 0.350
+Epoch 083 Example 381 | train loss: 0.351
+Epoch 083 Example 457 | train loss: 0.351
+
+ val loss: 0.610 | time: 88.803
+> what was the longest you 've been on the phone with customer service
+> barley speaking does that mean they were pabst tongue i 've been on
+target:1|  P false:1.000, P true: 0.000
+
+Epoch 084 Example 076 | train loss: 0.348
+Epoch 084 Example 152 | train loss: 0.348
+Epoch 084 Example 228 | train loss: 0.349
+Epoch 084 Example 305 | train loss: 0.350
+Epoch 084 Example 381 | train loss: 0.350
+Epoch 084 Example 457 | train loss: 0.351
+
+ val loss: 0.610 | time: 88.906
+> what are some good movies on netflix that you recommend everyone should watch
+> not a movie but frasier probably my favorite television show
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 085 Example 076 | train loss: 0.348
+Epoch 085 Example 152 | train loss: 0.349
+Epoch 085 Example 228 | train loss: 0.350
+Epoch 085 Example 305 | train loss: 0.350
+Epoch 085 Example 381 | train loss: 0.351
+Epoch 085 Example 457 | train loss: 0.351
+
+ val loss: 0.609 | time: 88.935
+> if you could have one tv show back on the air what would it
+> i would have loved to see a continuation of hbo 's carnivale sadly it
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 086 Example 076 | train loss: 0.347
+Epoch 086 Example 152 | train loss: 0.347
+Epoch 086 Example 228 | train loss: 0.348
+Epoch 086 Example 305 | train loss: 0.349
+Epoch 086 Example 381 | train loss: 0.350
+Epoch 086 Example 457 | train loss: 0.350
+
+ val loss: 0.611 | time: 89.034
+> serious what is something you really <unk> to do but have n't yet
+> i 've been wanting to see janelle <unk> for years now but every time
+target:1|  P false:0.024, P true: 0.976
+
+Epoch 087 Example 076 | train loss: 0.347
+Epoch 087 Example 152 | train loss: 0.348
+Epoch 087 Example 228 | train loss: 0.349
+Epoch 087 Example 305 | train loss: 0.349
+Epoch 087 Example 381 | train loss: 0.350
+Epoch 087 Example 457 | train loss: 0.350
+
+ val loss: 0.611 | time: 88.825
+> reddit why do you love your job or alternatively why do you hate your
+> oddly i am feeling indifferent right now i only started 3 months ago and
+target:1|  P false:0.000, P true: 1.000
+
+Epoch 088 Example 076 | train loss: 0.347
+Epoch 088 Example 152 | train loss: 0.348
+Epoch 088 Example 228 | train loss: 0.349
+Epoch 088 Example 305 | train loss: 0.349
+Epoch 088 Example 381 | train loss: 0.350
+Epoch 088 Example 457 | train loss: 0.350
+
+ val loss: 0.610 | time: 88.908
+> what are some of the best things to do in chicago
+> this is kind of silly but ... when i was young five or six
+target:0|  P false:0.030, P true: 0.970
+
+Epoch 089 Example 076 | train loss: 0.347
+Epoch 089 Example 152 | train loss: 0.348
+Epoch 089 Example 228 | train loss: 0.348
+Epoch 089 Example 305 | train loss: 0.349
+Epoch 089 Example 381 | train loss: 0.349
+Epoch 089 Example 457 | train loss: 0.350
+
+ val loss: 0.610 | time: 88.916
+> i use reddit i 'm deaf are there any others out there who
+> i was shot at with a water gun ... it felt wet
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 090 Example 076 | train loss: 0.347
+Epoch 090 Example 152 | train loss: 0.347
+Epoch 090 Example 228 | train loss: 0.348
+Epoch 090 Example 305 | train loss: 0.348
+Epoch 090 Example 381 | train loss: 0.349
+Epoch 090 Example 457 | train loss: 0.349
+
+ val loss: 0.610 | time: 88.847
+> redditors what have you learned from your ex boy- or girlfriends how and why
+> is there a dental school near you they often perform work at reasonable prices
+target:0|  P false:0.982, P true: 0.018
+
+Epoch 091 Example 076 | train loss: 0.349
+Epoch 091 Example 152 | train loss: 0.348
+Epoch 091 Example 228 | train loss: 0.348
+Epoch 091 Example 305 | train loss: 0.348
+Epoch 091 Example 381 | train loss: 0.349
+Epoch 091 Example 457 | train loss: 0.349
+
+ val loss: 0.609 | time: 89.202
+> if you could have one extra body part what would it be and why
+> an invisible poison gland above my canine teeth nothing lethal just paralytic and
+target:1|  P false:0.963, P true: 0.037
+
+Epoch 092 Example 076 | train loss: 0.347
+Epoch 092 Example 152 | train loss: 0.348
+Epoch 092 Example 228 | train loss: 0.348
+Epoch 092 Example 305 | train loss: 0.349
+Epoch 092 Example 381 | train loss: 0.349
+Epoch 092 Example 457 | train loss: 0.349
+
+ val loss: 0.612 | time: 88.939
+> serious non-aussies of reddit how has your opinion of our country changed
+> i want to visit just to hear the women talk
+target:1|  P false:0.002, P true: 0.998
+
+Epoch 093 Example 076 | train loss: 0.346
+Epoch 093 Example 152 | train loss: 0.346
+Epoch 093 Example 228 | train loss: 0.347
+Epoch 093 Example 305 | train loss: 0.348
+Epoch 093 Example 381 | train loss: 0.348
+Epoch 093 Example 457 | train loss: 0.349
+
+ val loss: 0.611 | time: 88.929
+> will we always have texting or some form of it
+> my mum was a security guard for an er a long time ago one
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 094 Example 076 | train loss: 0.346
+Epoch 094 Example 152 | train loss: 0.346
+Epoch 094 Example 228 | train loss: 0.347
+Epoch 094 Example 305 | train loss: 0.348
+Epoch 094 Example 381 | train loss: 0.349
+Epoch 094 Example 457 | train loss: 0.349
+
+ val loss: 0.611 | time: 88.881
+> my neighbor listens to music extremely loud at all hours so i let my
+> have you considered asking your neighbour to turn the music down
+target:1|  P false:0.799, P true: 0.201
+
+Epoch 095 Example 076 | train loss: 0.347
+Epoch 095 Example 152 | train loss: 0.347
+Epoch 095 Example 228 | train loss: 0.348
+Epoch 095 Example 305 | train loss: 0.348
+Epoch 095 Example 381 | train loss: 0.349
+Epoch 095 Example 457 | train loss: 0.349
+
+ val loss: 0.611 | time: 88.913
+> just moved into apartment invite friends over friend brings 2 delirious complete strangers along
+> the author of the infamously bad harry potter fanfiction my immortal
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 096 Example 076 | train loss: 0.346
+Epoch 096 Example 152 | train loss: 0.347
+Epoch 096 Example 228 | train loss: 0.347
+Epoch 096 Example 305 | train loss: 0.347
+Epoch 096 Example 381 | train loss: 0.348
+Epoch 096 Example 457 | train loss: 0.348
+
+ val loss: 0.614 | time: 89.000
+> i have 75 to spend on a laser pointer go
+> it 's not about a piece of paper given to you it about what
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 097 Example 076 | train loss: 0.346
+Epoch 097 Example 152 | train loss: 0.347
+Epoch 097 Example 228 | train loss: 0.347
+Epoch 097 Example 305 | train loss: 0.347
+Epoch 097 Example 381 | train loss: 0.348
+Epoch 097 Example 457 | train loss: 0.348
+
+ val loss: 0.610 | time: 88.845
+> does anyone know if there is some sort of weapon i as a young
+> do n't worry it 's not the end of the world i 'm
+target:0|  P false:0.505, P true: 0.495
+
+Epoch 098 Example 076 | train loss: 0.345
+Epoch 098 Example 152 | train loss: 0.346
+Epoch 098 Example 228 | train loss: 0.347
+Epoch 098 Example 305 | train loss: 0.347
+Epoch 098 Example 381 | train loss: 0.348
+Epoch 098 Example 457 | train loss: 0.348
+
+ val loss: 0.612 | time: 88.873
+> what is your best super clean joke for an audience aged 4-7
+> nowadays if you spit on a car it can cost several thousand
+target:0|  P false:0.003, P true: 0.997
+
+Epoch 099 Example 076 | train loss: 0.345
+Epoch 099 Example 152 | train loss: 0.346
+Epoch 099 Example 228 | train loss: 0.347
+Epoch 099 Example 305 | train loss: 0.348
+Epoch 099 Example 381 | train loss: 0.348
+Epoch 099 Example 457 | train loss: 0.348
+
+ val loss: 0.611 | time: 88.835
+> what is the longest period of time you 've stayed up and why
+> it really is n't as much gas as you would think i hate nascar
+target:0|  P false:1.000, P true: 0.000
+

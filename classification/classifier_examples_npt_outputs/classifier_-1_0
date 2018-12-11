@@ -1,0 +1,620 @@
+nb_epochs: 100
+batch_size: 500
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: None
+max_len: 30
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.005
+model_group: /classifier_examples_npt
+model_name: /classifier_-1
+autoencoder_location: /auto_encoder_2_1
+load model_version: 0
+model_filename: /home/mattd/PycharmProjects/reddit/classifier_examples_npts/classifier_-1_-1
+new_model_filename: /home/mattd/PycharmProjects/reddit/classifier_examples_npts/classifier_-1_0
+output_file: /home/mattd/PycharmProjects/reddit/classifier_examples_npt_outputs/classifier_-1_0
+
+Vocab size 56844
+Train 182789 
+Val: 45497
+No model found at /home/mattd/PycharmProjects/reddit/classifier_examples_npts/classifier_-1_-1
+
+
+Epoch: 0
+
+Train: 
+Example 060 | train loss: 0.709
+Example 121 | train loss: 0.701
+Example 182 | train loss: 0.695
+Example 243 | train loss: 0.692
+Example 304 | train loss: 0.688
+Example 365 | train loss: 0.686
+
+Validation 
+
+ val loss: 0.663 | time: 106.863
+Accuracy: 0.595
+Precision: 0.587
+Recall: 0.636
+F1: 0.610
+
+> reddit what do you consider to be the happiest piece of music ever made
+> does he have any type of insurance that would cover the stolen things
+target:0|  P false:0.886, P true: 0.114
+
+
+Epoch: 1
+
+Train: 
+Example 060 | train loss: 0.651
+Example 121 | train loss: 0.653
+Example 182 | train loss: 0.653
+Example 243 | train loss: 0.653
+Example 304 | train loss: 0.651
+Example 365 | train loss: 0.650
+
+Validation 
+
+ val loss: 0.637 | time: 107.581
+Accuracy: 0.640
+Precision: 0.639
+Recall: 0.639
+F1: 0.638
+
+> women that have been propositioned or hit on by their boss how have you handled the situation what was the end result
+> go down to the shawnee national forest or giant city state park there 's also a good amount of lakes down that way
+target:0|  P false:0.920, P true: 0.080
+
+
+Epoch: 2
+
+Train: 
+Example 060 | train loss: 0.616
+Example 121 | train loss: 0.619
+Example 182 | train loss: 0.619
+Example 243 | train loss: 0.619
+Example 304 | train loss: 0.618
+Example 365 | train loss: 0.617
+
+Validation 
+
+ val loss: 0.613 | time: 111.116
+Accuracy: 0.673
+Precision: 0.663
+Recall: 0.700
+F1: 0.680
+
+> i want bacon and eggs for breakfast what clever note s can i leave out for my sleeping wife to convince her to make them for me
+> fuck you cook your own goddamn breakfast you piece of shit
+target:1|  P false:0.734, P true: 0.266
+
+
+Epoch: 3
+
+Train: 
+Example 060 | train loss: 0.576
+Example 121 | train loss: 0.579
+Example 182 | train loss: 0.582
+Example 243 | train loss: 0.584
+Example 304 | train loss: 0.586
+Example 365 | train loss: 0.586
+
+Validation 
+
+ val loss: 0.597 | time: 111.924
+Accuracy: 0.693
+Precision: 0.684
+Recall: 0.713
+F1: 0.698
+
+> what <unk> if you win the state lottery in a different state
+> my understanding is you cant ... i thought state lottery required permanant residence could be different now
+target:1|  P false:0.018, P true: 0.982
+
+
+Epoch: 4
+
+Train: 
+Example 060 | train loss: 0.539
+Example 121 | train loss: 0.545
+Example 182 | train loss: 0.550
+Example 243 | train loss: 0.554
+Example 304 | train loss: 0.557
+Example 365 | train loss: 0.559
+
+Validation 
+
+ val loss: 0.582 | time: 111.925
+Accuracy: 0.710
+Precision: 0.702
+Recall: 0.728
+F1: 0.715
+
+> context
+> response
+target:1|  P false:0.026, P true: 0.974
+
+
+Epoch: 5
+
+Train: 
+Example 060 | train loss: 0.511
+Example 121 | train loss: 0.518
+Example 182 | train loss: 0.524
+Example 243 | train loss: 0.529
+Example 304 | train loss: 0.534
+Example 365 | train loss: 0.537
+
+Validation 
+
+ val loss: 0.576 | time: 111.179
+Accuracy: 0.718
+Precision: 0.708
+Recall: 0.741
+F1: 0.724
+
+> what 's your worst first world problem situation you 've been in
+> school marks when another little boy stepped on my foot because i got _num_ _num_ marks more than him on a math test
+target:0|  P false:0.070, P true: 0.930
+
+
+Epoch: 6
+
+Train: 
+Example 060 | train loss: 0.494
+Example 121 | train loss: 0.498
+Example 182 | train loss: 0.504
+Example 243 | train loss: 0.510
+Example 304 | train loss: 0.514
+Example 365 | train loss: 0.518
+
+Validation 
+
+ val loss: 0.567 | time: 113.064
+Accuracy: 0.728
+Precision: 0.721
+Recall: 0.742
+F1: 0.730
+
+> serious can a us airport officer deny you immigration if a swab test turns out <unk> or a drug sniffing dog marks you without carrying any drugs
+> eating tea and crumpets while watching soccer in your flat
+target:0|  P false:0.999, P true: 0.001
+
+
+Epoch: 7
+
+Train: 
+Example 060 | train loss: 0.475
+Example 121 | train loss: 0.482
+Example 182 | train loss: 0.489
+Example 243 | train loss: 0.494
+Example 304 | train loss: 0.499
+Example 365 | train loss: 0.503
+
+Validation 
+
+ val loss: 0.566 | time: 112.417
+Accuracy: 0.729
+Precision: 0.726
+Recall: 0.733
+F1: 0.729
+
+> may meet justice <unk> this week ... what should i ask her
+> ask her what she would do for a klondike bar
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 8
+
+Train: 
+Example 060 | train loss: 0.464
+Example 121 | train loss: 0.469
+Example 182 | train loss: 0.475
+Example 243 | train loss: 0.480
+Example 304 | train loss: 0.485
+Example 365 | train loss: 0.490
+
+Validation 
+
+ val loss: 0.565 | time: 112.869
+Accuracy: 0.731
+Precision: 0.721
+Recall: 0.753
+F1: 0.736
+
+> <unk> users of reddit can you describe your experience i have heard that it is hard to retain the information obtained while under the effects of dmt
+> no but i 've had normal healthy relationships with friends and coworkers who happen to be redditors
+target:0|  P false:0.686, P true: 0.314
+
+
+Epoch: 9
+
+Train: 
+Example 060 | train loss: 0.453
+Example 121 | train loss: 0.458
+Example 182 | train loss: 0.464
+Example 243 | train loss: 0.470
+Example 304 | train loss: 0.475
+Example 365 | train loss: 0.480
+
+Validation 
+
+ val loss: 0.563 | time: 109.694
+Accuracy: 0.733
+Precision: 0.728
+Recall: 0.743
+F1: 0.735
+
+> my wife and i just bought our first house any 'house hacks or <unk> i should be aware of
+> that the earth is flat personally i still think it is i do n't tell anyone this in fear i look stupid
+target:0|  P false:0.999, P true: 0.001
+
+
+Epoch: 10
+
+Train: 
+Example 060 | train loss: 0.441
+Example 121 | train loss: 0.447
+Example 182 | train loss: 0.454
+Example 243 | train loss: 0.460
+Example 304 | train loss: 0.465
+Example 365 | train loss: 0.470
+
+Validation 
+
+ val loss: 0.560 | time: 111.043
+Accuracy: 0.736
+Precision: 0.720
+Recall: 0.769
+F1: 0.743
+
+> what 's the deal with women who almost only have guy friends
+> ... and while we 're at it what 's the deal with airplane food
+target:1|  P false:0.966, P true: 0.034
+
+
+Epoch: 11
+
+Train: 
+Example 060 | train loss: 0.436
+Example 121 | train loss: 0.442
+Example 182 | train loss: 0.447
+Example 243 | train loss: 0.453
+Example 304 | train loss: 0.458
+Example 365 | train loss: 0.463
+
+Validation 
+
+ val loss: 0.558 | time: 109.142
+Accuracy: 0.738
+Precision: 0.728
+Recall: 0.759
+F1: 0.743
+
+> what would america be like now if the south won the civil war
+> i made my iphone charger fit in a chinese plug using _num_ paper clips it worked but would not recommend
+target:0|  P false:0.477, P true: 0.523
+
+
+Epoch: 12
+
+Train: 
+Example 060 | train loss: 0.433
+Example 121 | train loss: 0.437
+Example 182 | train loss: 0.443
+Example 243 | train loss: 0.448
+Example 304 | train loss: 0.453
+Example 365 | train loss: 0.457
+
+Validation 
+
+ val loss: 0.559 | time: 109.412
+Accuracy: 0.738
+Precision: 0.722
+Recall: 0.771
+F1: 0.745
+
+> has anyone ever thought of trying to make <unk> or <unk> kind of <unk> organised free concert
+> can you explain to me why anyone worth listening to would play for free
+target:1|  P false:0.002, P true: 0.998
+
+
+Epoch: 13
+
+Train: 
+Example 060 | train loss: 0.426
+Example 121 | train loss: 0.430
+Example 182 | train loss: 0.436
+Example 243 | train loss: 0.441
+Example 304 | train loss: 0.446
+Example 365 | train loss: 0.451
+
+Validation 
+
+ val loss: 0.556 | time: 110.459
+Accuracy: 0.742
+Precision: 0.732
+Recall: 0.761
+F1: 0.746
+
+> has anyone ever <unk> a phone number written on a bathroom stall what was your experience
+> yes there was a whole post about it here yesterday
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 14
+
+Train: 
+Example 060 | train loss: 0.421
+Example 121 | train loss: 0.426
+Example 182 | train loss: 0.431
+Example 243 | train loss: 0.435
+Example 304 | train loss: 0.440
+Example 365 | train loss: 0.444
+
+Validation 
+
+ val loss: 0.557 | time: 109.153
+Accuracy: 0.740
+Precision: 0.727
+Recall: 0.765
+F1: 0.745
+
+> how many of you actually vote with your wallet if so on what
+> i do not vote with my wallet i get what i need from the most convenient place i can get it
+target:1|  P false:0.002, P true: 0.998
+
+
+Epoch: 15
+
+Train: 
+Example 060 | train loss: 0.419
+Example 121 | train loss: 0.423
+Example 182 | train loss: 0.427
+Example 243 | train loss: 0.433
+Example 304 | train loss: 0.438
+Example 365 | train loss: 0.442
+
+Validation 
+
+ val loss: 0.557 | time: 116.290
+Accuracy: 0.739
+Precision: 0.730
+Recall: 0.757
+F1: 0.743
+
+> why does n't the government just give people money instead of setting up government programs
+> because people are financially irresponsible you ca n't sell a program
+target:1|  P false:0.020, P true: 0.980
+
+
+Epoch: 16
+
+Train: 
+Example 060 | train loss: 0.413
+Example 121 | train loss: 0.417
+Example 182 | train loss: 0.422
+Example 243 | train loss: 0.427
+Example 304 | train loss: 0.432
+Example 365 | train loss: 0.437
+
+Validation 
+
+ val loss: 0.557 | time: 108.299
+Accuracy: 0.739
+Precision: 0.721
+Recall: 0.779
+F1: 0.749
+
+> what three bands would you want to see tour together around still or not living or deceased
+> my three disturbed my all time favorite five finger death punch i saw them at the beginning of october and loved them and metallica
+target:1|  P false:0.998, P true: 0.002
+
+
+Epoch: 17
+
+Train: 
+Example 060 | train loss: 0.411
+Example 121 | train loss: 0.416
+Example 182 | train loss: 0.421
+Example 243 | train loss: 0.425
+Example 304 | train loss: 0.430
+Example 365 | train loss: 0.434
+
+Validation 
+
+ val loss: 0.556 | time: 119.608
+Accuracy: 0.742
+Precision: 0.727
+Recall: 0.773
+F1: 0.749
+
+> doctors of reddit what is the hardest part of your job
+> not a doctor but i always wondered how doctors felt after giving prostate exams and testicular cancer checks
+target:1|  P false:0.198, P true: 0.802
+
+
+Epoch: 18
+
+Train: 
+Example 060 | train loss: 0.408
+Example 121 | train loss: 0.412
+Example 182 | train loss: 0.415
+Example 243 | train loss: 0.420
+Example 304 | train loss: 0.425
+Example 365 | train loss: 0.430
+
+Validation 
+
+ val loss: 0.554 | time: 111.515
+Accuracy: 0.743
+Precision: 0.729
+Recall: 0.772
+F1: 0.749
+
+> what is a constructive way of using large amounts of free time
+> learn an instrument back when i was in high school and had free time i 'd play guitar/piano for hours and hours
+target:1|  P false:0.826, P true: 0.174
+
+
+Epoch: 19
+
+Train: 
+Example 060 | train loss: 0.406
+Example 121 | train loss: 0.411
+Example 182 | train loss: 0.414
+Example 243 | train loss: 0.420
+Example 304 | train loss: 0.424
+Example 365 | train loss: 0.428
+
+Validation 
+
+ val loss: 0.554 | time: 114.382
+Accuracy: 0.742
+Precision: 0.733
+Recall: 0.759
+F1: 0.746
+
+> for those who were previously religious but are no longer at what point did you stop believing in a god serious
+> cuz they think that the magical sky ghost will accept them into the city in the clouds
+target:0|  P false:0.102, P true: 0.898
+
+
+Epoch: 20
+
+Train: 
+Example 060 | train loss: 0.405
+Example 121 | train loss: 0.409
+Example 182 | train loss: 0.413
+Example 243 | train loss: 0.417
+Example 304 | train loss: 0.421
+Example 365 | train loss: 0.425
+
+Validation 
+
+ val loss: 0.554 | time: 112.035
+Accuracy: 0.745
+Precision: 0.727
+Recall: 0.783
+F1: 0.753
+
+> what paid-for entertainment activity provides the best value for money
+> i can make _num_ clicks per second by the way.. are you the guy from crank
+target:0|  P false:0.807, P true: 0.193
+
+
+Epoch: 21
+
+Train: 
+Example 060 | train loss: 0.401
+Example 121 | train loss: 0.406
+Example 182 | train loss: 0.411
+Example 243 | train loss: 0.414
+Example 304 | train loss: 0.418
+Example 365 | train loss: 0.423
+
+Validation 
+
+ val loss: 0.552 | time: 113.767
+Accuracy: 0.746
+Precision: 0.736
+Recall: 0.766
+F1: 0.750
+
+> how fast can a question get to the home page of reddit
+> how fast can a question be downvoted let 's find out _num_ _num_ pm est
+target:1|  P false:0.131, P true: 0.869
+
+
+Epoch: 22
+
+Train: 
+Example 060 | train loss: 0.401
+Example 121 | train loss: 0.404
+Example 182 | train loss: 0.408
+Example 243 | train loss: 0.413
+Example 304 | train loss: 0.417
+Example 365 | train loss: 0.420
+
+Validation 
+
+ val loss: 0.554 | time: 112.744
+Accuracy: 0.742
+Precision: 0.736
+Recall: 0.754
+F1: 0.744
+
+> how can an awkward teenager get over his fear of being judged at the gym
+> _num_ of scientists believe that climate change is a man-made urgent problem
+target:0|  P false:0.998, P true: 0.002
+
+
+Epoch: 23
+
+Train: 
+Example 060 | train loss: 0.398
+Example 121 | train loss: 0.401
+Example 182 | train loss: 0.405
+Example 243 | train loss: 0.409
+Example 304 | train loss: 0.413
+Example 365 | train loss: 0.418
+
+Validation 
+
+ val loss: 0.553 | time: 115.988
+Accuracy: 0.746
+Precision: 0.733
+Recall: 0.773
+F1: 0.752
+
+> what joke or situation are you going to hell for laughing at
+> um ... .. i fed someone through a tube _num_ times today does that count
+target:0|  P false:0.999, P true: 0.001
+
+
+Epoch: 24
+
+Train: 
+Example 060 | train loss: 0.396
+Example 121 | train loss: 0.401
+Example 182 | train loss: 0.404
+Example 243 | train loss: 0.408
+Example 304 | train loss: 0.412
+Example 365 | train loss: 0.416
+
+Validation 
+
+ val loss: 0.552 | time: 113.657
+Accuracy: 0.745
+Precision: 0.733
+Recall: 0.770
+F1: 0.751
+
+> serious new yorkers of reddit how have things changed since the nypd started only making <unk> arrests and citations
+> assuming your talking about the face shaven you try kissing prickly face and getting attacked by it
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 25
+
+Train: 
+Example 060 | train loss: 0.396
+Example 121 | train loss: 0.399
+Example 182 | train loss: 0.403
+Example 243 | train loss: 0.406
+Example 304 | train loss: 0.410
+Example 365 | train loss: 0.414
+
+Validation 
+
+ val loss: 0.551 | time: 105.802
+Accuracy: 0.747
+Precision: 0.737
+Recall: 0.766
+F1: 0.751
+
+> serious what is your personal opinion about classy <unk> in the _num_ th century fedoras <unk> etc
+> if you can pull it off it 's fine just do n't wear it with a t shirt and jeans you look stupid and out of place
+target:1|  P false:0.002, P true: 0.998
+

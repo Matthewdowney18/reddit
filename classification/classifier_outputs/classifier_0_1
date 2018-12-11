@@ -1,0 +1,58 @@
+nb_epochs: 50
+batch_size: 500
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: /embeddings_min2_max15.npy
+max_len: 15
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.001
+model_group: /classifier
+model_name: /classifier_0
+autoencoder_location: /auto_encoder_3_1
+load model_version: 0
+model_filename: /home/mattd/PycharmProjects/reddit/auto_encoders/auto_encoder_3_1
+new_model_filename: /home/mattd/PycharmProjects/reddit/classifiers/classifier_0_0
+output_file: /home/mattd/PycharmProjects/reddit/classifier_outputs/classifier_0_0
+
+Train 228831, val: 57061
+Loaded Model:
+lowest_validation_loss: 500
+description: ['none']
+last_epoch:0
+Epoch 000 Example 076 | train loss: 0.474
+Epoch 000 Example 152 | train loss: 0.491
+Epoch 000 Example 228 | train loss: 0.498
+Epoch 000 Example 305 | train loss: 0.503
+Epoch 000 Example 381 | train loss: 0.507
+Epoch 000 Example 457 | train loss: 0.510
+
+ val loss: 0.597 | time: 88.684
+> my friends girlfriend hit on me what do i do
+> i would gladly serve jail time to punch kanye west in the face..
+target:0|  P false:1.000, P true: 0.000
+
+Epoch 001 Example 076 | train loss: 0.464
+Epoch 001 Example 152 | train loss: 0.467
+Epoch 001 Example 228 | train loss: 0.471
+Epoch 001 Example 305 | train loss: 0.474
+Epoch 001 Example 381 | train loss: 0.475
+Epoch 001 Example 457 | train loss: 0.478
+
+ val loss: 0.597 | time: 88.974
+> retail workers is it easy to tell when a person does n't plan on
+> pee play around with my new dick ex helicopter
+target:0|  P false:0.998, P true: 0.002
+
+Epoch 002 Example 076 | train loss: 0.447
+Epoch 002 Example 152 | train loss: 0.448
+Epoch 002 Example 228 | train loss: 0.451
+Epoch 002 Example 305 | train loss: 0.454
+Epoch 002 Example 381 | train loss: 0.456
+Epoch 002 Example 457 | train loss: 0.458
+
+ val loss: 0.597 | time: 88.715
+> redditors that have been here for a very long time or since the beginning
+> if you 're thinking about divorce now then you are n't ready for marriage
+target:0|  P false:0.988, P true: 0.012
+

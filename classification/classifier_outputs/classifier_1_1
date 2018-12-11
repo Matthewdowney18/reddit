@@ -1,0 +1,23 @@
+nb_epochs: 100
+batch_size: 500
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: /embeddings_min2_max15.npy
+max_len: 15
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.001
+model_group: /classifier
+model_name: /classifier_1
+autoencoder_location: /auto_encoder_3_1
+load model_version: 1
+model_filename: /home/mattd/PycharmProjects/reddit/classifiers/classifier_1_0
+new_model_filename: /home/mattd/PycharmProjects/reddit/classifiers/classifier_1_1
+output_file: /home/mattd/PycharmProjects/reddit/classifier_outputs/classifier_1_1
+
+Train 228831, val: 57061
+Loaded Model:
+lowest_validation_loss: 0.6047149176182954
+description: ['none']
+last_epoch:20
+

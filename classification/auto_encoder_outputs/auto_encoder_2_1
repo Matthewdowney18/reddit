@@ -1,0 +1,667 @@
+nb_epochs: 50
+batch_size: 300
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: /embeddings_min2_max20.npy
+max_len: 20
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.001
+model_group: /auto_encoder
+autoencoder_name: /auto_encoder_2
+
+Train 611406, val: 152704
+Loaded Model:
+lowest_validation_loss: 0.6641173879889881
+description: ['none']
+last_epoch
+Epoch 008 Example 339 | train loss: 0.620
+Epoch 008 Example 679 | train loss: 0.608
+Epoch 008 Example 1019 | train loss: 0.605
+Epoch 008 Example 1359 | train loss: 0.602
+Epoch 008 Example 1699 | train loss: 0.599
+Epoch 008 Example 2038 | train loss: 0.598
+
+ val loss: 0.675 | time: 4162.704
+| sentence accuracy:0.284| token accuracy:0.897
+> what is something you do on a regular basis that you 're ashamed of except masturbating
+= what is something you do on a regular basis that you 're ashamed of except masturbating
+< what is something you do on a regular basis that you 're ashamed of way masturbating
+
+Epoch 009 Example 339 | train loss: 0.576
+Epoch 009 Example 679 | train loss: 0.567
+Epoch 009 Example 1019 | train loss: 0.566
+Epoch 009 Example 1359 | train loss: 0.564
+Epoch 009 Example 1699 | train loss: 0.562
+Epoch 009 Example 2038 | train loss: 0.560
+
+ val loss: 0.513 | time: 4169.321
+| sentence accuracy:0.428| token accuracy:0.938
+> reddit what are some great apps that do n't require wifi or use any data
+= reddit what are some great apps that do n't require wifi or use any data
+< reddit what are some great apps that do n't require wifi or use any data
+
+Epoch 010 Example 339 | train loss: 0.535
+Epoch 010 Example 679 | train loss: 0.532
+Epoch 010 Example 1019 | train loss: 0.532
+Epoch 010 Example 1359 | train loss: 0.532
+Epoch 010 Example 1699 | train loss: 0.531
+Epoch 010 Example 2038 | train loss: 0.530
+
+ val loss: 0.619 | time: 4170.207
+| sentence accuracy:0.314| token accuracy:0.908
+> does anyone have suggestions regarding subjects for my new hobby
+= does anyone have suggestions regarding subjects for my new hobby
+< does anyone have suggestions regarding subjects for my new hobby
+
+Epoch 011 Example 339 | train loss: 0.525
+Epoch 011 Example 679 | train loss: 0.516
+Epoch 011 Example 1019 | train loss: 0.513
+Epoch 011 Example 1359 | train loss: 0.511
+Epoch 011 Example 1699 | train loss: 0.510
+Epoch 011 Example 2038 | train loss: 0.509
+
+ val loss: 0.509 | time: 4169.962
+| sentence accuracy:0.410| token accuracy:0.935
+> most tourist places in no are safe just do n't be alone in a dark ally late at night
+= most tourist places in no are safe just do n't be alone in a dark ally late at night
+< most tourist places in is fair being really do do fall but in a dark testament late late day
+
+Epoch 012 Example 339 | train loss: 0.495
+Epoch 012 Example 679 | train loss: 0.489
+Epoch 012 Example 1019 | train loss: 0.489
+Epoch 012 Example 1359 | train loss: 0.489
+Epoch 012 Example 1699 | train loss: 0.489
+Epoch 012 Example 2038 | train loss: 0.488
+
+ val loss: 0.443 | time: 4171.518
+| sentence accuracy:0.490| token accuracy:0.949
+> the u-bend in sinks and toilets keeps sewer smells out of our houses if we did n't have this
+= the u-bend in sinks and toilets keeps sewer smells out of our houses if we did n't have this
+< the salem in my and can keep wearing fake out of our houses if we did n't have this
+
+Epoch 013 Example 339 | train loss: 0.468
+Epoch 013 Example 679 | train loss: 0.467
+Epoch 013 Example 1019 | train loss: 0.468
+Epoch 013 Example 1359 | train loss: 0.468
+Epoch 013 Example 1699 | train loss: 0.469
+Epoch 013 Example 2038 | train loss: 0.469
+
+ val loss: 0.485 | time: 4170.988
+| sentence accuracy:0.433| token accuracy:0.937
+> daughters boys turn into little brats at about age 7. but damn daughters are adorable until age 13.
+= daughters boys turn into little brats at about age 7. but damn daughters are adorable until age 13.
+< daughters boys stop for little tough at about age 7. but christ tall are oh until of since
+
+Epoch 014 Example 339 | train loss: 0.458
+Epoch 014 Example 679 | train loss: 0.456
+Epoch 014 Example 1019 | train loss: 0.455
+Epoch 014 Example 1359 | train loss: 0.454
+Epoch 014 Example 1699 | train loss: 0.455
+Epoch 014 Example 2038 | train loss: 0.455
+
+ val loss: 0.461 | time: 4174.676
+| sentence accuracy:0.457| token accuracy:0.943
+> what totally mundane event changed the course of your life
+= what totally mundane event changed the course of your life
+< what totally mundane event changed the course of your life
+
+Epoch 015 Example 339 | train loss: 0.442
+Epoch 015 Example 679 | train loss: 0.440
+Epoch 015 Example 1019 | train loss: 0.440
+Epoch 015 Example 1359 | train loss: 0.441
+Epoch 015 Example 1699 | train loss: 0.441
+Epoch 015 Example 2038 | train loss: 0.441
+
+ val loss: 0.429 | time: 4172.829
+| sentence accuracy:0.499| token accuracy:0.950
+> that 's `` i 'm learning '' sorry oh and i 'm following this tutorial http
+= that 's `` i 'm learning '' sorry oh and i 'm following this tutorial http
+< that 's `` i 'm learning '' sorry oh and i 'm following this solutions http
+
+Epoch 016 Example 339 | train loss: 0.523
+Epoch 016 Example 679 | train loss: 0.476
+Epoch 016 Example 1019 | train loss: 0.461
+Epoch 016 Example 1359 | train loss: 0.453
+Epoch 016 Example 1699 | train loss: 0.448
+Epoch 016 Example 2038 | train loss: 0.445
+
+ val loss: 0.412 | time: 4170.339
+| sentence accuracy:0.530| token accuracy:0.955
+> how would honda know if you wrecked one of their cars
+= how would honda know if you wrecked one of their cars
+< how would build know if you seduce one of their cars
+
+Epoch 017 Example 339 | train loss: 0.433
+Epoch 017 Example 679 | train loss: 0.425
+Epoch 017 Example 1019 | train loss: 0.423
+Epoch 017 Example 1359 | train loss: 0.422
+Epoch 017 Example 1699 | train loss: 0.422
+Epoch 017 Example 2038 | train loss: 0.422
+
+ val loss: 0.415 | time: 4169.640
+| sentence accuracy:0.522| token accuracy:0.954
+> as an av technician somewhere between electrician and computer nerd most of our clients look down at us
+= as an av technician somewhere between electrician and computer nerd most of our clients look down at us
+< as an angle buttons somewhere between financial and computer nerd most of our clients look down at us
+
+Epoch 018 Example 339 | train loss: 0.488
+Epoch 018 Example 679 | train loss: 0.448
+Epoch 018 Example 1019 | train loss: 0.435
+Epoch 018 Example 1359 | train loss: 0.429
+Epoch 018 Example 1699 | train loss: 0.426
+Epoch 018 Example 2038 | train loss: 0.423
+
+ val loss: 0.444 | time: 4168.450
+| sentence accuracy:0.473| token accuracy:0.946
+> why do you want to delete it if you want to get something similar anyway
+= why do you want to delete it if you want to get something similar anyway
+< why do you want to delete it if you want to get something similar anyway
+
+Epoch 019 Example 339 | train loss: 0.501
+Epoch 019 Example 679 | train loss: 0.451
+Epoch 019 Example 1019 | train loss: 0.435
+Epoch 019 Example 1359 | train loss: 0.427
+Epoch 019 Example 1699 | train loss: 0.422
+Epoch 019 Example 2038 | train loss: 0.419
+
+ val loss: 0.371 | time: 4170.394
+| sentence accuracy:0.579| token accuracy:0.962
+> kinda related i heard that one of my favourite book series the jack reacher books by lee child
+= kinda related i heard that one of my favourite book series the jack reacher books by lee child
+< kinda have advice porn that one of my favourite book series the jack aquarium books by lee child
+
+Epoch 020 Example 339 | train loss: 0.389
+Epoch 020 Example 679 | train loss: 0.389
+Epoch 020 Example 1019 | train loss: 0.390
+Epoch 020 Example 1359 | train loss: 0.391
+Epoch 020 Example 1699 | train loss: 0.392
+Epoch 020 Example 2038 | train loss: 0.392
+
+ val loss: 0.415 | time: 4169.866
+| sentence accuracy:0.510| token accuracy:0.951
+> what show do you find hard to watch while eating but just ca n't turn away from
+= what show do you find hard to watch while eating but just ca n't turn away from
+< what show do you find hard to watch while eating but just ca n't turn away from
+
+Epoch 021 Example 339 | train loss: 0.395
+Epoch 021 Example 679 | train loss: 0.388
+Epoch 021 Example 1019 | train loss: 0.387
+Epoch 021 Example 1359 | train loss: 0.387
+Epoch 021 Example 1699 | train loss: 0.387
+Epoch 021 Example 2038 | train loss: 0.388
+
+ val loss: 0.437 | time: 4167.793
+| sentence accuracy:0.483| token accuracy:0.947
+> have you not been using this website very often lately because there are so many posts about this topic
+= have you not been using this website very often lately because there are so many posts about this topic
+< have you not been using this only 100 exercise lately because there are so many posts about this topic
+
+Epoch 022 Example 339 | train loss: 0.437
+Epoch 022 Example 679 | train loss: 0.407
+Epoch 022 Example 1019 | train loss: 0.399
+Epoch 022 Example 1359 | train loss: 0.394
+Epoch 022 Example 1699 | train loss: 0.392
+Epoch 022 Example 2038 | train loss: 0.390
+
+ val loss: 0.373 | time: 4169.396
+| sentence accuracy:0.567| token accuracy:0.960
+> treat your body and baby well for 9 <unk> give child up for adoption gt abortion it
+= treat your body and baby well for 9 <unk> give child up for adoption gt abortion it
+< treat your body and baby well for 9 <unk> give child up for adoption gt abortion it
+
+Epoch 023 Example 339 | train loss: 0.372
+Epoch 023 Example 679 | train loss: 0.371
+Epoch 023 Example 1019 | train loss: 0.372
+Epoch 023 Example 1359 | train loss: 0.372
+Epoch 023 Example 1699 | train loss: 0.373
+Epoch 023 Example 2038 | train loss: 0.373
+
+ val loss: 0.348 | time: 4171.466
+| sentence accuracy:0.609| token accuracy:0.965
+> i do n't even really know who kurt cobain is/was nor did i hear about his death nor
+= i do n't even really know who kurt cobain is/was nor did i hear about his death nor
+< i do n't even really know who kurt chronic or nor did i hear about his death nor
+
+Epoch 024 Example 339 | train loss: 0.357
+Epoch 024 Example 679 | train loss: 0.361
+Epoch 024 Example 1019 | train loss: 0.363
+Epoch 024 Example 1359 | train loss: 0.365
+Epoch 024 Example 1699 | train loss: 0.365
+Epoch 024 Example 2038 | train loss: 0.367
+
+ val loss: 0.390 | time: 4171.443
+| sentence accuracy:0.543| token accuracy:0.957
+> pretty sure the majority of couples do not have a list of celebrities they would allow their partner to
+= pretty sure the majority of couples do not have a list of celebrities they would allow their partner to
+< pretty sure the majority of couples do they have a list of celebrities they would allow their partner to
+
+Epoch 025 Example 339 | train loss: 0.374
+Epoch 025 Example 679 | train loss: 0.367
+Epoch 025 Example 1019 | train loss: 0.365
+Epoch 025 Example 1359 | train loss: 0.366
+Epoch 025 Example 1699 | train loss: 0.366
+Epoch 025 Example 2038 | train loss: 0.366
+
+ val loss: 0.339 | time: 4169.916
+| sentence accuracy:0.618| token accuracy:0.966
+> the big apple going cold turkey take him to the cleaners cleaned his clock why do these phrases resonate
+= the big apple going cold turkey take him to the cleaners cleaned his clock why do these phrases resonate
+< the big apple going cold turkey take him to the backing chair his clock why do these phrases “
+
+Epoch 026 Example 339 | train loss: 0.349
+Epoch 026 Example 679 | train loss: 0.352
+Epoch 026 Example 1019 | train loss: 0.354
+Epoch 026 Example 1359 | train loss: 0.356
+Epoch 026 Example 1699 | train loss: 0.357
+Epoch 026 Example 2038 | train loss: 0.358
+
+ val loss: 0.393 | time: 4170.271
+| sentence accuracy:0.519| token accuracy:0.955
+> if you had a cousin that was new to the prostitution scene how could you scare her anonymously
+= if you had a cousin that was new to the prostitution scene how could you scare her anonymously
+< if you had a cousin that was new to the prostitution scene how could you scare her anonymously
+
+Epoch 027 Example 339 | train loss: 0.355
+Epoch 027 Example 679 | train loss: 0.353
+Epoch 027 Example 1019 | train loss: 0.353
+Epoch 027 Example 1359 | train loss: 0.354
+Epoch 027 Example 1699 | train loss: 0.354
+Epoch 027 Example 2038 | train loss: 0.355
+
+ val loss: 0.331 | time: 4170.972
+| sentence accuracy:0.627| token accuracy:0.967
+> if you could morph into an animal what animal would you be able to morph in to and why
+= if you could morph into an animal what animal would you be able to morph in to and why
+< if you could bump into an animal what animal would you be able to ceremony in to and why
+
+Epoch 028 Example 339 | train loss: 0.342
+Epoch 028 Example 679 | train loss: 0.344
+Epoch 028 Example 1019 | train loss: 0.346
+Epoch 028 Example 1359 | train loss: 0.348
+Epoch 028 Example 1699 | train loss: 0.349
+Epoch 028 Example 2038 | train loss: 0.350
+
+ val loss: 0.349 | time: 4169.563
+| sentence accuracy:0.610| token accuracy:0.965
+> the other one is a pm me account i have more karma on that one though
+= the other one is a pm me account i have more karma on that one though
+< the other one is a pm me account i have more karma on that one though
+
+Epoch 029 Example 339 | train loss: 0.341
+Epoch 029 Example 679 | train loss: 0.344
+Epoch 029 Example 1019 | train loss: 0.344
+Epoch 029 Example 1359 | train loss: 0.345
+Epoch 029 Example 1699 | train loss: 0.346
+Epoch 029 Example 2038 | train loss: 0.347
+
+ val loss: 0.405 | time: 4172.109
+| sentence accuracy:0.502| token accuracy:0.952
+> reddit if you could be any video game character for a day who would you be and why
+= reddit if you could be any video game character for a day who would you be and why
+< reddit if you could be any video game of line a day who would you be and why
+
+Epoch 030 Example 339 | train loss: 0.354
+Epoch 030 Example 679 | train loss: 0.348
+Epoch 030 Example 1019 | train loss: 0.346
+Epoch 030 Example 1359 | train loss: 0.346
+Epoch 030 Example 1699 | train loss: 0.347
+Epoch 030 Example 2038 | train loss: 0.347
+
+ val loss: 0.328 | time: 4172.017
+| sentence accuracy:0.630| token accuracy:0.968
+> the fucking i get but why did you throw them at your sister edit ment to reply
+= the fucking i get but why did you throw them at your sister edit ment to reply
+< the fucking i get but why did you throw them at your sister edit finishes to reply
+
+Epoch 031 Example 339 | train loss: 0.332
+Epoch 031 Example 679 | train loss: 0.335
+Epoch 031 Example 1019 | train loss: 0.336
+Epoch 031 Example 1359 | train loss: 0.337
+Epoch 031 Example 1699 | train loss: 0.339
+Epoch 031 Example 2038 | train loss: 0.340
+
+ val loss: 0.331 | time: 4173.838
+| sentence accuracy:0.632| token accuracy:0.968
+> you hit the nail on the head i have n't worn shoes in 20 years and when i pick
+= you hit the nail on the head i have n't worn shoes in 20 years and when i pick
+< you hit the nail on the head i have n't worn shoes in 20 years and when i pick
+
+Epoch 032 Example 339 | train loss: 0.333
+Epoch 032 Example 679 | train loss: 0.335
+Epoch 032 Example 1019 | train loss: 0.337
+Epoch 032 Example 1359 | train loss: 0.337
+Epoch 032 Example 1699 | train loss: 0.338
+Epoch 032 Example 2038 | train loss: 0.339
+
+ val loss: 0.344 | time: 4175.242
+| sentence accuracy:0.608| token accuracy:0.965
+> what is the most efficient way to wake up in the morning serious
+= what is the most efficient way to wake up in the morning serious
+< what is the most efficient way to wake up in the morning serious
+
+Epoch 033 Example 339 | train loss: 0.331
+Epoch 033 Example 679 | train loss: 0.331
+Epoch 033 Example 1019 | train loss: 0.332
+Epoch 033 Example 1359 | train loss: 0.334
+Epoch 033 Example 1699 | train loss: 0.334
+Epoch 033 Example 2038 | train loss: 0.336
+
+ val loss: 0.366 | time: 4175.771
+| sentence accuracy:0.565| token accuracy:0.960
+> why do psychopaths end up in positions of power why is kim kardashian on t.v looks charisma
+= why do psychopaths end up in positions of power why is kim kardashian on t.v looks charisma
+< why do fantasize end up in positions of power why is kim kardashian on one looks depends
+
+Epoch 034 Example 339 | train loss: 0.523
+Epoch 034 Example 679 | train loss: 0.431
+Epoch 034 Example 1019 | train loss: 0.399
+Epoch 034 Example 1359 | train loss: 0.383
+Epoch 034 Example 1699 | train loss: 0.373
+Epoch 034 Example 2038 | train loss: 0.367
+
+ val loss: 0.397 | time: 4175.718
+| sentence accuracy:0.493| token accuracy:0.953
+> i broke one relationship and missed another because of my startup is it worth it
+= i broke one relationship and missed another because of my startup is it worth it
+< i broke one relationship and missed another men the my startup is it worth it
+
+Epoch 035 Example 339 | train loss: 0.336
+Epoch 035 Example 679 | train loss: 0.332
+Epoch 035 Example 1019 | train loss: 0.332
+Epoch 035 Example 1359 | train loss: 0.331
+Epoch 035 Example 1699 | train loss: 0.331
+Epoch 035 Example 2038 | train loss: 0.332
+
+ val loss: 0.330 | time: 4177.164
+| sentence accuracy:0.633| token accuracy:0.968
+> if each subreddit had a scent what would they smell like
+= if each subreddit had a scent what would they smell like
+< if each subreddit had a scent what would they smell like
+
+Epoch 036 Example 339 | train loss: 0.325
+Epoch 036 Example 679 | train loss: 0.325
+Epoch 036 Example 1019 | train loss: 0.325
+Epoch 036 Example 1359 | train loss: 0.326
+Epoch 036 Example 1699 | train loss: 0.327
+Epoch 036 Example 2038 | train loss: 0.328
+
+ val loss: 0.317 | time: 4177.786
+| sentence accuracy:0.646| token accuracy:0.970
+> wedding night i had food poisoning and could n't get it up for long and when i did
+= wedding night i had food poisoning and could n't get it up for long and when i did
+< wedding night i had food poisoning and could n't get it up for long and when i did
+
+Epoch 037 Example 339 | train loss: 0.318
+Epoch 037 Example 679 | train loss: 0.319
+Epoch 037 Example 1019 | train loss: 0.321
+Epoch 037 Example 1359 | train loss: 0.323
+Epoch 037 Example 1699 | train loss: 0.324
+Epoch 037 Example 2038 | train loss: 0.325
+
+ val loss: 0.314 | time: 4174.394
+| sentence accuracy:0.647| token accuracy:0.970
+> see lard_pwn 's comment here part time work at home jobs http //www.reddit.com/r/askreddit/comments/d2417/reddit_are_there_any_truly_legit_parttime_work_at/c0x0mcq
+= see lard_pwn 's comment here part time work at home jobs http //www.reddit.com/r/askreddit/comments/d2417/reddit_are_there_any_truly_legit_parttime_work_at/c0x0mcq
+< see ..she 's comment here part time work at home jobs http //www.hoteldeglace-canada.com/
+
+Epoch 038 Example 339 | train loss: 0.317
+Epoch 038 Example 679 | train loss: 0.318
+Epoch 038 Example 1019 | train loss: 0.319
+Epoch 038 Example 1359 | train loss: 0.321
+Epoch 038 Example 1699 | train loss: 0.323
+Epoch 038 Example 2038 | train loss: 0.324
+
+ val loss: 0.319 | time: 4171.455
+| sentence accuracy:0.643| token accuracy:0.969
+> i jerked it in my best friends family cabin they may or may not known about it
+= i jerked it in my best friends family cabin they may or may not known about it
+< i jerked it in my best friends family cabin they may or may not known about it
+
+Epoch 039 Example 339 | train loss: 0.318
+Epoch 039 Example 679 | train loss: 0.319
+Epoch 039 Example 1019 | train loss: 0.319
+Epoch 039 Example 1359 | train loss: 0.320
+Epoch 039 Example 1699 | train loss: 0.321
+Epoch 039 Example 2038 | train loss: 0.322
+
+ val loss: 0.373 | time: 4170.213
+| sentence accuracy:0.532| token accuracy:0.958
+> serious people spouting about white privilege what is there to accomplish by pointing this out what is the
+= serious people spouting about white privilege what is there to accomplish by pointing this out what is the
+< serious people understand about white privilege how is there to accomplish by pointing this out what is the
+
+Epoch 040 Example 339 | train loss: 0.318
+Epoch 040 Example 679 | train loss: 0.317
+Epoch 040 Example 1019 | train loss: 0.318
+Epoch 040 Example 1359 | train loss: 0.319
+Epoch 040 Example 1699 | train loss: 0.320
+Epoch 040 Example 2038 | train loss: 0.321
+
+ val loss: 0.309 | time: 4171.014
+| sentence accuracy:0.652| token accuracy:0.970
+> a bunch of teenagers on a plane going for a trip with my spanish class 3/7 guys joined ``
+= a bunch of teenagers on a plane going for a trip with my spanish class 3/7 guys joined ``
+< a bunch of teenagers on a plane going for a trip with my spanish class mostly guys joined ``
+
+Epoch 041 Example 339 | train loss: 0.310
+Epoch 041 Example 679 | train loss: 0.315
+Epoch 041 Example 1019 | train loss: 0.316
+Epoch 041 Example 1359 | train loss: 0.317
+Epoch 041 Example 1699 | train loss: 0.318
+Epoch 041 Example 2038 | train loss: 0.318
+
+ val loss: 0.326 | time: 4171.247
+| sentence accuracy:0.633| token accuracy:0.968
+> eric whitacre i ca n't think of anything by him that wo n't calm you down except maybe
+= eric whitacre i ca n't think of anything by him that wo n't calm you down except maybe
+< eric eric i ca n't think of anything by him that wo n't calm you down except maybe
+
+Epoch 042 Example 339 | train loss: 0.315
+Epoch 042 Example 679 | train loss: 0.314
+Epoch 042 Example 1019 | train loss: 0.315
+Epoch 042 Example 1359 | train loss: 0.316
+Epoch 042 Example 1699 | train loss: 0.317
+Epoch 042 Example 2038 | train loss: 0.318
+
+ val loss: 0.314 | time: 4170.144
+| sentence accuracy:0.651| token accuracy:0.970
+> i 've never been to 9gag and i 'm too lazy to check what it is can someone explain
+= i 've never been to 9gag and i 'm too lazy to check what it is can someone explain
+< i 've never been to 9gag and i 'm too lazy to check what it is can someone explain
+
+Epoch 043 Example 339 | train loss: 0.311
+Epoch 043 Example 679 | train loss: 0.311
+Epoch 043 Example 1019 | train loss: 0.313
+Epoch 043 Example 1359 | train loss: 0.314
+Epoch 043 Example 1699 | train loss: 0.315
+Epoch 043 Example 2038 | train loss: 0.317
+
+ val loss: 0.341 | time: 4169.827
+| sentence accuracy:0.612| token accuracy:0.966
+> did the dealer originally claim that no painting was done to the car does it mention something like ``
+= did the dealer originally claim that no painting was done to the car does it mention something like ``
+< did the dealer originally claim that no painting was done to the car does it mention something like ``
+
+Epoch 044 Example 339 | train loss: 0.368
+Epoch 044 Example 679 | train loss: 0.342
+Epoch 044 Example 1019 | train loss: 0.333
+Epoch 044 Example 1359 | train loss: 0.329
+Epoch 044 Example 1699 | train loss: 0.327
+Epoch 044 Example 2038 | train loss: 0.325
+
+ val loss: 0.404 | time: 4170.374
+| sentence accuracy:0.508| token accuracy:0.953
+> step one get a relationship already super-spicy compared to your previous situation
+= step one get a relationship already super-spicy compared to your previous situation
+< step one get a relationship already danced compared to your previous situation
+
+Epoch 045 Example 339 | train loss: 0.324
+Epoch 045 Example 679 | train loss: 0.318
+Epoch 045 Example 1019 | train loss: 0.316
+Epoch 045 Example 1359 | train loss: 0.316
+Epoch 045 Example 1699 | train loss: 0.316
+Epoch 045 Example 2038 | train loss: 0.316
+
+ val loss: 0.304 | time: 4170.205
+| sentence accuracy:0.661| token accuracy:0.971
+> rewinding videos gay right this race of people who were called white
+= rewinding videos gay right this race of people who were called white
+< caffeine videos gay right this race of people who were called white
+
+Epoch 046 Example 339 | train loss: 0.304
+Epoch 046 Example 679 | train loss: 0.306
+Epoch 046 Example 1019 | train loss: 0.308
+Epoch 046 Example 1359 | train loss: 0.310
+Epoch 046 Example 1699 | train loss: 0.311
+Epoch 046 Example 2038 | train loss: 0.312
+
+ val loss: 0.302 | time: 4170.581
+| sentence accuracy:0.663| token accuracy:0.972
+> people who know someone with asperger syndrome well what should a asperger movie character be like how do you
+= people who know someone with asperger syndrome well what should a asperger movie character be like how do you
+< people who know someone with asperger syndrome well what should a asperger movie character be like how do you
+
+Epoch 047 Example 339 | train loss: 0.301
+Epoch 047 Example 679 | train loss: 0.304
+Epoch 047 Example 1019 | train loss: 0.307
+Epoch 047 Example 1359 | train loss: 0.308
+Epoch 047 Example 1699 | train loss: 0.310
+Epoch 047 Example 2038 | train loss: 0.311
+
+ val loss: 0.311 | time: 4170.581
+| sentence accuracy:0.654| token accuracy:0.971
+> why ca n't i keep my logo from sitting on my search bar
+= why ca n't i keep my logo from sitting on my search bar
+< why ca n't i keep my logo from sitting on my search bar
+
+Epoch 048 Example 339 | train loss: 0.306
+Epoch 048 Example 679 | train loss: 0.307
+Epoch 048 Example 1019 | train loss: 0.308
+Epoch 048 Example 1359 | train loss: 0.309
+Epoch 048 Example 1699 | train loss: 0.309
+Epoch 048 Example 2038 | train loss: 0.310
+
+ val loss: 0.303 | time: 4171.575
+| sentence accuracy:0.661| token accuracy:0.971
+> stop talking stop trying to talk listen take in what the other person is saying listen
+= stop talking stop trying to talk listen take in what the other person is saying listen
+< stop talking stop trying to talk listen take in what the other person is saying listen
+
+Epoch 049 Example 339 | train loss: 0.300
+Epoch 049 Example 679 | train loss: 0.302
+Epoch 049 Example 1019 | train loss: 0.305
+Epoch 049 Example 1359 | train loss: 0.306
+Epoch 049 Example 1699 | train loss: 0.308
+Epoch 049 Example 2038 | train loss: 0.309
+
+ val loss: 0.306 | time: 4170.163
+| sentence accuracy:0.658| token accuracy:0.971
+> only 25 then get hunting parties together to kill the zombies and keep the peace/prevent riots the
+= only 25 then get hunting parties together to kill the zombies and keep the peace/prevent riots the
+< only 25 then get hunting parties together to kill the zombies and keep the junior riots the
+
+Epoch 050 Example 339 | train loss: 0.304
+Epoch 050 Example 679 | train loss: 0.303
+Epoch 050 Example 1019 | train loss: 0.306
+Epoch 050 Example 1359 | train loss: 0.307
+Epoch 050 Example 1699 | train loss: 0.308
+Epoch 050 Example 2038 | train loss: 0.308
+
+ val loss: 0.306 | time: 4170.366
+| sentence accuracy:0.661| token accuracy:0.971
+> do n't think so tobacco does n't really make you feel that much better
+= do n't think so tobacco does n't really make you feel that much better
+< do n't think so tobacco does n't really make you feel that much better
+
+Epoch 051 Example 339 | train loss: 0.302
+Epoch 051 Example 679 | train loss: 0.303
+Epoch 051 Example 1019 | train loss: 0.305
+Epoch 051 Example 1359 | train loss: 0.306
+Epoch 051 Example 1699 | train loss: 0.307
+Epoch 051 Example 2038 | train loss: 0.307
+
+ val loss: 0.324 | time: 4170.785
+| sentence accuracy:0.629| token accuracy:0.968
+> meeting a girl that girl wrecked my preteen years and led to substance abuse dropping out of school
+= meeting a girl that girl wrecked my preteen years and led to substance abuse dropping out of school
+< meeting a girl that girl driving my mother and and led to substance abuse dropping out of school
+
+Epoch 052 Example 339 | train loss: 0.309
+Epoch 052 Example 679 | train loss: 0.305
+Epoch 052 Example 1019 | train loss: 0.305
+Epoch 052 Example 1359 | train loss: 0.306
+Epoch 052 Example 1699 | train loss: 0.307
+Epoch 052 Example 2038 | train loss: 0.307
+
+ val loss: 0.340 | time: 4170.546
+| sentence accuracy:0.603| token accuracy:0.965
+> messanger bag as long as you 're biking that is when you 're leaned forwarded on a
+= messanger bag as long as you 're biking that is when you 're leaned forwarded on a
+< **please bag as long as you 're biking that is when you 're leaned forwarded on a
+
+Epoch 053 Example 339 | train loss: 0.313
+Epoch 053 Example 679 | train loss: 0.307
+Epoch 053 Example 1019 | train loss: 0.306
+Epoch 053 Example 1359 | train loss: 0.306
+Epoch 053 Example 1699 | train loss: 0.307
+Epoch 053 Example 2038 | train loss: 0.307
+
+ val loss: 0.320 | time: 4170.989
+| sentence accuracy:0.644| token accuracy:0.970
+> can we have a way to view links that have received the most downmodding
+= can we have a way to view links that have received the most downmodding
+< can we have a way to view links that have received the most town/city
+
+Epoch 054 Example 339 | train loss: 0.299
+Epoch 054 Example 679 | train loss: 0.300
+Epoch 054 Example 1019 | train loss: 0.302
+Epoch 054 Example 1359 | train loss: 0.302
+Epoch 054 Example 1699 | train loss: 0.303
+Epoch 054 Example 2038 | train loss: 0.304
+
+ val loss: 0.296 | time: 4186.954
+| sentence accuracy:0.669| token accuracy:0.972
+> i work at a really relaxed hotel front desk that i get to sit down at we are busy
+= i work at a really relaxed hotel front desk that i get to sit down at we are busy
+< i work at a really relaxed hotel front desk that i get to sit down at we are busy
+
+Epoch 055 Example 339 | train loss: 0.295
+Epoch 055 Example 679 | train loss: 0.298
+Epoch 055 Example 1019 | train loss: 0.299
+Epoch 055 Example 1359 | train loss: 0.301
+Epoch 055 Example 1699 | train loss: 0.302
+Epoch 055 Example 2038 | train loss: 0.303
+
+ val loss: 0.318 | time: 4201.344
+| sentence accuracy:0.637| token accuracy:0.969
+> always plead not guilty and show up in court you can only help yourself
+= always plead not guilty and show up in court you can only help yourself
+< always plead not guilty and show up in court you can only help yourself
+
+Epoch 056 Example 339 | train loss: 0.623
+Epoch 056 Example 679 | train loss: 0.466
+Epoch 056 Example 1019 | train loss: 0.413
+Epoch 056 Example 1359 | train loss: 0.386
+Epoch 056 Example 1699 | train loss: 0.370
+Epoch 056 Example 2038 | train loss: 0.360
+
+ val loss: 0.299 | time: 4202.737
+| sentence accuracy:0.667| token accuracy:0.972
+> wave combines features of email im and a forum all at once and it accomplishes this quite
+= wave combines features of email im and a forum all at once and it accomplishes this quite
+< wave seat different of email im and a forum all at once and it reacted this quite
+
+Epoch 057 Example 339 | train loss: 0.293
+Epoch 057 Example 679 | train loss: 0.295
+Epoch 057 Example 1019 | train loss: 0.296
+Epoch 057 Example 1359 | train loss: 0.298
+Epoch 057 Example 1699 | train loss: 0.300
+Epoch 057 Example 2038 | train loss: 0.301
+
+ val loss: 0.292 | time: 4201.414
+| sentence accuracy:0.674| token accuracy:0.973
+> does erosion count because you could point to easter island stonehenge etc
+= does erosion count because you could point to easter island stonehenge etc
+< does seems count because you could point to easter island universe etc
+

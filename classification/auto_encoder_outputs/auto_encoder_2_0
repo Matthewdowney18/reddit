@@ -1,0 +1,123 @@
+nb_epochs: 50
+batch_size: 300
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: /embeddings_min2_max20.npy
+max_len: 20
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.001
+model_group: /auto_encoder
+autoencoder_name: /auto_encoder_2
+
+Train 611406, val: 152704
+No model found at /home/mattd/PycharmProjects/reddit/auto_encoders/auto_encoder_2
+
+Epoch 000 Example 340 | train loss: 6.799
+Epoch 000 Example 680 | train loss: 6.471
+Epoch 000 Example 1020 | train loss: 6.064
+Epoch 000 Example 1360 | train loss: 5.713
+Epoch 000 Example 1700 | train loss: 5.408
+
+ val loss: 3.861 | time: 4163.337
+| sentence accuracy:0.000| token accuracy:0.421
+> being the eldest my mother was experiencing all the firsts that i had for the first time as well
+= being the eldest my mother was experiencing all the firsts that i had for the first time as well
+< has a at at was my first at a my girl i have been been in a and
+
+Epoch 001 Example 340 | train loss: 3.493
+Epoch 001 Example 680 | train loss: 3.348
+Epoch 001 Example 1020 | train loss: 3.219
+Epoch 001 Example 1360 | train loss: 3.100
+Epoch 001 Example 1700 | train loss: 2.990
+
+ val loss: 2.542 | time: 4164.809
+| sentence accuracy:0.005| token accuracy:0.594
+> what is your memory that you 're not 100 sure actually happened
+= what is your memory that you 're not 100 sure actually happened
+< what is your opinion that that not as everyone else is
+
+Epoch 002 Example 340 | train loss: 2.201
+Epoch 002 Example 680 | train loss: 2.133
+Epoch 002 Example 1020 | train loss: 2.071
+Epoch 002 Example 1360 | train loss: 2.009
+Epoch 002 Example 1700 | train loss: 1.953
+
+ val loss: 1.506 | time: 4165.574
+| sentence accuracy:0.057| token accuracy:0.764
+> my uncle randy lately rumors have been going around town with people claiming he 's that singer lorde
+= my uncle randy lately rumors have been going around town with people claiming he 's that singer lorde
+< my uncle cousin ... some are been going around with <unk> kids who he 's that he made
+
+Epoch 003 Example 340 | train loss: 1.529
+Epoch 003 Example 680 | train loss: 1.493
+Epoch 003 Example 1020 | train loss: 1.460
+Epoch 003 Example 1360 | train loss: 1.430
+Epoch 003 Example 1700 | train loss: 1.402
+
+ val loss: 1.100 | time: 4165.764
+| sentence accuracy:0.127| token accuracy:0.835
+> say hypothetically you were burglarizing your house and stopped to use the bathroom when the owner came home how
+= say hypothetically you were burglarizing your house and stopped to use the bathroom when the owner came home how
+< say think you were offered you child and and without the past behind going your wife baby away what
+
+Epoch 004 Example 340 | train loss: 1.161
+Epoch 004 Example 680 | train loss: 1.145
+Epoch 004 Example 1020 | train loss: 1.130
+Epoch 004 Example 1360 | train loss: 1.113
+Epoch 004 Example 1700 | train loss: 1.096
+
+ val loss: 0.915 | time: 4167.452
+| sentence accuracy:0.173| token accuracy:0.864
+> darude sandstorm i 'm actually serious i ca n't not dance when that song comes on
+= darude sandstorm i 'm actually serious i ca n't not dance when that song comes on
+< firstly depends i 'm actually serious i ca n't be teeth but that song after on
+
+Epoch 005 Example 340 | train loss: 0.952
+Epoch 005 Example 680 | train loss: 0.943
+Epoch 005 Example 1020 | train loss: 0.932
+Epoch 005 Example 1360 | train loss: 0.922
+Epoch 005 Example 1700 | train loss: 0.911
+
+ val loss: 0.763 | time: 4169.081
+| sentence accuracy:0.245| token accuracy:0.894
+> today i had a life changing moment sitting in the bathtub when was yours
+= today i had a life changing moment sitting in the bathtub when was yours
+< today i had a life changing moment school in the side when was yours
+
+Epoch 006 Example 340 | train loss: 0.809
+Epoch 006 Example 680 | train loss: 0.804
+Epoch 006 Example 1020 | train loss: 0.800
+Epoch 006 Example 1360 | train loss: 0.795
+Epoch 006 Example 1700 | train loss: 0.787
+
+ val loss: 0.689 | time: 4172.851
+| sentence accuracy:0.283| token accuracy:0.906
+> serious okay reddit when did you realize it was time to let a friend go
+= serious okay reddit when did you realize it was time to let a friend go
+< serious okay reddit when did you realize it was time to let a friend go
+
+Epoch 007 Example 340 | train loss: 0.719
+Epoch 007 Example 680 | train loss: 0.713
+Epoch 007 Example 1020 | train loss: 0.710
+Epoch 007 Example 1360 | train loss: 0.706
+Epoch 007 Example 1700 | train loss: 0.701
+
+ val loss: 0.886 | time: 4173.241
+| sentence accuracy:0.197| token accuracy:0.853
+> what are the most comfortable contact lenses for those with astigmatism
+= what are the most comfortable contact lenses for those with astigmatism
+< what are the most comfortable contact texts for those with
+
+Epoch 008 Example 340 | train loss: 0.663
+Epoch 008 Example 680 | train loss: 0.654
+Epoch 008 Example 1020 | train loss: 0.649
+Epoch 008 Example 1360 | train loss: 0.646
+Epoch 008 Example 1700 | train loss: 0.643
+
+ val loss: 0.664 | time: 4172.737
+| sentence accuracy:0.283| token accuracy:0.903
+> whenever something unexpected happens i go like `` uhhh ... <unk> '' like when peter parker got his powers
+= whenever something unexpected happens i go like `` uhhh ... <unk> '' like when peter parker got his powers
+< whenever something unexpected happens i go like `` rush ... oh include to man absolutely 4. his skull powers
+

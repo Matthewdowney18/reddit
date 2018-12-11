@@ -1,0 +1,339 @@
+nb_epochs: 50
+batch_size: 500
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: /embeddings_min2_max15.npy
+max_len: 15
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.001
+model_group: /auto_encoder
+autoencoder_name: /auto_encoder_3
+
+Train 457662, val: 114122
+No model found at /home/mattd/PycharmProjects/reddit/auto_encoders/auto_encoder_3
+
+Epoch 000 Example 153 | train loss: 6.802
+Epoch 000 Example 306 | train loss: 6.659
+Epoch 000 Example 458 | train loss: 6.518
+Epoch 000 Example 611 | train loss: 6.276
+Epoch 000 Example 764 | train loss: 6.043
+
+ val loss: 4.483 | time: 1475.476
+| sentence accuracy:0.000| token accuracy:0.322
+> switching off the console while the game telling me not to whilst saving
+= switching off the console while the game telling me not to whilst saving
+< in the the the lot to be the adult is the is the
+
+Epoch 001 Example 153 | train loss: 4.383
+Epoch 001 Example 306 | train loss: 4.232
+Epoch 001 Example 458 | train loss: 4.093
+Epoch 001 Example 611 | train loss: 3.963
+Epoch 001 Example 764 | train loss: 3.838
+
+ val loss: 2.880 | time: 1475.829
+| sentence accuracy:0.002| token accuracy:0.566
+> how old are you what is your job whats your salary
+= how old are you what is your job whats your salary
+< how many what what you the the so your life
+
+Epoch 002 Example 153 | train loss: 2.886
+Epoch 002 Example 306 | train loss: 2.806
+Epoch 002 Example 458 | train loss: 2.724
+Epoch 002 Example 611 | train loss: 2.643
+Epoch 002 Example 764 | train loss: 2.568
+
+ val loss: 1.879 | time: 1475.732
+| sentence accuracy:0.022| token accuracy:0.714
+> i hate hearing `` y'all '' no matter how they 're spelling it
+= i hate hearing `` y'all '' no matter how they 're spelling it
+< i hate many `` `` no no guy and they really works it it
+
+Epoch 003 Example 153 | train loss: 1.958
+Epoch 003 Example 306 | train loss: 1.907
+Epoch 003 Example 458 | train loss: 1.858
+Epoch 003 Example 611 | train loss: 1.810
+Epoch 003 Example 764 | train loss: 1.765
+
+ val loss: 1.289 | time: 1475.992
+| sentence accuracy:0.095| token accuracy:0.810
+> have you ever been close to them they should 've gone even if
+= have you ever been close to them they should 've gone even if
+< have you ever been able to them they should 've go even if
+
+Epoch 004 Example 153 | train loss: 1.390
+Epoch 004 Example 306 | train loss: 1.360
+Epoch 004 Example 458 | train loss: 1.332
+Epoch 004 Example 611 | train loss: 1.306
+Epoch 004 Example 764 | train loss: 1.279
+
+ val loss: 0.968 | time: 1475.404
+| sentence accuracy:0.192| token accuracy:0.863
+> yeah be worried about it as others have said this is a scam
+= yeah be worried about it as others have said this is a scam
+< yeah be worried if no is to boobs nothing this was a scam
+
+Epoch 005 Example 153 | train loss: 1.051
+Epoch 005 Example 306 | train loss: 1.033
+Epoch 005 Example 458 | train loss: 1.019
+Epoch 005 Example 611 | train loss: 1.004
+Epoch 005 Example 764 | train loss: 0.990
+
+ val loss: 0.767 | time: 1475.012
+| sentence accuracy:0.296| token accuracy:0.899
+> amp 3232 \_ amp 3232 a simple
+= amp 3232 \_ amp 3232 a simple
+< amp 3232 <unk> amp <unk> having weird
+
+Epoch 006 Example 153 | train loss: 0.831
+Epoch 006 Example 306 | train loss: 0.827
+Epoch 006 Example 458 | train loss: 0.820
+Epoch 006 Example 611 | train loss: 0.812
+Epoch 006 Example 764 | train loss: 0.804
+
+ val loss: 0.653 | time: 1476.322
+| sentence accuracy:0.369| token accuracy:0.917
+> a murderer standing over you with a knife leaning in to slit your throat
+= a murderer standing over you with a knife leaning in to slit your throat
+< a child standing over you with a knife package for to the your throat
+
+Epoch 007 Example 153 | train loss: 0.701
+Epoch 007 Example 306 | train loss: 0.699
+Epoch 007 Example 458 | train loss: 0.696
+Epoch 007 Example 611 | train loss: 0.690
+Epoch 007 Example 764 | train loss: 0.686
+
+ val loss: 0.574 | time: 1476.154
+| sentence accuracy:0.424| token accuracy:0.929
+> what kind of theme nights would you implement if you would be <unk> of
+= what kind of theme nights would you implement if you would be <unk> of
+< what kind of every year would you do what you would be <unk> of
+
+Epoch 008 Example 153 | train loss: 0.621
+Epoch 008 Example 306 | train loss: 0.618
+Epoch 008 Example 458 | train loss: 0.614
+Epoch 008 Example 611 | train loss: 0.610
+Epoch 008 Example 764 | train loss: 0.607
+
+ val loss: 0.523 | time: 1474.988
+| sentence accuracy:0.467| token accuracy:0.937
+> diverse canada i say that because we a mix of everything here
+= diverse canada i say that because we a mix of everything here
+< all canada i say that because we a mix of everything here
+
+Epoch 009 Example 153 | train loss: 0.549
+Epoch 009 Example 306 | train loss: 0.550
+Epoch 009 Example 458 | train loss: 0.549
+Epoch 009 Example 611 | train loss: 0.549
+Epoch 009 Example 764 | train loss: 0.548
+
+ val loss: 0.482 | time: 1476.348
+| sentence accuracy:0.503| token accuracy:0.943
+> whose death would give you the most satisfaction or who would you like to
+= whose death would give you the most satisfaction or who would you like to
+< whose death would give you the most voices or who would you like to
+
+Epoch 010 Example 153 | train loss: 0.500
+Epoch 010 Example 306 | train loss: 0.503
+Epoch 010 Example 458 | train loss: 0.505
+Epoch 010 Example 611 | train loss: 0.505
+Epoch 010 Example 764 | train loss: 0.506
+
+ val loss: 0.456 | time: 1476.088
+| sentence accuracy:0.526| token accuracy:0.947
+> do n't think so tobacco does n't really make you feel that much better
+= do n't think so tobacco does n't really make you feel that much better
+< do n't think so tobacco does n't really make you feel that much better
+
+Epoch 011 Example 153 | train loss: 0.467
+Epoch 011 Example 306 | train loss: 0.471
+Epoch 011 Example 458 | train loss: 0.472
+Epoch 011 Example 611 | train loss: 0.473
+Epoch 011 Example 764 | train loss: 0.474
+
+ val loss: 0.427 | time: 1475.564
+| sentence accuracy:0.558| token accuracy:0.952
+> lifeguards of reddit what is your most <unk> experience on and off duty
+= lifeguards of reddit what is your most <unk> experience on and off duty
+< homeowners of reddit what is your most <unk> experience on and off duty
+
+Epoch 012 Example 153 | train loss: 0.442
+Epoch 012 Example 306 | train loss: 0.446
+Epoch 012 Example 458 | train loss: 0.447
+Epoch 012 Example 611 | train loss: 0.447
+Epoch 012 Example 764 | train loss: 0.447
+
+ val loss: 0.411 | time: 1475.109
+| sentence accuracy:0.569| token accuracy:0.954
+> tell me a secret why do you not clean up after yourselves in shared
+= tell me a secret why do you not clean up after yourselves in shared
+< tell me a secret why do you not clean up after yourselves in shared
+
+Epoch 013 Example 153 | train loss: 0.418
+Epoch 013 Example 306 | train loss: 0.422
+Epoch 013 Example 458 | train loss: 0.423
+Epoch 013 Example 611 | train loss: 0.424
+Epoch 013 Example 764 | train loss: 0.425
+
+ val loss: 0.392 | time: 1476.552
+| sentence accuracy:0.593| token accuracy:0.957
+> what will happen to me will i know i 'm dead it 's
+= what will happen to me will i know i 'm dead it 's
+< what will happen to me will i know i 'm dead it 's
+
+Epoch 014 Example 153 | train loss: 0.398
+Epoch 014 Example 306 | train loss: 0.404
+Epoch 014 Example 458 | train loss: 0.405
+Epoch 014 Example 611 | train loss: 0.406
+Epoch 014 Example 764 | train loss: 0.407
+
+ val loss: 0.386 | time: 1476.556
+| sentence accuracy:0.596| token accuracy:0.957
+> a blonde guy gets stuck in a bathroom and shit ends up everywhere
+= a blonde guy gets stuck in a bathroom and shit ends up everywhere
+< a blonde guy gets stuck in a bathroom and shit ends up everywhere
+
+Epoch 015 Example 153 | train loss: 0.382
+Epoch 015 Example 306 | train loss: 0.386
+Epoch 015 Example 458 | train loss: 0.387
+Epoch 015 Example 611 | train loss: 0.390
+Epoch 015 Example 764 | train loss: 0.391
+
+ val loss: 0.373 | time: 1475.932
+| sentence accuracy:0.615| token accuracy:0.960
+> a. sometimes b but when they give the blanket statement you quoted above
+= a. sometimes b but when they give the blanket statement you quoted above
+< haha ha oh when but they to the blanket statement you cooking above
+
+Epoch 016 Example 153 | train loss: 0.370
+Epoch 016 Example 306 | train loss: 0.373
+Epoch 016 Example 458 | train loss: 0.374
+Epoch 016 Example 611 | train loss: 0.376
+Epoch 016 Example 764 | train loss: 0.377
+
+ val loss: 0.357 | time: 1475.890
+| sentence accuracy:0.629| token accuracy:0.962
+> can jets fly into space and if not what is stopping them
+= can jets fly into space and if not what is stopping them
+< can serve fly into space and if not what is stopping them
+
+Epoch 017 Example 153 | train loss: 0.355
+Epoch 017 Example 306 | train loss: 0.359
+Epoch 017 Example 458 | train loss: 0.363
+Epoch 017 Example 611 | train loss: 0.364
+Epoch 017 Example 764 | train loss: 0.366
+
+ val loss: 0.349 | time: 1476.412
+| sentence accuracy:0.638| token accuracy:0.963
+> where can you order fast food to go and not pay taxes
+= where can you order fast food to go and not pay taxes
+< where can you order fast food to go and not pay taxes
+
+Epoch 018 Example 153 | train loss: 0.349
+Epoch 018 Example 306 | train loss: 0.350
+Epoch 018 Example 458 | train loss: 0.351
+Epoch 018 Example 611 | train loss: 0.353
+Epoch 018 Example 764 | train loss: 0.355
+
+ val loss: 0.340 | time: 1476.226
+| sentence accuracy:0.649| token accuracy:0.964
+> does anybody know any way of resizing pixel art so the pixels do n't
+= does anybody know any way of resizing pixel art so the pixels do n't
+< does anybody know any way of islands diy art so the slice do n't
+
+Epoch 019 Example 153 | train loss: 0.338
+Epoch 019 Example 306 | train loss: 0.340
+Epoch 019 Example 458 | train loss: 0.343
+Epoch 019 Example 611 | train loss: 0.344
+Epoch 019 Example 764 | train loss: 0.346
+
+ val loss: 0.332 | time: 1475.360
+| sentence accuracy:0.658| token accuracy:0.966
+> what saddens you the most about the world your kids will grow up in
+= what saddens you the most about the world your kids will grow up in
+< what motivates you the most about the world your kids will grow up in
+
+Epoch 020 Example 153 | train loss: 0.327
+Epoch 020 Example 306 | train loss: 0.331
+Epoch 020 Example 458 | train loss: 0.333
+Epoch 020 Example 611 | train loss: 0.335
+Epoch 020 Example 764 | train loss: 0.336
+
+ val loss: 0.327 | time: 1475.548
+| sentence accuracy:0.664| token accuracy:0.966
+> dental professionals with large boobs do you get a lot of requests for dental
+= dental professionals with large boobs do you get a lot of requests for dental
+< dental professionals with large boobs do you get a lot of requests for dental
+
+Epoch 021 Example 153 | train loss: 0.320
+Epoch 021 Example 306 | train loss: 0.323
+Epoch 021 Example 458 | train loss: 0.326
+Epoch 021 Example 611 | train loss: 0.328
+Epoch 021 Example 764 | train loss: 0.330
+
+ val loss: 0.320 | time: 1475.531
+| sentence accuracy:0.672| token accuracy:0.967
+> my brother bought me a pocket knife for my 18th birthday carried it ever
+= my brother bought me a pocket knife for my 18th birthday carried it ever
+< my brother bought me a pocket knife for my 18th birthday onto it ever
+
+Epoch 022 Example 153 | train loss: 0.314
+Epoch 022 Example 306 | train loss: 0.317
+Epoch 022 Example 458 | train loss: 0.319
+Epoch 022 Example 611 | train loss: 0.321
+Epoch 022 Example 764 | train loss: 0.323
+
+ val loss: 0.315 | time: 1475.434
+| sentence accuracy:0.676| token accuracy:0.968
+> its from the spore creature creator it was on the front page but i
+= its from the spore creature creator it was on the front page but i
+< its from the midwest robot politics it was on the front page but i
+
+Epoch 023 Example 153 | train loss: 0.304
+Epoch 023 Example 306 | train loss: 0.309
+Epoch 023 Example 458 | train loss: 0.312
+Epoch 023 Example 611 | train loss: 0.315
+Epoch 023 Example 764 | train loss: 0.316
+
+ val loss: 0.310 | time: 1475.566
+| sentence accuracy:0.686| token accuracy:0.969
+> what is the funniest text message you have ever received
+= what is the funniest text message you have ever received
+< what is the funniest text message you have ever received
+
+Epoch 024 Example 153 | train loss: 0.301
+Epoch 024 Example 306 | train loss: 0.303
+Epoch 024 Example 458 | train loss: 0.306
+Epoch 024 Example 611 | train loss: 0.309
+Epoch 024 Example 764 | train loss: 0.311
+
+ val loss: 0.308 | time: 1475.392
+| sentence accuracy:0.684| token accuracy:0.969
+> what 's the best/funniest thing you have done to get rid of a stalker
+= what 's the best/funniest thing you have done to get rid of a stalker
+< what 's the best/funniest thing you have done to get rid of a stalker
+
+Epoch 025 Example 153 | train loss: 0.295
+Epoch 025 Example 306 | train loss: 0.299
+Epoch 025 Example 458 | train loss: 0.302
+Epoch 025 Example 611 | train loss: 0.304
+Epoch 025 Example 764 | train loss: 0.306
+
+ val loss: 0.301 | time: 1475.532
+| sentence accuracy:0.690| token accuracy:0.970
+> life without a relationship is n't too bad hell you prolly would n't
+= life without a relationship is n't too bad hell you prolly would n't
+< life without a relationship is n't too bad hell you incorrect would n't
+
+Epoch 026 Example 153 | train loss: 0.292
+Epoch 026 Example 306 | train loss: 0.296
+Epoch 026 Example 458 | train loss: 0.296
+Epoch 026 Example 611 | train loss: 0.299
+Epoch 026 Example 764 | train loss: 0.301
+
+ val loss: 0.297 | time: 1476.365
+| sentence accuracy:0.698| token accuracy:0.970
+> what do you think will happen at brazil 's world cup
+= what do you think will happen at brazil 's world cup
+< what do you think will happen at brazil 's world cup
+

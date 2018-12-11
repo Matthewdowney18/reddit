@@ -1,0 +1,8 @@
+examples_npt
+the purpose of this experiment is to determine what the optimal length
+of the sequences are. the classifier was trained on 20, 25, and 30
+examples. the results show that accuracy goes up as the max length goes
+up. this may be because the number of available training examples goes
+up along with the max length. this is very likely because the examples
+experiment shows the trend of more training examples results in a higher
+accuracy.

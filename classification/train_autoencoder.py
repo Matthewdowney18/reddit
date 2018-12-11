@@ -4,10 +4,10 @@ import torch.utils.data
 import time
 from tqdm import tqdm
 
-from dataset import SentenceDataset
-from model import Seq2SeqModel
+from classification.dataset import SentenceDataset
+from classification.model import Seq2SeqModel
 from utils import variable, cuda, argmax, get_sentence_from_indices, \
-    get_pretrained_embeddings, save_checkpoint, load_checkpoint, freeze_layer, \
+    get_pretrained_embeddings, save_checkpoint, load_checkpoint, \
     encoder_accuracy
 
 

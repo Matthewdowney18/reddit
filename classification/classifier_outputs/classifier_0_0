@@ -1,0 +1,89 @@
+classifier 0 go a bit screwed up because i was accidentally saving the classifier to the autoencoder 3 1. this resulted in the loss of that file, 
+but i still trained multiple things on this including classifier 1
+nb_epochs: 50
+batch_size: 500
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: /embeddings_min2_max15.npy
+max_len: 15
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.001
+model_group: /classifier
+model_name: /classifier_0
+autoencoder_location: /auto_encoder_3_1
+load model_version: 0
+model_filename: /home/mattd/PycharmProjects/reddit/auto_encoders/auto_encoder_3_1
+new_model_filename: /home/mattd/PycharmProjects/reddit/classifiers/classifier_0_0
+output_file: /home/mattd/PycharmProjects/reddit/classifier_outputs/classifier_0_1
+
+Train 228831, val: 57061
+Loaded Model:
+lowest_validation_loss: 500
+description: ['none']
+last_epoch:0
+Epoch 000 Example 076 | train loss: 0.817
+Epoch 000 Example 152 | train loss: 0.817
+Epoch 000 Example 228 | train loss: 0.788
+Epoch 000 Example 305 | train loss: 0.762
+Epoch 000 Example 381 | train loss: 0.745
+Epoch 000 Example 457 | train loss: 0.731
+
+ val loss: 0.658 | time: 88.582
+> why does the fda say eating raw red meat is bad for you
+> bacteria mad cow disease parasites from the cow ... all of these things
+target:1  output:[[0.17510033]
+ [0.8248997 ]]
+
+Epoch 001 Example 076 | train loss: 0.644
+Epoch 001 Example 152 | train loss: 0.644
+Epoch 001 Example 228 | train loss: 0.641
+Epoch 001 Example 305 | train loss: 0.639
+Epoch 001 Example 381 | train loss: 0.638
+Epoch 001 Example 457 | train loss: 0.636
+
+ val loss: 0.630 | time: 88.796
+> all things considered why do you think west/east coast is better to live in
+> i 've lived on both and they each have their good and bad things
+target:1  output:[[0.24761301]
+ [0.752387  ]]
+
+Epoch 002 Example 076 | train loss: 0.591
+Epoch 002 Example 152 | train loss: 0.592
+Epoch 002 Example 228 | train loss: 0.593
+Epoch 002 Example 305 | train loss: 0.595
+Epoch 002 Example 381 | train loss: 0.595
+Epoch 002 Example 457 | train loss: 0.595
+
+ val loss: 0.619 | time: 88.783
+> reddit should comedians be allowed to joke about anything they want
+> you can joke about any topic you like but you ca n't joke about
+target:1  output:[[0.6095897 ]
+ [0.39041033]]
+
+Epoch 003 Example 076 | train loss: 0.554
+Epoch 003 Example 152 | train loss: 0.556
+Epoch 003 Example 228 | train loss: 0.559
+Epoch 003 Example 305 | train loss: 0.562
+Epoch 003 Example 381 | train loss: 0.563
+Epoch 003 Example 457 | train loss: 0.564
+
+ val loss: 0.617 | time: 88.708
+> context
+> video games i 'd try not to spend too much or i 'd
+target:0  output:[[0.05381161]
+ [0.9461884 ]]
+
+Epoch 004 Example 076 | train loss: 0.524
+Epoch 004 Example 152 | train loss: 0.528
+Epoch 004 Example 228 | train loss: 0.532
+Epoch 004 Example 305 | train loss: 0.536
+Epoch 004 Example 381 | train loss: 0.538
+Epoch 004 Example 457 | train loss: 0.540
+
+ val loss: 0.613 | time: 88.840
+> serious jehovah 's witnesses of reddit ... why are some bible verses blank
+> it would look like the energy of a million rare pepes and dank memes
+target:0  output:[[0.2007668]
+ [0.7992332]]
+

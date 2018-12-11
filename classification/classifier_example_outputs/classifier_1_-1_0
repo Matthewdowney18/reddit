@@ -1,0 +1,1923 @@
+nb_epochs: 100
+batch_size: 1000
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: /embeddings/embeddings_min2_max30.npy
+max_len: 30
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.005
+model_group: /classifier_example
+model_name: /classifier_1_-1
+autoencoder_location: /auto_encoder_2_1
+load model_version: 0
+model_filename: /home/mattd/PycharmProjects/reddit/classifier_examples/classifier_1_-1_0
+new_model_filename: /home/mattd/PycharmProjects/reddit/classifier_examples/classifier_1_-1_0
+output_file: /home/mattd/PycharmProjects/reddit/classifier_example_outputs/classifier_1_-1_0
+num_training_examples: -1
+
+Vocab size 104680
+Train 344248 
+Val: 86028
+No model found at /home/mattd/PycharmProjects/reddit/classifier_examples/classifier_1_-1_0
+
+
+Epoch: 0
+
+Train: 
+Example 172 | train loss: 0.629
+Example 344 | train loss: 0.608
+
+Validation 
+
+ val loss: 0.567 | time: 241.469 | lowest loss: 500.000 highest accuracy: 0.000
+Accuracy: 0.732
+Precision: 0.709
+Recall: 0.781
+F1: 0.743
+
+> reddit it 's story time tell us a story any story so long as it 's your story
+> i love painting and drawing and just creating art in general but i am so bad at coming up with ideas i would rather someone just tell me what
+target:1|  P false:0.951, P true: 0.049
+
+
+Epoch: 1
+
+Train: 
+Example 172 | train loss: 0.554
+Example 344 | train loss: 0.554
+
+Validation 
+
+ val loss: 0.549 | time: 277.240 | lowest loss: 0.567 highest accuracy: 0.732
+Accuracy: 0.749
+Precision: 0.734
+Recall: 0.776
+F1: 0.754
+
+> what sudden change in your daily life made you realize that you 're not a 'youngster anymore
+> i 'm a supermodel who lactates hundred dollar bills and am interested in giving you nonstop _num_ -hour oral sex for the rest of your life
+target:0|  P false:0.779, P true: 0.221
+
+
+Epoch: 2
+
+Train: 
+Example 172 | train loss: 0.522
+Example 344 | train loss: 0.529
+
+Validation 
+
+ val loss: 0.541 | time: 262.887 | lowest loss: 0.549 highest accuracy: 0.749
+Accuracy: 0.757
+Precision: 0.739
+Recall: 0.788
+F1: 0.763
+
+> what small change to an already existing product would make it way better
+> this might just be me but i think some kind of <unk> like in a washing machine to put your socks in when you wash them could avoid a
+target:1|  P false:0.017, P true: 0.983
+
+
+Epoch: 3
+
+Train: 
+Example 172 | train loss: 0.502
+Example 344 | train loss: 0.512
+
+Validation 
+
+ val loss: 0.537 | time: 277.495 | lowest loss: 0.541 highest accuracy: 0.757
+Accuracy: 0.763
+Precision: 0.748
+Recall: 0.788
+F1: 0.767
+
+> why do adults clean their language up for younger people and similarly why do younger people clean their language up for adults
+> sadly i 'd say the simpsons has run its course and could 've ended on a very good note years ago
+target:0|  P false:0.999, P true: 0.001
+
+
+Epoch: 4
+
+Train: 
+Example 172 | train loss: 0.489
+Example 344 | train loss: 0.499
+
+Validation 
+
+ val loss: 0.529 | time: 270.867 | lowest loss: 0.537 highest accuracy: 0.763
+Accuracy: 0.771
+Precision: 0.757
+Recall: 0.793
+F1: 0.774
+
+> if you could choose to live in a fictional place or universe which would you choose and why
+> it affects the world so why not let the world chime in
+target:0|  P false:0.010, P true: 0.990
+
+
+Epoch: 5
+
+Train: 
+Example 172 | train loss: 0.476
+Example 344 | train loss: 0.489
+
+Validation 
+
+ val loss: 0.529 | time: 276.985 | lowest loss: 0.529 highest accuracy: 0.771
+Accuracy: 0.771
+Precision: 0.748
+Recall: 0.813
+F1: 0.779
+
+> if you were being threatened by an idiot who had your family hostage and he told you to invent something or he would kill them off one by one
+> blue jays would be down _num_ _num_ until the _num_ th edwin hits a grandslam to take the lead _num_ _num_ final for the blue jays
+target:0|  P false:0.854, P true: 0.146
+
+
+Epoch: 6
+
+Train: 
+Example 172 | train loss: 0.468
+Example 344 | train loss: 0.482
+
+Validation 
+
+ val loss: 0.527 | time: 277.029 | lowest loss: 0.529 highest accuracy: 0.771
+Accuracy: 0.773
+Precision: 0.747
+Recall: 0.823
+F1: 0.782
+
+> what is something you 're sure pisses you off and only you
+> being asked why im in a bad mood when im not in a bad mood
+target:1|  P false:0.015, P true: 0.985
+
+
+Epoch: 7
+
+Train: 
+Example 172 | train loss: 0.462
+Example 344 | train loss: 0.475
+
+Validation 
+
+ val loss: 0.521 | time: 272.079 | lowest loss: 0.527 highest accuracy: 0.773
+Accuracy: 0.780
+Precision: 0.772
+Recall: 0.791
+F1: 0.781
+
+> i 'm a canadian that may have to move to the states is it as fucked up as i 've heard or am i worrying too much
+> so in the past how did you get up on time to do shit you could n't have made it far enough to get a job if you were
+target:0|  P false:0.365, P true: 0.635
+
+
+Epoch: 8
+
+Train: 
+Example 172 | train loss: 0.456
+Example 344 | train loss: 0.469
+
+Validation 
+
+ val loss: 0.521 | time: 277.369 | lowest loss: 0.521 highest accuracy: 0.780
+Accuracy: 0.779
+Precision: 0.769
+Recall: 0.794
+F1: 0.781
+
+> what is the laziest thing you are to ashamed to admit you 've done
+> i have met someone on reddit that has changed my life
+target:0|  P false:0.060, P true: 0.940
+
+
+Epoch: 9
+
+Train: 
+Example 172 | train loss: 0.451
+Example 344 | train loss: 0.464
+
+Validation 
+
+ val loss: 0.520 | time: 270.318 | lowest loss: 0.521 highest accuracy: 0.780
+Accuracy: 0.780
+Precision: 0.775
+Recall: 0.785
+F1: 0.779
+
+> sports fans of reddit what is the craziest thing you 've ever seen in the crowd at the game or while tailgating
+> thrashed trashed cobbled squiffy tippled trotted tanked blotted bungled boinked bobbled shot slammed blanked stupid
+target:0|  P false:0.000, P true: 1.000
+
+
+Epoch: 10
+
+Train: 
+Example 172 | train loss: 0.446
+Example 344 | train loss: 0.459
+
+Validation 
+
+ val loss: 0.520 | time: 281.569 | lowest loss: 0.520 highest accuracy: 0.780
+Accuracy: 0.781
+Precision: 0.774
+Recall: 0.789
+F1: 0.781
+
+> men who were raised by single mothers with little or no father involvement what is the best advice you can give to a single mother raising a son
+> stuck in the middle with you by stealers wheels when i saw reservoir dogs at the cinema the guy next to me was crying during the scene
+target:0|  P false:0.924, P true: 0.076
+
+
+Epoch: 11
+
+Train: 
+Example 172 | train loss: 0.444
+Example 344 | train loss: 0.456
+
+Validation 
+
+ val loss: 0.522 | time: 270.682 | lowest loss: 0.520 highest accuracy: 0.781
+Accuracy: 0.779
+Precision: 0.760
+Recall: 0.809
+F1: 0.784
+
+> what 's the longest amount of time that you went without a shower what was your excuse and how did you feel
+> _num_ months in the hospital i got to wash my hair every couple of days but no sponge bath or anything like that
+target:1|  P false:0.193, P true: 0.807
+
+
+Epoch: 12
+
+Train: 
+Example 172 | train loss: 0.439
+Example 344 | train loss: 0.452
+
+Validation 
+
+ val loss: 0.519 | time: 282.017 | lowest loss: 0.520 highest accuracy: 0.781
+Accuracy: 0.782
+Precision: 0.769
+Recall: 0.802
+F1: 0.785
+
+> what is amazing drunk but terrible high and vice versa
+> spinning while looking up at the stars amazing high terrible drunk
+target:1|  P false:0.003, P true: 0.997
+
+
+Epoch: 13
+
+Train: 
+Example 172 | train loss: 0.437
+Example 344 | train loss: 0.450
+
+Validation 
+
+ val loss: 0.516 | time: 278.345 | lowest loss: 0.519 highest accuracy: 0.782
+Accuracy: 0.784
+Precision: 0.771
+Recall: 0.804
+F1: 0.787
+
+> if a grain of sand was telekinetically forced through your chest through your heart then out the back would it kill you
+> how much do you want to spend the `` best '' noise canceling headphones cost in the _num_ _num_ range here 's one review _link_
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 14
+
+Train: 
+Example 172 | train loss: 0.435
+Example 344 | train loss: 0.447
+
+Validation 
+
+ val loss: 0.516 | time: 273.831 | lowest loss: 0.516 highest accuracy: 0.784
+Accuracy: 0.786
+Precision: 0.780
+Recall: 0.793
+F1: 0.786
+
+> where is the first place you would go at the start of a zombie apocalypse
+> the library to get every 'how to book i can get my hands on then ... to the gardening store to load up on as many seeds as i
+target:1|  P false:0.792, P true: 0.208
+
+
+Epoch: 15
+
+Train: 
+Example 172 | train loss: 0.433
+Example 344 | train loss: 0.445
+
+Validation 
+
+ val loss: 0.518 | time: 282.868 | lowest loss: 0.516 highest accuracy: 0.786
+Accuracy: 0.782
+Precision: 0.778
+Recall: 0.786
+F1: 0.782
+
+> women of reddit what do you think is more important penis length or girth
+> where are you now what do you like to do some people like culture others like relaxations others like large quantities of alcohol
+target:0|  P false:0.998, P true: 0.002
+
+
+Epoch: 16
+
+Train: 
+Example 172 | train loss: 0.431
+Example 344 | train loss: 0.443
+
+Validation 
+
+ val loss: 0.517 | time: 275.708 | lowest loss: 0.516 highest accuracy: 0.786
+Accuracy: 0.784
+Precision: 0.774
+Recall: 0.798
+F1: 0.785
+
+> legally i do n't think i 'm wrong ... but maybe morally i 'm not sure landlord tenant question
+> personally i do n't care what you have on your system truth is most people are pretty damned boring that includes you
+target:0|  P false:0.955, P true: 0.045
+
+
+Epoch: 17
+
+Train: 
+Example 172 | train loss: 0.428
+Example 344 | train loss: 0.441
+
+Validation 
+
+ val loss: 0.517 | time: 281.039 | lowest loss: 0.516 highest accuracy: 0.786
+Accuracy: 0.784
+Precision: 0.767
+Recall: 0.811
+F1: 0.788
+
+> ladies of reddit what 's the best compliment your man/woman has ever given you
+> said to me as i was eating breakfast with my then-boyfriend by a guy who got up from his table with his wife/kids `` i 'm sorry to interrupt
+target:1|  P false:0.001, P true: 0.999
+
+
+Epoch: 18
+
+Train: 
+Example 172 | train loss: 0.427
+Example 344 | train loss: 0.439
+
+Validation 
+
+ val loss: 0.517 | time: 270.927 | lowest loss: 0.516 highest accuracy: 0.786
+Accuracy: 0.783
+Precision: 0.770
+Recall: 0.804
+F1: 0.786
+
+> if you could name your child after a character from a video game movie book etc what would it be and why
+> well i just got back from a week long vacation in istanbul with a very lovely girl i am dating who also happens to be gorgeous i just celebrated
+target:0|  P false:0.984, P true: 0.016
+
+
+Epoch: 19
+
+Train: 
+Example 172 | train loss: 0.426
+Example 344 | train loss: 0.437
+
+Validation 
+
+ val loss: 0.518 | time: 281.010 | lowest loss: 0.516 highest accuracy: 0.786
+Accuracy: 0.783
+Precision: 0.762
+Recall: 0.818
+F1: 0.789
+
+> those who overcame a fear or general anxiety over public speaking how did you do it
+> interstellar i wanted to turn it off after _num_ mins ... ... ... ..so fucking boring/dumb/senseless
+target:0|  P false:0.073, P true: 0.927
+
+
+Epoch: 20
+
+Train: 
+Example 172 | train loss: 0.425
+Example 344 | train loss: 0.436
+
+Validation 
+
+ val loss: 0.516 | time: 271.817 | lowest loss: 0.516 highest accuracy: 0.786
+Accuracy: 0.785
+Precision: 0.770
+Recall: 0.808
+F1: 0.788
+
+> what is the worst/weirdest thing a child has ever said to you
+> depends you are now legally an adult but it 's up to you if you want to be treated like one and start acting like one
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 21
+
+Train: 
+Example 172 | train loss: 0.423
+Example 344 | train loss: 0.435
+
+Validation 
+
+ val loss: 0.518 | time: 277.253 | lowest loss: 0.516 highest accuracy: 0.786
+Accuracy: 0.782
+Precision: 0.755
+Recall: 0.832
+F1: 0.791
+
+> i want to romantically apologize to my girlfriend any ideas
+> girls do n't want showy shit no matter what the movies say just go to her house and apologize face to face like a man
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 22
+
+Train: 
+Example 172 | train loss: 0.423
+Example 344 | train loss: 0.434
+
+Validation 
+
+ val loss: 0.518 | time: 278.084 | lowest loss: 0.516 highest accuracy: 0.786
+Accuracy: 0.782
+Precision: 0.757
+Recall: 0.827
+F1: 0.790
+
+> what are your stories of getting really scared over something and it turned out to be nothing ill start
+> meeting new people but every stranger is just a friend you have n't met
+target:1|  P false:0.009, P true: 0.991
+
+
+Epoch: 23
+
+Train: 
+Example 172 | train loss: 0.421
+Example 344 | train loss: 0.432
+
+Validation 
+
+ val loss: 0.515 | time: 272.234 | lowest loss: 0.516 highest accuracy: 0.786
+Accuracy: 0.787
+Precision: 0.779
+Recall: 0.797
+F1: 0.787
+
+> if society as we know it were to collapse what problems would we have that tv shows seem to forget
+> digging a toilet hole at every place you camp at
+target:1|  P false:0.998, P true: 0.002
+
+
+Epoch: 24
+
+Train: 
+Example 172 | train loss: 0.419
+Example 344 | train loss: 0.431
+
+Validation 
+
+ val loss: 0.515 | time: 281.621 | lowest loss: 0.515 highest accuracy: 0.787
+Accuracy: 0.786
+Precision: 0.769
+Recall: 0.812
+F1: 0.790
+
+> my fiance and i are on a tight budget we 'd love to honeymoon somewhere beautiful in the main _num_ any suggestions
+> key west sucks because there are no beaches to speak of ... when is this taking place
+target:1|  P false:0.649, P true: 0.351
+
+
+Epoch: 25
+
+Train: 
+Example 172 | train loss: 0.418
+Example 344 | train loss: 0.430
+
+Validation 
+
+ val loss: 0.514 | time: 273.629 | lowest loss: 0.515 highest accuracy: 0.787
+Accuracy: 0.787
+Precision: 0.784
+Recall: 0.788
+F1: 0.786
+
+> people whose first language is n't english what english word do you have the most trouble with
+> `` hold the fort '' rather than `` hold down the fort '' `` it begs the question '' used correctly
+target:0|  P false:0.817, P true: 0.183
+
+
+Epoch: 26
+
+Train: 
+Example 172 | train loss: 0.418
+Example 344 | train loss: 0.429
+
+Validation 
+
+ val loss: 0.515 | time: 281.753 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.786
+Precision: 0.778
+Recall: 0.798
+F1: 0.787
+
+> why are we all talking about the anti-gay laws in russia when america has similar anti-gay laws
+> start by buying all of your cleaning supplies from the dollar store shower curtain too i 'm not talking dollar general i 'm talking the real dollar store where
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 27
+
+Train: 
+Example 172 | train loss: 0.416
+Example 344 | train loss: 0.427
+
+Validation 
+
+ val loss: 0.517 | time: 275.253 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.784
+Precision: 0.772
+Recall: 0.802
+F1: 0.786
+
+> what is the weirdest thing you have witnessed a parent do to their child in public
+> some near death sickness so everyone around me can stop being petty but then again i would never want a near death sickness
+target:0|  P false:0.067, P true: 0.933
+
+
+Epoch: 28
+
+Train: 
+Example 172 | train loss: 0.415
+Example 344 | train loss: 0.427
+
+Validation 
+
+ val loss: 0.517 | time: 281.083 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.784
+Precision: 0.776
+Recall: 0.794
+F1: 0.784
+
+> after the butterflies and sweaty palms fade ... what are you left with to know you truly love a person
+> making the front page of reddit i would figure out how to make it on that particular day mind you every single time i would eventually master collecting gold
+target:0|  P false:0.323, P true: 0.677
+
+
+Epoch: 29
+
+Train: 
+Example 172 | train loss: 0.415
+Example 344 | train loss: 0.427
+
+Validation 
+
+ val loss: 0.518 | time: 277.524 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.782
+Precision: 0.765
+Recall: 0.811
+F1: 0.787
+
+> what do i do if i think someone close to me may have gotten into a car crash
+> i 'm not sure but if you figure it out please let me know maybe i can use the same method to tell my cat that seagulls are too
+target:0|  P false:0.900, P true: 0.100
+
+
+Epoch: 30
+
+Train: 
+Example 172 | train loss: 0.415
+Example 344 | train loss: 0.426
+
+Validation 
+
+ val loss: 0.519 | time: 275.354 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.781
+Precision: 0.758
+Recall: 0.822
+F1: 0.788
+
+> is it normal to be/have you ever been stalked in public by someone you do n't know
+> savings usually what i do with any money i get and do n't need at the moment
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 31
+
+Train: 
+Example 172 | train loss: 0.414
+Example 344 | train loss: 0.425
+
+Validation 
+
+ val loss: 0.515 | time: 278.686 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.786
+Precision: 0.774
+Recall: 0.803
+F1: 0.788
+
+> what useless bargain bin superpower would you take without a second thought
+> the ability to run fast but only when i need to use the bathroom
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 32
+
+Train: 
+Example 172 | train loss: 0.413
+Example 344 | train loss: 0.425
+
+Validation 
+
+ val loss: 0.517 | time: 276.594 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.783
+Precision: 0.761
+Recall: 0.821
+F1: 0.790
+
+> i live in pa and was fined for driving with an expired license the total amount of the fine is _num_ of what it should be is there anything
+> reddit is not your lawyer and you should not trust anything you read on here
+target:1|  P false:0.059, P true: 0.941
+
+
+Epoch: 33
+
+Train: 
+Example 172 | train loss: 0.413
+Example 344 | train loss: 0.423
+
+Validation 
+
+ val loss: 0.515 | time: 281.302 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.786
+Precision: 0.771
+Recall: 0.810
+F1: 0.790
+
+> what is something you are afraid of that others pay no attention to
+> i get my electricity from an electrical co-op lowest rates in the state and we get a dividend check every year the longer you belong to the co-op the
+target:0|  P false:0.656, P true: 0.344
+
+
+Epoch: 34
+
+Train: 
+Example 172 | train loss: 0.411
+Example 344 | train loss: 0.423
+
+Validation 
+
+ val loss: 0.515 | time: 273.721 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.785
+Precision: 0.766
+Recall: 0.818
+F1: 0.791
+
+> what 's the most embarrassing thing you 've ever learned from another person about yourself
+> i dance really really really badly when i am drunk ... ... had no idea until a video was shown of my busting my moves i always thought i
+target:1|  P false:0.034, P true: 0.966
+
+
+Epoch: 35
+
+Train: 
+Example 172 | train loss: 0.411
+Example 344 | train loss: 0.422
+
+Validation 
+
+ val loss: 0.515 | time: 281.857 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.786
+Precision: 0.773
+Recall: 0.805
+F1: 0.789
+
+> what single nearly insignificant piece of <unk> saying from your parents turned out to help you a lot later in life
+> never turn your back on a muslim i started to one day and for some reason my old man 's advice flashed into my head i spun back quick
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 36
+
+Train: 
+Example 172 | train loss: 0.412
+Example 344 | train loss: 0.422
+
+Validation 
+
+ val loss: 0.515 | time: 275.364 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.786
+Precision: 0.775
+Recall: 0.804
+F1: 0.789
+
+> serious what is something meaningful you can do to help those in need besides donating money
+> volunteer i do three types of volunteer work foodlink picks up extra food from bakeries supermarkets restaurants and serves them to the homeless meals on wheels drops off meals
+target:1|  P false:0.001, P true: 0.999
+
+
+Epoch: 37
+
+Train: 
+Example 172 | train loss: 0.410
+Example 344 | train loss: 0.421
+
+Validation 
+
+ val loss: 0.515 | time: 279.764 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.784
+Precision: 0.765
+Recall: 0.816
+F1: 0.790
+
+> dear reddit who actually cares how long a novelty account has existed before it posts
+> agreed i 'm not gon na complain about someone making me laugh
+target:1|  P false:0.997, P true: 0.003
+
+
+Epoch: 38
+
+Train: 
+Example 172 | train loss: 0.409
+Example 344 | train loss: 0.420
+
+Validation 
+
+ val loss: 0.513 | time: 275.799 | lowest loss: 0.514 highest accuracy: 0.787
+Accuracy: 0.788
+Precision: 0.786
+Recall: 0.788
+F1: 0.787
+
+> reddit fast-food workers what 's the best <unk> hack you know
+> this wo n't save you money but it will get you a fresh batch of french fries ask for unsalted fries
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 39
+
+Train: 
+Example 172 | train loss: 0.409
+Example 344 | train loss: 0.420
+
+Validation 
+
+ val loss: 0.516 | time: 275.561 | lowest loss: 0.513 highest accuracy: 0.788
+Accuracy: 0.784
+Precision: 0.766
+Recall: 0.814
+F1: 0.789
+
+> reddit can you help me come up with a name for my company
+> <unk> am starting a biomedical device company like what specifically
+target:1|  P false:0.020, P true: 0.980
+
+
+Epoch: 40
+
+Train: 
+Example 172 | train loss: 0.408
+Example 344 | train loss: 0.420
+
+Validation 
+
+ val loss: 0.513 | time: 280.932 | lowest loss: 0.513 highest accuracy: 0.788
+Accuracy: 0.788
+Precision: 0.787
+Recall: 0.786
+F1: 0.786
+
+> what did you wish you knew about love in your twenties
+> plastic bags they will be the only thing left after the bombs drop
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 41
+
+Train: 
+Example 172 | train loss: 0.409
+Example 344 | train loss: 0.419
+
+Validation 
+
+ val loss: 0.513 | time: 273.606 | lowest loss: 0.513 highest accuracy: 0.788
+Accuracy: 0.789
+Precision: 0.780
+Recall: 0.800
+F1: 0.790
+
+> ask reddit you 're given one pc game and one console game to play for the rest of your life what do you choose
+> a friend of mine kept cancelling plans at the absolute last minute once in a while was n't a big deal but eventually it came to around _num_ of
+target:0|  P false:0.998, P true: 0.002
+
+
+Epoch: 42
+
+Train: 
+Example 172 | train loss: 0.407
+Example 344 | train loss: 0.418
+
+Validation 
+
+ val loss: 0.515 | time: 280.810 | lowest loss: 0.513 highest accuracy: 0.789
+Accuracy: 0.787
+Precision: 0.770
+Recall: 0.814
+F1: 0.791
+
+> what t.v show do you want an explanation for its cancellation
+> ofc the obligatory firefly and maybe even more then that better of ted
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 43
+
+Train: 
+Example 172 | train loss: 0.408
+Example 344 | train loss: 0.418
+
+Validation 
+
+ val loss: 0.513 | time: 275.289 | lowest loss: 0.513 highest accuracy: 0.789
+Accuracy: 0.788
+Precision: 0.782
+Recall: 0.796
+F1: 0.788
+
+> what is the worst thing someone you know has ever gotten into trouble for
+> depends on where i am if i 'm just trying to grocery shop in a baggy t-shirt and no make-up it 's baffling when i 'm dressed up i
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 44
+
+Train: 
+Example 172 | train loss: 0.407
+Example 344 | train loss: 0.417
+
+Validation 
+
+ val loss: 0.513 | time: 278.083 | lowest loss: 0.513 highest accuracy: 0.789
+Accuracy: 0.789
+Precision: 0.778
+Recall: 0.804
+F1: 0.791
+
+> what 's the most fucked up 'would you rather question you can come up with
+> the drew carey show its a great series but is stuck in licensing purgatory and is sadly being kept off of dvd release
+target:0|  P false:0.998, P true: 0.002
+
+
+Epoch: 45
+
+Train: 
+Example 172 | train loss: 0.407
+Example 344 | train loss: 0.417
+
+Validation 
+
+ val loss: 0.511 | time: 278.730 | lowest loss: 0.513 highest accuracy: 0.789
+Accuracy: 0.790
+Precision: 0.781
+Recall: 0.803
+F1: 0.792
+
+> if you were to take any video game character out of it 's game to live with you in the real world who would it be and what would
+> lara crofts butler ... ... i 'd get him to pretend he was alfred and i was batman
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 46
+
+Train: 
+Example 172 | train loss: 0.407
+Example 344 | train loss: 0.417
+
+Validation 
+
+ val loss: 0.515 | time: 275.090 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.785
+Precision: 0.774
+Recall: 0.802
+F1: 0.788
+
+> my dog ate half a batch of hershey fudge brownies how worried should i be
+> my husband put his jizz on his thumb wiped it on my forehead and said 'simba i was not pleased
+target:0|  P false:0.976, P true: 0.024
+
+
+Epoch: 47
+
+Train: 
+Example 172 | train loss: 0.406
+Example 344 | train loss: 0.416
+
+Validation 
+
+ val loss: 0.512 | time: 276.602 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.789
+Precision: 0.781
+Recall: 0.799
+F1: 0.790
+
+> where are you from and what do you think about the netherlands
+> i live in north wales does the shetland pony park still exist in holland i used to go to it a lot in the seventies when i lived in
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 48
+
+Train: 
+Example 172 | train loss: 0.405
+Example 344 | train loss: 0.415
+
+Validation 
+
+ val loss: 0.514 | time: 274.723 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.787
+Precision: 0.779
+Recall: 0.797
+F1: 0.788
+
+> victims of any sort of abuse who got revenge on the abuser what 's the revenge story and how did it happen
+> no the strippers in our country get assigned numbers when they pass the exam
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 49
+
+Train: 
+Example 172 | train loss: 0.405
+Example 344 | train loss: 0.415
+
+Validation 
+
+ val loss: 0.516 | time: 282.393 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.785
+Precision: 0.764
+Recall: 0.820
+F1: 0.791
+
+> what did you want to be when you grew up and did you become what you had hoped
+> _num_ k in loans for a bachelor 's degree is a boneheaded thing to do two years at a community college plus two years at a state school will
+target:0|  P false:0.395, P true: 0.605
+
+
+Epoch: 50
+
+Train: 
+Example 172 | train loss: 0.405
+Example 344 | train loss: 0.415
+
+Validation 
+
+ val loss: 0.514 | time: 273.455 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.786
+Precision: 0.773
+Recall: 0.808
+F1: 0.790
+
+> reddit which subreddit do you hate the most and why
+> i 'm growing to dislike all of them actually you can hardly make any commentaries anywhere no matter how benign they might be lest some ass-wipe chiming in with
+target:1|  P false:0.020, P true: 0.980
+
+
+Epoch: 51
+
+Train: 
+Example 172 | train loss: 0.404
+Example 344 | train loss: 0.414
+
+Validation 
+
+ val loss: 0.516 | time: 280.773 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.785
+Precision: 0.764
+Recall: 0.820
+F1: 0.791
+
+> if you were to watch a _num_ -minute superhero cartoon called <unk> adventures of captain crystal and meth <unk> what would you have seen during that episode
+> meth-lad do you mean al-lad or a methylated lysergic acid diethylamide i 've never heard of that chem though if i was to watch a show like this i
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 52
+
+Train: 
+Example 172 | train loss: 0.404
+Example 344 | train loss: 0.414
+
+Validation 
+
+ val loss: 0.515 | time: 277.420 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.786
+Precision: 0.772
+Recall: 0.808
+F1: 0.789
+
+> i need a vehicle with _num_ wd priced somewhere between _num_ _num_ suggestions experiences
+> my birthday as _num_ _num_ my sister 's birthday is _num_ _num_ columbine among other things obviously my father was born _num_ _num_ hiroshima my mother was born _num_
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 53
+
+Train: 
+Example 172 | train loss: 0.404
+Example 344 | train loss: 0.413
+
+Validation 
+
+ val loss: 0.515 | time: 276.971 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.786
+Precision: 0.777
+Recall: 0.797
+F1: 0.787
+
+> why is n't solar power a much bigger part of our lives yet
+> your mum does n't need to enter the equation any female will do because you started in your dad 's nuts
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 54
+
+Train: 
+Example 172 | train loss: 0.403
+Example 344 | train loss: 0.413
+
+Validation 
+
+ val loss: 0.515 | time: 279.090 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.786
+Precision: 0.772
+Recall: 0.807
+F1: 0.789
+
+> why does no one care that cisa was signed in to law today
+> what is the point of caring there is nothing we can do about it they sneak stuff into bills all the time they have been doing it for years
+target:1|  P false:0.016, P true: 0.984
+
+
+Epoch: 55
+
+Train: 
+Example 172 | train loss: 0.404
+Example 344 | train loss: 0.413
+
+Validation 
+
+ val loss: 0.513 | time: 274.048 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.788
+Precision: 0.774
+Recall: 0.809
+F1: 0.791
+
+> what do you prefer starbucks or costa coffee and why
+> costa as the pay corp tax in the uk unlike starbucks
+target:1|  P false:0.819, P true: 0.181
+
+
+Epoch: 56
+
+Train: 
+Example 172 | train loss: 0.402
+Example 344 | train loss: 0.412
+
+Validation 
+
+ val loss: 0.514 | time: 282.696 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.787
+Precision: 0.775
+Recall: 0.806
+F1: 0.790
+
+> ok reddit what famous person have you encountered and what he or she nice or rude
+> i came here to bitch about my ex-wife and tell you how crazy she is but i ca n't even touch you bro
+target:0|  P false:0.115, P true: 0.885
+
+
+Epoch: 57
+
+Train: 
+Example 172 | train loss: 0.402
+Example 344 | train loss: 0.412
+
+Validation 
+
+ val loss: 0.518 | time: 274.460 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.783
+Precision: 0.761
+Recall: 0.820
+F1: 0.789
+
+> what 's the most <unk> sex dream you have ever had
+> easy they are a kneejerk reaction to fundies forcing religion on them `` in god we trust '' shouldnt be on public currency there should be no praying in
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 58
+
+Train: 
+Example 172 | train loss: 0.402
+Example 344 | train loss: 0.412
+
+Validation 
+
+ val loss: 0.513 | time: 282.317 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.788
+Precision: 0.779
+Recall: 0.800
+F1: 0.789
+
+> what 's the weirdest funniest awkward or most random thing anyone has said to you while you were working
+> sounds like you just needed to get this off your chest now take a deep breath and think about what you should do next you should probably just move
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 59
+
+Train: 
+Example 172 | train loss: 0.403
+Example 344 | train loss: 0.412
+
+Validation 
+
+ val loss: 0.514 | time: 276.462 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.787
+Precision: 0.770
+Recall: 0.813
+F1: 0.791
+
+> what is something about your country that is genuinely better than any other country
+> england ... uhhhh we do monarchy better than any other country
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 60
+
+Train: 
+Example 172 | train loss: 0.401
+Example 344 | train loss: 0.411
+
+Validation 
+
+ val loss: 0.513 | time: 281.178 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.788
+Precision: 0.785
+Recall: 0.789
+F1: 0.787
+
+> dear reddit how can i turn my internet addiction into money
+> _num_ addicted to the internet _num_ _num_ profit so i gues you need to do ** **
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 61
+
+Train: 
+Example 172 | train loss: 0.402
+Example 344 | train loss: 0.411
+
+Validation 
+
+ val loss: 0.513 | time: 275.681 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.789
+Precision: 0.776
+Recall: 0.807
+F1: 0.791
+
+> what 's an unpopular conspiracy theory you believe to be true
+> everyone 's a lizard who is too afraid to tell everyone else they 're a lizard because they do n't know whether everyone else is a lizard except me
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 62
+
+Train: 
+Example 172 | train loss: 0.401
+Example 344 | train loss: 0.411
+
+Validation 
+
+ val loss: 0.514 | time: 276.158 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.788
+Precision: 0.770
+Recall: 0.816
+F1: 0.792
+
+> assuming you do n't know yourself and using only online clues how close can you get to finding out who you are from your username for example
+> in the short run nothing in the long run they may see a decrease in sales
+target:0|  P false:0.990, P true: 0.010
+
+
+Epoch: 63
+
+Train: 
+Example 172 | train loss: 0.402
+Example 344 | train loss: 0.411
+
+Validation 
+
+ val loss: 0.514 | time: 279.199 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.788
+Precision: 0.780
+Recall: 0.798
+F1: 0.789
+
+> has someone ever told you that they were not looking to jump into a relationship only to come back and contact you when they were ready
+> i was sleeping with this girl for a while then fell out of contact for about a month then told her i would be out of touch for a
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 64
+
+Train: 
+Example 172 | train loss: 0.401
+Example 344 | train loss: 0.411
+
+Validation 
+
+ val loss: 0.514 | time: 192.001 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.788
+Precision: 0.771
+Recall: 0.814
+F1: 0.792
+
+> moral <unk> found an iphone _num_ on the ground belonging to a rich person do i return it
+> i say keep it it is worth way more to you than to him the lost pictures are kind of cruel however
+target:1|  P false:0.071, P true: 0.929
+
+
+Epoch: 65
+
+Train: 
+Example 172 | train loss: 0.399
+Example 344 | train loss: 0.410
+
+Validation 
+
+ val loss: 0.514 | time: 151.384 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.787
+Precision: 0.771
+Recall: 0.813
+F1: 0.791
+
+> i 'm baffled by the amount of redditors who have had/know someone who has had meningitis as a survivor i 'd like to know your stories
+> my dad got meningitis from being bitten by a brown snapping turtle in virginia his brain swelled and he almost died a couple of times he was in the
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 66
+
+Train: 
+Example 172 | train loss: 0.400
+Example 344 | train loss: 0.410
+
+Validation 
+
+ val loss: 0.511 | time: 151.098 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.790
+Precision: 0.784
+Recall: 0.797
+F1: 0.790
+
+> what music would you change at your school dances if you could
+> no they ca n't deduct it from their taxes to do that they would first have to book it as revenue so it would be pointless
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 67
+
+Train: 
+Example 172 | train loss: 0.401
+Example 344 | train loss: 0.410
+
+Validation 
+
+ val loss: 0.511 | time: 150.517 | lowest loss: 0.511 highest accuracy: 0.790
+Accuracy: 0.791
+Precision: 0.785
+Recall: 0.797
+F1: 0.791
+
+> who owes you money and why have n't you been able to collect
+> my brother just called him five minutes ago and discussed this but got only them promises regarding the collection i can only say i am weak with blood relatives
+target:1|  P false:1.000, P true: 0.000
+
+
+Epoch: 68
+
+Train: 
+Example 172 | train loss: 0.399
+Example 344 | train loss: 0.409
+
+Validation 
+
+ val loss: 0.515 | time: 151.616 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.786
+Precision: 0.766
+Recall: 0.820
+F1: 0.792
+
+> my boyfriend has finally convinced me to try 'toys in our sex life and i need some feedback ...
+> this old game called `` password '' is pretty fun or i like to play the telephone pictionary game or video games because then everyone laughs at how terrible
+target:0|  P false:0.510, P true: 0.490
+
+
+Epoch: 69
+
+Train: 
+Example 172 | train loss: 0.400
+Example 344 | train loss: 0.409
+
+Validation 
+
+ val loss: 0.514 | time: 150.606 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.788
+Precision: 0.768
+Recall: 0.820
+F1: 0.793
+
+> hey reddit how would you make murder look like a suicide
+> ummm ... you may want to check your `` female '' partner a bit closer
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 70
+
+Train: 
+Example 172 | train loss: 0.399
+Example 344 | train loss: 0.409
+
+Validation 
+
+ val loss: 0.515 | time: 150.801 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.786
+Precision: 0.767
+Recall: 0.818
+F1: 0.792
+
+> could a system and the exploits like <unk> exist in real life
+> i just realized how <unk> i am because my first thought was definitely 'me why would i want someone else to do that
+target:0|  P false:0.003, P true: 0.997
+
+
+Epoch: 71
+
+Train: 
+Example 172 | train loss: 0.399
+Example 344 | train loss: 0.408
+
+Validation 
+
+ val loss: 0.513 | time: 151.712 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.789
+Precision: 0.776
+Recall: 0.808
+F1: 0.791
+
+> serious older redditors what 's the best financial advice you can give to a _num_ year old
+> my brother has a vietnamese wife she came to the us when she was _num_ he met her and they were dating she said she was pregnant with his
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 72
+
+Train: 
+Example 172 | train loss: 0.399
+Example 344 | train loss: 0.408
+
+Validation 
+
+ val loss: 0.514 | time: 150.763 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.787
+Precision: 0.768
+Recall: 0.818
+F1: 0.792
+
+> if celebrities had normal jobs what job would they do and what would the people they work with think of them
+> beyoncé would work at a sephora makeup counter her coworkers would think she 's a diva and stuck-up her baby daddy would be in jail
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 73
+
+Train: 
+Example 172 | train loss: 0.398
+Example 344 | train loss: 0.408
+
+Validation 
+
+ val loss: 0.514 | time: 150.997 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.788
+Precision: 0.774
+Recall: 0.808
+F1: 0.790
+
+> serious if i was american homeless broke and diagnosed with a serious illness ... would i get treatment without insurance
+> can you run itunes with wine i have a mac and i can count the times i sync on my hand i have had my iphone _num_ g since
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 74
+
+Train: 
+Example 172 | train loss: 0.398
+Example 344 | train loss: 0.407
+
+Validation 
+
+ val loss: 0.512 | time: 151.427 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.790
+Precision: 0.780
+Recall: 0.804
+F1: 0.792
+
+> do you guys know how many guys your girlfriend has slept with before she met you what if you find out now
+> as long as it 's not over _num_ i 'm fine with it but if it 's more than a hundred even _num_ i 'm outta there
+target:1|  P false:0.762, P true: 0.238
+
+
+Epoch: 75
+
+Train: 
+Example 172 | train loss: 0.397
+Example 344 | train loss: 0.407
+
+Validation 
+
+ val loss: 0.515 | time: 150.703 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.785
+Precision: 0.772
+Recall: 0.806
+F1: 0.788
+
+> i am full time student and a full time working professional where do i find some affordable health insurance reddit
+> have you checked to see if your school offers any health plans
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 76
+
+Train: 
+Example 172 | train loss: 0.399
+Example 344 | train loss: 0.408
+
+Validation 
+
+ val loss: 0.515 | time: 150.503 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.786
+Precision: 0.769
+Recall: 0.812
+F1: 0.790
+
+> serious could some explain to me the actual reasoning/ though process behind not wanting to vaccinate your kid
+> i 'm not one of those people but i 'd imagine the reasoning for some of them goes a lot like this since the majority of people are vaccinated
+target:1|  P false:0.151, P true: 0.849
+
+
+Epoch: 77
+
+Train: 
+Example 172 | train loss: 0.398
+Example 344 | train loss: 0.407
+
+Validation 
+
+ val loss: 0.515 | time: 151.251 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.786
+Precision: 0.769
+Recall: 0.814
+F1: 0.791
+
+> teens girls of reddit what do you call teen males
+> `` i spent some time thinking and i 'm willing to go a little higher how about new bid ''
+target:0|  P false:0.058, P true: 0.942
+
+
+Epoch: 78
+
+Train: 
+Example 172 | train loss: 0.397
+Example 344 | train loss: 0.407
+
+Validation 
+
+ val loss: 0.512 | time: 151.328 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.790
+Precision: 0.790
+Recall: 0.787
+F1: 0.788
+
+> how would you feel if definitive proof was discovered today that life only exists on earth
+> it would be a bummer a massive bummer the universe would be such a waste
+target:1|  P false:0.002, P true: 0.998
+
+
+Epoch: 79
+
+Train: 
+Example 172 | train loss: 0.397
+Example 344 | train loss: 0.406
+
+Validation 
+
+ val loss: 0.512 | time: 150.796 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.789
+Precision: 0.785
+Recall: 0.792
+F1: 0.788
+
+> what movie do you dislike that a lot of people love
+> `` pigs '' the term seems to be relevant now but not a blanket description of police
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 80
+
+Train: 
+Example 172 | train loss: 0.397
+Example 344 | train loss: 0.406
+
+Validation 
+
+ val loss: 0.513 | time: 151.369 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.787
+Precision: 0.781
+Recall: 0.795
+F1: 0.787
+
+> do you think that elections in the usa are fair honest and balanced
+> i once used an entire baugette making nutella and nori dried seaweed sandwiches it was a delicious afternoon
+target:0|  P false:0.999, P true: 0.001
+
+
+Epoch: 81
+
+Train: 
+Example 172 | train loss: 0.397
+Example 344 | train loss: 0.406
+
+Validation 
+
+ val loss: 0.515 | time: 151.331 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.786
+Precision: 0.771
+Recall: 0.810
+F1: 0.790
+
+> is there a poll feature for reddit and if there is n't maybe its a good idea ...
+> i would saw off a few studs from the wheels of cars in the middle of night the result would be a lot of accidents with missing wheels they
+target:0|  P false:0.970, P true: 0.030
+
+
+Epoch: 82
+
+Train: 
+Example 172 | train loss: 0.396
+Example 344 | train loss: 0.405
+
+Validation 
+
+ val loss: 0.515 | time: 150.485 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.786
+Precision: 0.770
+Recall: 0.812
+F1: 0.790
+
+> if there was one show or movie to describe you or your family what would it me and why
+> illinois here probably not voting because i do n't really like any of the candidates they all seem like the type that are gon na be the next ones
+target:0|  P false:0.999, P true: 0.001
+
+
+Epoch: 83
+
+Train: 
+Example 172 | train loss: 0.396
+Example 344 | train loss: 0.405
+
+Validation 
+
+ val loss: 0.513 | time: 151.499 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.787
+Precision: 0.778
+Recall: 0.800
+F1: 0.788
+
+> i just saw a man on a public computer in my local library looking at porn reddit what is the weirdest thing that you saw someone doing in a
+> some dude having a fist fight with two invisible dudes in the middle of the street
+target:1|  P false:0.097, P true: 0.903
+
+
+Epoch: 84
+
+Train: 
+Example 172 | train loss: 0.395
+Example 344 | train loss: 0.405
+
+Validation 
+
+ val loss: 0.515 | time: 151.637 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.787
+Precision: 0.773
+Recall: 0.810
+F1: 0.790
+
+> what 's something about your country 's culture you do n't understand or wish you could change
+> moles can be very dangerous if agitated i suggest calling the local animal shelter and have them deal with it
+target:0|  P false:1.000, P true: 0.000
+
+
+Epoch: 85
+
+Train: 
+Example 172 | train loss: 0.396
+Example 344 | train loss: 0.405
+
+Validation 
+
+ val loss: 0.514 | time: 151.659 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.787
+Precision: 0.774
+Recall: 0.807
+F1: 0.790
+
+> why do girls randomly wear dresses in the middle of the week
+> you compare it to the milk that comes directly from their breasts
+target:0|  P false:0.721, P true: 0.279
+
+
+Epoch: 86
+
+Train: 
+Example 172 | train loss: 0.395
+Example 344 | train loss: 0.404
+
+Validation 
+
+ val loss: 0.515 | time: 151.294 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.786
+Precision: 0.768
+Recall: 0.814
+F1: 0.790
+
+> which scene commonly seen in movies bothers you every time
+> when they have a phone conversation and when their done talking they do n't say goodbye or nothing they just hang up who does that
+target:1|  P false:0.308, P true: 0.692
+
+
+Epoch: 87
+
+Train: 
+Example 172 | train loss: 0.395
+Example 344 | train loss: 0.405
+
+Validation 
+
+ val loss: 0.515 | time: 150.875 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.787
+Precision: 0.771
+Recall: 0.812
+F1: 0.790
+
+> obama orders _num_ christmas tree tax or fee can you guess his justification for that before you google it
+> r/politics also its not a tax on christians so get over that
+target:1|  P false:0.772, P true: 0.228
+
+
+Epoch: 88
+
+Train: 
+Example 172 | train loss: 0.395
+Example 344 | train loss: 0.404
+
+Validation 
+
+ val loss: 0.513 | time: 149.966 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.789
+Precision: 0.785
+Recall: 0.792
+F1: 0.788
+
+> is there any particular reason germany is so far left
+> did n't the nazis basically severely sour the idea of right-wing politics there
+target:1|  P false:0.012, P true: 0.988
+
+
+Epoch: 89
+
+Train: 
+Example 172 | train loss: 0.394
+Example 344 | train loss: 0.404
+
+Validation 
+
+ val loss: 0.514 | time: 149.261 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.788
+Precision: 0.770
+Recall: 0.816
+F1: 0.792
+
+> scottish redditors why are you voting for or against independence non-scottish uk redditors what do you want to happen and why
+> paul krugman had a pretty interesting column in the ny times the other day about the potential economic downside of scottish independence _link_
+target:1|  P false:0.923, P true: 0.077
+
+
+Epoch: 90
+
+Train: 
+Example 172 | train loss: 0.395
+Example 344 | train loss: 0.403
+
+Validation 
+
+ val loss: 0.515 | time: 149.749 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.787
+Precision: 0.774
+Recall: 0.807
+F1: 0.790
+
+> other countries that have had bombers like boston does the bombing bond and inspire like <unk> strong
+> i visited the site of the _num_ bali bombings on their ten year anniversary the atmosphere seemed similar it 's a demographically young area so there was a similar
+target:1|  P false:0.030, P true: 0.970
+
+
+Epoch: 91
+
+Train: 
+Example 172 | train loss: 0.395
+Example 344 | train loss: 0.404
+
+Validation 
+
+ val loss: 0.516 | time: 149.789 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.786
+Precision: 0.765
+Recall: 0.821
+F1: 0.791
+
+> what would i need if i were to get away from here and start from scratch
+> you said `` know what would be a funny reply the title of a porno `` you said `` everybody
+target:0|  P false:0.633, P true: 0.367
+
+
+Epoch: 92
+
+Train: 
+Example 172 | train loss: 0.395
+Example 344 | train loss: 0.403
+
+Validation 
+
+ val loss: 0.514 | time: 149.312 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.788
+Precision: 0.776
+Recall: 0.806
+F1: 0.790
+
+> what is the worst thing someone has said to you directly after sex
+> nevermind directly after i had a girl state the chemical equation for the fermentation of glucose into ethanol during the nasty you wan na know the worst thing it
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 93
+
+Train: 
+Example 172 | train loss: 0.395
+Example 344 | train loss: 0.403
+
+Validation 
+
+ val loss: 0.515 | time: 149.152 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.785
+Precision: 0.769
+Recall: 0.812
+F1: 0.790
+
+> why do you suppose half the people in the us do n't vote
+> john mccain has actually put in a lot of work in trying to get money out of politics labeling the current system of pacs and lobbying as `` legalized
+target:0|  P false:0.000, P true: 1.000
+
+
+Epoch: 94
+
+Train: 
+Example 172 | train loss: 0.393
+Example 344 | train loss: 0.402
+
+Validation 
+
+ val loss: 0.515 | time: 149.753 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.785
+Precision: 0.773
+Recall: 0.803
+F1: 0.787
+
+> reddit what is a job that will never be replaced by a machine
+> i 've seen one person use the word `` where '' instead of `` wear ''
+target:0|  P false:0.991, P true: 0.009
+
+
+Epoch: 95
+
+Train: 
+Example 172 | train loss: 0.394
+Example 344 | train loss: 0.402
+
+Validation 
+
+ val loss: 0.515 | time: 149.231 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.786
+Precision: 0.769
+Recall: 0.813
+F1: 0.790
+
+> my mother is a compulsive shopper and hoarder it has ruined her marriage and i fear it is going to deteriorate my father 's health what do i do
+> one of my friend 's in-laws are exactly the same you 'll need to get your dad on your side get her in therapy and clean up even if
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 96
+
+Train: 
+Example 172 | train loss: 0.393
+Example 344 | train loss: 0.402
+
+Validation 
+
+ val loss: 0.513 | time: 149.720 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.789
+Precision: 0.780
+Recall: 0.800
+F1: 0.789
+
+> redditors that got <unk> would you describe the pain from the bullet
+> there was a topic like this several months ago by what i read you do n't feel the pain but you feel it like something bit you it 's
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 97
+
+Train: 
+Example 172 | train loss: 0.394
+Example 344 | train loss: 0.403
+
+Validation 
+
+ val loss: 0.512 | time: 149.754 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.789
+Precision: 0.778
+Recall: 0.805
+F1: 0.791
+
+> what is your most hated part about your appearance and how has it affected you
+> i 'm a girl and i have a square face/jaw i ca n't pull off a lot of hair cuts my facial features are fine but sometimes i think
+target:1|  P false:0.000, P true: 1.000
+
+
+Epoch: 98
+
+Train: 
+Example 172 | train loss: 0.393
+Example 344 | train loss: 0.402
+
+Validation 
+
+ val loss: 0.513 | time: 149.373 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.788
+Precision: 0.780
+Recall: 0.798
+F1: 0.789
+
+> what is something that you are most afraid of but too embarrassed to tell people
+> is this the same as feline aids too lazy to google
+target:0|  P false:0.860, P true: 0.140
+
+
+Epoch: 99
+
+Train: 
+Example 172 | train loss: 0.395
+Example 344 | train loss: 0.403
+
+Validation 
+
+ val loss: 0.516 | time: 149.282 | lowest loss: 0.511 highest accuracy: 0.791
+Accuracy: 0.784
+Precision: 0.769
+Recall: 0.809
+F1: 0.788
+
+> reddit and photographers of reddit what do you do with unruly kids do you charge extra knowing that there will be younger children reddit what would you like your
+> i would like for the photographer to awkwardly stand there and wait while my child goes nuts
+target:1|  P false:0.048, P true: 0.952
+

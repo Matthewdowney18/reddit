@@ -1,0 +1,75 @@
+nb_epochs: 50
+batch_size: 300
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: None
+max_len: 20
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.001
+model_group: /auto_encoder
+autoencoder_name: /auto_encoder_1
+
+Train 611406, val: 152704
+No model found at /home/mattd/PycharmProjects/reddit/auto_encoders/auto_encoder_1
+
+Epoch 000 Example 340 | train loss: 6.553
+Epoch 000 Example 680 | train loss: 6.051
+Epoch 000 Example 1020 | train loss: 5.673
+Epoch 000 Example 1360 | train loss: 5.347
+Epoch 000 Example 1700 | train loss: 5.067
+
+ val loss: 3.455 | time: 4130.002
+| sentence accuracy:0.000| token accuracy:0.495
+> dude im from <unk> too i lived in <unk> for a couple of months and travelled there frequently
+= dude im from <unk> too i lived in <unk> for a couple of months and travelled there frequently
+< <unk> at i i i 'm in for <unk> <unk> for for a one of those few and
+
+Epoch 001 Example 340 | train loss: 3.309
+Epoch 001 Example 680 | train loss: 3.191
+Epoch 001 Example 1020 | train loss: 3.082
+Epoch 001 Example 1360 | train loss: 2.976
+Epoch 001 Example 1700 | train loss: 2.874
+
+ val loss: 2.155 | time: 4123.977
+| sentence accuracy:0.018| token accuracy:0.672
+> if you could name the planet something other than earth what would it be
+= if you could name the planet something other than earth what would it be
+< if you could change the universe thing more than earth what would it be
+
+Epoch 002 Example 340 | train loss: 2.109
+Epoch 002 Example 680 | train loss: 2.039
+Epoch 002 Example 1020 | train loss: 1.975
+Epoch 002 Example 1360 | train loss: 1.913
+Epoch 002 Example 1700 | train loss: 1.857
+
+ val loss: 1.507 | time: 4208.259
+| sentence accuracy:0.067| token accuracy:0.762
+> fellow redditors how did you find your way onto reddit
+= fellow redditors how did you find your way onto reddit
+< fellow redditors how did you find your way onto reddit
+
+Epoch 003 Example 340 | train loss: 1.427
+Epoch 003 Example 680 | train loss: 1.390
+Epoch 003 Example 1020 | train loss: 1.356
+Epoch 003 Example 1360 | train loss: 1.327
+Epoch 003 Example 1700 | train loss: 1.299
+
+ val loss: 1.049 | time: 4148.894
+| sentence accuracy:0.152| token accuracy:0.842
+> those of you who do n't believe in global warming why not and what would it take to convince
+= those of you who do n't believe in global warming why not and what would it take to convince
+< those of you who do n't believe in global warming why not and what would it take to me
+
+Epoch 004 Example 340 | train loss: 1.066
+Epoch 004 Example 680 | train loss: 1.047
+Epoch 004 Example 1020 | train loss: 1.033
+Epoch 004 Example 1360 | train loss: 1.019
+Epoch 004 Example 1700 | train loss: 1.004
+
+ val loss: 0.880 | time: 4125.646
+| sentence accuracy:0.200| token accuracy:0.868
+> ask reddit i need advice to develop a website but i have no idea where to start any
+= ask reddit i need advice to develop a website but i have no idea where to start any
+< ask reddit i need advice to develop a website but i have idea how now to share
+

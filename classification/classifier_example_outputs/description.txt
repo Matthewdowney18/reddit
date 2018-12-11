@@ -1,0 +1,5 @@
+this experiment is to test how many training examples you need to have optimal results.
+
+the names of the files are as follows:
+
+classifier_"trial numebr"_"num_training_examples"_"model version"

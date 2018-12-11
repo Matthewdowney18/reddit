@@ -1,0 +1,2019 @@
+Dataset: 10998
+Train 10798, val: 200
+['none']
+Epoch 001 | train loss: 5.424
+ val loss: 5.331 | time: 6.519
+| sentence accuracy:0.000| token accuracy:0.183
+> cant get spark from coil to distributor
+= cant get spark from coil to distributor
+< i i you have the the is the
+
+Epoch 002 | train loss: 5.198
+ val loss: 5.150 | time: 6.524
+| sentence accuracy:0.000| token accuracy:0.199
+> thank you i believe that i got it
+= thank you i believe that i got it
+< i i is the the the
+
+Epoch 003 | train loss: 4.999
+ val loss: 4.998 | time: 6.519
+| sentence accuracy:0.000| token accuracy:0.212
+> left front of engine compartment
+= left front of engine compartment
+< i the the and help the car
+
+Epoch 004 | train loss: 4.835
+ val loss: 4.880 | time: 6.519
+| sentence accuracy:0.000| token accuracy:0.219
+> so do you mean check to see if its
+= so do you mean check to see if its
+< i you is and have the
+
+Epoch 005 | train loss: 4.691
+ val loss: 4.773 | time: 6.522
+| sentence accuracy:0.005| token accuracy:0.235
+> it is the box inside the car i think
+= it is the box inside the car i think
+< i it is the the engine is i be
+
+Epoch 006 | train loss: 4.540
+ val loss: 4.661 | time: 6.521
+| sentence accuracy:0.005| token accuracy:0.265
+> i checked the catalyst it also has good exhaust
+= i checked the catalyst it also has good exhaust
+< i have the new to to and to
+
+Epoch 007 | train loss: 4.375
+ val loss: 4.493 | time: 6.523
+| sentence accuracy:0.010| token accuracy:0.291
+> glad to help
+= glad to help
+< please let us know what happens cheers
+
+Epoch 008 | train loss: 4.194
+ val loss: 4.359 | time: 6.516
+| sentence accuracy:0.010| token accuracy:0.309
+> there is no abs light on
+= there is no abs light on
+< the i car is is
+
+Epoch 009 | train loss: 4.018
+ val loss: 4.251 | time: 6.527
+| sentence accuracy:0.015| token accuracy:0.337
+> is the entire wiring harness to the injectors different
+= is the entire wiring harness to the injectors different
+< is car is the the to the the the
+
+Epoch 010 | train loss: 3.866
+ val loss: 4.130 | time: 6.539
+| sentence accuracy:0.025| token accuracy:0.362
+> yes its safe to drive
+= yes its safe to drive
+< yes have it not and
+
+Epoch 011 | train loss: 3.723
+ val loss: 4.013 | time: 6.536
+| sentence accuracy:0.025| token accuracy:0.380
+> sorry that i wasnt more in detail about no
+= sorry that i wasnt more in detail about no
+< ok i i am for pressure of my car
+
+Epoch 012 | train loss: 3.587
+ val loss: 3.897 | time: 6.530
+| sentence accuracy:0.035| token accuracy:0.399
+> my son bought a k5 blazer and he needs
+= my son bought a k5 blazer and he needs
+< my car has on been a and the for
+
+Epoch 013 | train loss: 3.448
+ val loss: 3.823 | time: 6.527
+| sentence accuracy:0.035| token accuracy:0.413
+> hello steve i have bye pass the faulty wire
+= hello steve i have bye pass the faulty wire
+< hello i have a battery of all and the
+
+Epoch 014 | train loss: 3.322
+ val loss: 3.727 | time: 6.515
+| sentence accuracy:0.040| token accuracy:0.440
+> any idea where the engine fuse module is located
+= any idea where the engine fuse module is located
+< the the car conditioner is on the the the
+
+Epoch 015 | train loss: 3.206
+ val loss: 3.625 | time: 6.528
+| sentence accuracy:0.040| token accuracy:0.453
+> the code number is po301 what the meaning is
+= the code number is po301 what the meaning is
+< the car is the the the the engine is
+
+Epoch 016 | train loss: 3.084
+ val loss: 3.553 | time: 6.522
+| sentence accuracy:0.040| token accuracy:0.462
+> if your catalytic converter is rattling its bad the
+= if your catalytic converter is rattling its bad the
+< if if light is the a a there
+
+Epoch 017 | train loss: 2.967
+ val loss: 3.464 | time: 6.520
+| sentence accuracy:0.050| token accuracy:0.474
+> here is the correct one your adjustment may be
+= here is the correct one your adjustment may be
+< here is the guide that for the the is
+
+Epoch 018 | train loss: 2.854
+ val loss: 3.391 | time: 6.532
+| sentence accuracy:0.055| token accuracy:0.487
+> do you have rear disc or drum brakes
+= do you have rear disc or drum brakes
+< do you have an for sides battery temperature
+
+Epoch 019 | train loss: 2.745
+ val loss: 3.329 | time: 6.524
+| sentence accuracy:0.060| token accuracy:0.499
+> i am having some trouble finalizing the removal of
+= i am having some trouble finalizing the removal of
+< i am not find the the the transmission of
+
+Epoch 020 | train loss: 2.638
+ val loss: 3.267 | time: 6.541
+| sentence accuracy:0.045| token accuracy:0.502
+> i checked the fuel pump relay and it was
+= i checked the fuel pump relay and it was
+< i replaced the car switch and it wont start
+
+Epoch 021 | train loss: 2.534
+ val loss: 3.213 | time: 6.533
+| sentence accuracy:0.050| token accuracy:0.515
+> try resetting security system if no manual look online
+= try resetting security system if no manual look online
+< try resetting security system if no manual look online
+
+Epoch 022 | train loss: 2.434
+ val loss: 3.152 | time: 6.542
+| sentence accuracy:0.060| token accuracy:0.528
+> num is ground the dark green goes to
+= num is ground the dark green goes to
+< num is is not in the car to
+
+Epoch 023 | train loss: 2.341
+ val loss: 3.076 | time: 6.528
+| sentence accuracy:0.060| token accuracy:0.537
+> its getting spark any suggestions
+= its getting spark any suggestions
+< its a e150 of with
+
+Epoch 024 | train loss: 2.247
+ val loss: 3.030 | time: 6.537
+| sentence accuracy:0.060| token accuracy:0.541
+> do you have pictures of the track bar
+= do you have pictures of the track bar
+< do you have have the fuel or fork
+
+Epoch 025 | train loss: 2.162
+ val loss: 2.994 | time: 6.535
+| sentence accuracy:0.065| token accuracy:0.557
+> auto temp can be any sensor in the car
+= auto temp can be any sensor in the car
+< how as can been be a in the car
+
+Epoch 026 | train loss: 2.076
+ val loss: 2.958 | time: 6.534
+| sentence accuracy:0.065| token accuracy:0.559
+> no
+= no
+< no
+
+Epoch 027 | train loss: 1.990
+ val loss: 2.892 | time: 6.536
+| sentence accuracy:0.065| token accuracy:0.574
+> based on your description i would be checking the
+= based on your description i would be checking the
+< on on what i i i could the the
+
+Epoch 028 | train loss: 1.905
+ val loss: 2.870 | time: 6.529
+| sentence accuracy:0.070| token accuracy:0.578
+> i bought a new relay for the motor hoping
+= i bought a new relay for the motor hoping
+< i need a new for for the the num
+
+Epoch 029 | train loss: 1.832
+ val loss: 2.833 | time: 6.526
+| sentence accuracy:0.075| token accuracy:0.586
+> also while the distributor cap is off turn
+= also while the distributor cap is off turn
+< also the the engine light is and the
+
+Epoch 030 | train loss: 1.754
+ val loss: 2.778 | time: 6.531
+| sentence accuracy:0.075| token accuracy:0.591
+> thats ok ive seen them plenty of times
+= thats ok ive seen them plenty of times
+< ok im ive na ive had of of
+
+Epoch 031 | train loss: 1.686
+ val loss: 2.742 | time: 6.542
+| sentence accuracy:0.075| token accuracy:0.594
+> also while the distributor cap is off turn
+= also while the distributor cap is off turn
+< also like the starter still is like the
+
+Epoch 032 | train loss: 1.614
+ val loss: 2.731 | time: 6.536
+| sentence accuracy:0.080| token accuracy:0.599
+> ok let me know how you get on
+= ok let me know how you get on
+< ok let let me know how you find out
+
+Epoch 033 | train loss: 1.549
+ val loss: 2.696 | time: 6.540
+| sentence accuracy:0.080| token accuracy:0.609
+> had problem with car stalling most of the time
+= had problem with car stalling most of the time
+< had had new other of resistance it it
+
+Epoch 034 | train loss: 1.488
+ val loss: 2.663 | time: 6.538
+| sentence accuracy:0.090| token accuracy:0.612
+> i would like to know if the cars ecu
+= i would like to know if the cars ecu
+< i would start to know if the computer
+
+Epoch 035 | train loss: 1.424
+ val loss: 2.638 | time: 6.530
+| sentence accuracy:0.100| token accuracy:0.618
+> my truck surges at idle and i am not
+= my truck surges at idle and i am not
+< my truck stopped brake and and i would not
+
+Epoch 036 | train loss: 1.367
+ val loss: 2.623 | time: 6.525
+| sentence accuracy:0.105| token accuracy:0.622
+> if it has small holes itleaks replace it
+= if it has small holes itleaks replace it
+< if it has be into an it it
+
+Epoch 037 | train loss: 1.310
+ val loss: 2.610 | time: 6.524
+| sentence accuracy:0.100| token accuracy:0.629
+> there is no more information i can give you
+= there is no more information i can give you
+< there is no question i i can you any
+
+Epoch 038 | train loss: 1.254
+ val loss: 2.563 | time: 6.521
+| sentence accuracy:0.095| token accuracy:0.637
+> no there are no auto lamps at all
+= no there are no auto lamps at all
+< no there are no codes at all codes
+
+Epoch 039 | train loss: 1.205
+ val loss: 2.546 | time: 6.530
+| sentence accuracy:0.100| token accuracy:0.633
+> im looking into getting jaguar guides off a num
+= im looking into getting jaguar guides off a num
+< im getting about about about three num num
+
+Epoch 040 | train loss: 1.151
+ val loss: 2.534 | time: 6.528
+| sentence accuracy:0.110| token accuracy:0.642
+> if its not an option you will spend more
+= if its not an option you will spend more
+< if its an you an issue not not
+
+Epoch 041 | train loss: 1.100
+ val loss: 2.514 | time: 6.530
+| sentence accuracy:0.110| token accuracy:0.644
+> that is the only code it kicked i can
+= that is the only code it kicked i can
+< that is the code scanner it can not do
+
+Epoch 042 | train loss: 1.060
+ val loss: 2.526 | time: 6.537
+| sentence accuracy:0.110| token accuracy:0.645
+> codes are p0731 p0733 p0734 p0745
+= codes are p0731 p0733 p0734 p0745
+< codes are p0731 p0733 p0734 p0745
+
+Epoch 043 | train loss: 1.015
+ val loss: 2.473 | time: 6.534
+| sentence accuracy:0.135| token accuracy:0.656
+> yes a dvom would do nicely
+= yes a dvom would do nicely
+< yes a fan can do to
+
+Epoch 044 | train loss: 0.969
+ val loss: 2.463 | time: 6.525
+| sentence accuracy:0.135| token accuracy:0.653
+> have not done compression test yet we got it
+= have not done compression test yet we got it
+< have not tried look look codes try it may
+
+Epoch 045 | train loss: 0.930
+ val loss: 2.450 | time: 6.533
+| sentence accuracy:0.130| token accuracy:0.662
+> thanks please let us know
+= thanks please let us know
+< thanks please let us know
+
+Epoch 046 | train loss: 0.886
+ val loss: 2.429 | time: 6.527
+| sentence accuracy:0.135| token accuracy:0.656
+> what was that fault code a real common problem
+= what was that fault code a real common problem
+< what would cause the exact code numbers to change
+
+Epoch 047 | train loss: 0.851
+ val loss: 2.419 | time: 6.536
+| sentence accuracy:0.145| token accuracy:0.663
+> any idea where the engine fuse module is located
+= any idea where the engine fuse module is located
+< any in what the oil temperature is located
+
+Epoch 048 | train loss: 0.815
+ val loss: 2.406 | time: 6.521
+| sentence accuracy:0.130| token accuracy:0.662
+> what is the exact problem you are having and
+= what is the exact problem you are having and
+< what is the problem you are are to computer
+
+Epoch 049 | train loss: 0.783
+ val loss: 2.381 | time: 6.520
+| sentence accuracy:0.145| token accuracy:0.670
+> see picture wire going to pcm is marked i
+= see picture wire going to pcm is marked i
+< see up to wire to do when i can
+
+Epoch 050 | train loss: 0.747
+ val loss: 2.383 | time: 6.525
+| sentence accuracy:0.150| token accuracy:0.670
+> how do i scan for codes
+= how do i scan for codes
+< how do i scan for codes
+
+Epoch 051 | train loss: 0.714
+ val loss: 2.375 | time: 6.520
+| sentence accuracy:0.155| token accuracy:0.671
+> they are out there but they wont be check
+= they are out there but they wont be check
+< they are all but they they say hot on
+
+Epoch 052 | train loss: 0.684
+ val loss: 2.382 | time: 6.528
+| sentence accuracy:0.170| token accuracy:0.669
+> thanks for all your help again
+= thanks for all your help again
+< thanks for all your your help
+
+Epoch 053 | train loss: 0.654
+ val loss: 2.357 | time: 6.521
+| sentence accuracy:0.160| token accuracy:0.666
+> have not done compression test yet we got it
+= have not done compression test yet we got it
+< have not done done look because it may your
+
+Epoch 054 | train loss: 0.629
+ val loss: 2.346 | time: 6.540
+| sentence accuracy:0.160| token accuracy:0.667
+> if it has small holes itleaks replace it
+= if it has small holes itleaks replace it
+< if it has electric hot hot it holds
+
+Epoch 055 | train loss: 0.603
+ val loss: 2.336 | time: 6.532
+| sentence accuracy:0.160| token accuracy:0.674
+> here is the correct one your adjustment may be
+= here is the correct one your adjustment may be
+< here is the part number part number as
+
+Epoch 056 | train loss: 0.575
+ val loss: 2.334 | time: 6.532
+| sentence accuracy:0.165| token accuracy:0.676
+> that is the only code it kicked i can
+= that is the only code it kicked i can
+< that is the code is it it it i
+
+Epoch 057 | train loss: 0.549
+ val loss: 2.331 | time: 6.510
+| sentence accuracy:0.170| token accuracy:0.677
+> checked both wires and power is present
+= checked both wires and power is present
+< checked both and ground switch is new
+
+Epoch 058 | train loss: 0.527
+ val loss: 2.313 | time: 6.533
+| sentence accuracy:0.180| token accuracy:0.680
+> make sure youve got the belt properly routed
+= make sure youve got the belt properly routed
+< make sure why it had the timing gasket pin
+
+Epoch 059 | train loss: 0.505
+ val loss: 2.325 | time: 6.535
+| sentence accuracy:0.165| token accuracy:0.686
+> how do i unclogged the pickup in the filter
+= how do i unclogged the pickup in the filter
+< how do i install the freeze in the oil
+
+Epoch 060 | train loss: 0.484
+ val loss: 2.305 | time: 6.534
+| sentence accuracy:0.175| token accuracy:0.684
+> do you have pictures of the track bar
+= do you have pictures of the track bar
+< do you have pictures of the rear front
+
+Epoch 061 | train loss: 0.463
+ val loss: 2.293 | time: 6.536
+| sentence accuracy:0.190| token accuracy:0.689
+> it may be sticking or the passage partially blocked
+= it may be sticking or the passage partially blocked
+< it may be loose or the the exhaust cooling
+
+Epoch 062 | train loss: 0.447
+ val loss: 2.306 | time: 6.527
+| sentence accuracy:0.170| token accuracy:0.683
+> i would like to know if the cars ecu
+= i would like to know if the cars ecu
+< i would like to know if the vehicle the
+
+Epoch 063 | train loss: 0.430
+ val loss: 2.295 | time: 6.521
+| sentence accuracy:0.185| token accuracy:0.684
+> do you have abs on your car
+= do you have abs on your car
+< do you have any current on my
+
+Epoch 064 | train loss: 0.409
+ val loss: 2.297 | time: 6.513
+| sentence accuracy:0.195| token accuracy:0.689
+> it is the box inside the car i think
+= it is the box inside the car i think
+< it is the two the car since i i
+
+Epoch 065 | train loss: 0.392
+ val loss: 2.283 | time: 6.533
+| sentence accuracy:0.180| token accuracy:0.687
+> hey did you ever get the problem fixed
+= hey did you ever get the problem fixed
+< hey did you ever get the problem fixed
+
+Epoch 066 | train loss: 0.375
+ val loss: 2.283 | time: 6.526
+| sentence accuracy:0.195| token accuracy:0.687
+> it sounds like the alternator is not working you
+= it sounds like the alternator is not working you
+< it sounds like the pump is not not so
+
+Epoch 067 | train loss: 0.363
+ val loss: 2.269 | time: 6.523
+| sentence accuracy:0.195| token accuracy:0.689
+> have replaced tps but check engine light keeps coming
+= have replaced tps but check engine light keeps coming
+< have changed radiator changed my engine fan air locks
+
+Epoch 068 | train loss: 0.347
+ val loss: 2.271 | time: 6.523
+| sentence accuracy:0.200| token accuracy:0.687
+> yes what its on jack stands under the
+= yes what its on jack stands under the
+< yes what its its on on the drivers
+
+Epoch 069 | train loss: 0.332
+ val loss: 2.263 | time: 6.535
+| sentence accuracy:0.205| token accuracy:0.694
+> sorry that i wasnt more in detail about no
+= sorry that i wasnt more in detail about no
+< sorry that thought that in about an but
+
+Epoch 070 | train loss: 0.321
+ val loss: 2.249 | time: 6.525
+| sentence accuracy:0.195| token accuracy:0.701
+> how to remove a purge canister
+= how to remove a purge canister
+< how to remove a panel shop
+
+Epoch 071 | train loss: 0.307
+ val loss: 2.251 | time: 6.511
+| sentence accuracy:0.205| token accuracy:0.698
+> hey did you ever get the problem fixed
+= hey did you ever get the problem fixed
+< hey did you ever get the problem fixed
+
+Epoch 072 | train loss: 0.298
+ val loss: 2.264 | time: 6.526
+| sentence accuracy:0.210| token accuracy:0.695
+> driver side temperature sensor num buick
+= driver side temperature sensor num buick
+< bank side bank sensor num sensor
+
+Epoch 073 | train loss: 0.285
+ val loss: 2.238 | time: 6.525
+| sentence accuracy:0.205| token accuracy:0.699
+> auto zone did not have hook up the flash
+= auto zone did not have hook up the flash
+< auto parts does not have chip cut the the
+
+Epoch 074 | train loss: 0.275
+ val loss: 2.234 | time: 6.536
+| sentence accuracy:0.205| token accuracy:0.697
+> can you please help
+= can you please help
+< can you please help
+
+Epoch 075 | train loss: 0.263
+ val loss: 2.234 | time: 6.529
+| sentence accuracy:0.200| token accuracy:0.696
+> please let us know how it goes so it
+= please let us know how it goes so it
+< please let us know how it goes so
+
+Epoch 076 | train loss: 0.255
+ val loss: 2.233 | time: 6.521
+| sentence accuracy:0.215| token accuracy:0.699
+> no they are still good today it wont even
+= no they are still good today it wont even
+< no they are good until did it wont work
+
+Epoch 077 | train loss: 0.246
+ val loss: 2.220 | time: 6.527
+| sentence accuracy:0.210| token accuracy:0.704
+> do you have pictures of the track bar
+= do you have pictures of the track bar
+< do you have pictures of the wrong cluster
+
+Epoch 078 | train loss: 0.235
+ val loss: 2.236 | time: 6.524
+| sentence accuracy:0.215| token accuracy:0.696
+> i will do that mr steve and get back
+= i will do that mr steve and get back
+< i will do that tomorrow and get once tomorrow
+
+Epoch 079 | train loss: 0.227
+ val loss: 2.222 | time: 6.524
+| sentence accuracy:0.215| token accuracy:0.703
+> cant get spark from coil to distributor
+= cant get spark from coil to distributor
+< cant get spark from from well then you
+
+Epoch 080 | train loss: 0.220
+ val loss: 2.210 | time: 6.537
+| sentence accuracy:0.210| token accuracy:0.700
+> but the clicking i hear under the dash on
+= but the clicking i hear under the dash on
+< but the i i bought the hood control the
+
+Epoch 081 | train loss: 0.214
+ val loss: 2.211 | time: 6.530
+| sentence accuracy:0.215| token accuracy:0.701
+> it sounds like it is bad again sorry
+= it sounds like it is bad again sorry
+< it sounds like it is fine bad it
+
+Epoch 082 | train loss: 0.206
+ val loss: 2.215 | time: 6.522
+| sentence accuracy:0.215| token accuracy:0.702
+> driving pattern the time required for each diagnosis varies
+= driving pattern the time required for each diagnosis varies
+< right down the same for for both systems youll
+
+Epoch 083 | train loss: 0.201
+ val loss: 2.219 | time: 6.516
+| sentence accuracy:0.225| token accuracy:0.703
+> i checked the vacuum hoses and there was no
+= i checked the vacuum hoses and there was no
+< i checked the vacuum hoses and there was no
+
+Epoch 084 | train loss: 0.192
+ val loss: 2.188 | time: 6.526
+| sentence accuracy:0.210| token accuracy:0.704
+> explain exactly what you did with your leg the
+= explain exactly what you did with your leg the
+< follow what exactly you want to remove the rear
+
+Epoch 085 | train loss: 0.187
+ val loss: 2.191 | time: 6.508
+| sentence accuracy:0.220| token accuracy:0.706
+> hello the port closest to the suction port is
+= hello the port closest to the suction port is
+< hello the 48re her to the flywheel is is
+
+Epoch 086 | train loss: 0.182
+ val loss: 2.193 | time: 6.531
+| sentence accuracy:0.220| token accuracy:0.706
+> the clutch plates are grinding turning when system is
+= the clutch plates are grinding turning when system is
+< the system light are multi relay if so traced
+
+Epoch 087 | train loss: 0.176
+ val loss: 2.201 | time: 6.526
+| sentence accuracy:0.215| token accuracy:0.710
+> no they are still good today it wont even
+= no they are still good today it wont even
+< no they are good until wont it it sounds
+
+Epoch 088 | train loss: 0.172
+ val loss: 2.184 | time: 6.511
+| sentence accuracy:0.220| token accuracy:0.708
+> glad you could get it fixed please use 2carpros
+= glad you could get it fixed please use 2carpros
+< glad you could get it fixed please use 2carpros
+
+Epoch 089 | train loss: 0.166
+ val loss: 2.185 | time: 6.522
+| sentence accuracy:0.220| token accuracy:0.709
+> thank you hmac for your reply i
+= thank you hmac for your reply i
+< thank you steve for your reply i
+
+Epoch 090 | train loss: 0.162
+ val loss: 2.187 | time: 6.522
+| sentence accuracy:0.220| token accuracy:0.704
+> thanks hmac300
+= thanks hmac300
+< thanks hmac300
+
+Epoch 091 | train loss: 0.157
+ val loss: 2.196 | time: 6.528
+| sentence accuracy:0.215| token accuracy:0.705
+> there is no more information i can give you
+= there is no more information i can give you
+< there is no coolant than you than i
+
+Epoch 092 | train loss: 0.153
+ val loss: 2.186 | time: 6.532
+| sentence accuracy:0.210| token accuracy:0.705
+> no
+= no
+< no
+
+Epoch 093 | train loss: 0.149
+ val loss: 2.196 | time: 6.520
+| sentence accuracy:0.215| token accuracy:0.704
+> the b3055 and the b3060 is the key isnt
+= the b3055 and the b3060 is the key isnt
+< the ecu and the key is the key
+
+Epoch 094 | train loss: 0.146
+ val loss: 2.188 | time: 6.522
+| sentence accuracy:0.215| token accuracy:0.706
+> i am going to change the hose today
+= i am going to change the hose today
+< i am going to change the hose today
+
+Epoch 095 | train loss: 0.141
+ val loss: 2.168 | time: 6.529
+| sentence accuracy:0.220| token accuracy:0.708
+> what is the fuel pressure
+= what is the fuel pressure
+< what is the fuel pressure
+
+Epoch 096 | train loss: 0.138
+ val loss: 2.177 | time: 6.517
+| sentence accuracy:0.220| token accuracy:0.703
+> if your catalytic converter is rattling its bad the
+= if your catalytic converter is rattling its bad the
+< if your idle gauge is is bad or a
+
+Epoch 097 | train loss: 0.136
+ val loss: 2.186 | time: 6.524
+| sentence accuracy:0.220| token accuracy:0.706
+> could the wrong size tires damage strutmountassembly
+= could the wrong size tires damage strutmountassembly
+< could the exact coolant size axle or
+
+Epoch 098 | train loss: 0.132
+ val loss: 2.173 | time: 6.535
+| sentence accuracy:0.215| token accuracy:0.706
+> yes what its on jack stands under the
+= yes what its on jack stands under the
+< yes what its on or replacing the kick
+
+Epoch 099 | train loss: 0.128
+ val loss: 2.177 | time: 6.517
+| sentence accuracy:0.230| token accuracy:0.706
+> yes what its on jack stands under the
+= yes what its on jack stands under the
+< yes what its on on the the wheel
+
+Epoch 100 | train loss: 0.125
+ val loss: 2.166 | time: 6.522
+| sentence accuracy:0.220| token accuracy:0.709
+> glad to help
+= glad to help
+< glad to help
+
+Epoch 101 | train loss: 0.123
+ val loss: 2.178 | time: 6.532
+| sentence accuracy:0.230| token accuracy:0.710
+> i am having some trouble finalizing the removal of
+= i am having some trouble finalizing the removal of
+< i am having some information of the correct with
+
+Epoch 102 | train loss: 0.119
+ val loss: 2.182 | time: 6.521
+| sentence accuracy:0.230| token accuracy:0.710
+> dandy hope thats the solution
+= dandy hope thats the solution
+< dandy wow thanks the medic
+
+Epoch 103 | train loss: 0.117
+ val loss: 2.163 | time: 6.531
+| sentence accuracy:0.225| token accuracy:0.709
+> is it a constant miss like those two cylinders
+= is it a constant miss like those two cylinders
+< is it a led less than two than one
+
+Epoch 104 | train loss: 0.115
+ val loss: 2.172 | time: 6.525
+| sentence accuracy:0.220| token accuracy:0.708
+> make sure youve got the belt properly routed
+= make sure youve got the belt properly routed
+< make sure why it the timing belt itself
+
+Epoch 105 | train loss: 0.111
+ val loss: 2.154 | time: 6.514
+| sentence accuracy:0.230| token accuracy:0.710
+> check the drl relay then have it scanned for
+= check the drl relay then have it scanned for
+< check the fuses fuses then it it with back
+
+Epoch 106 | train loss: 0.110
+ val loss: 2.160 | time: 6.518
+| sentence accuracy:0.215| token accuracy:0.705
+> have replaced tps but check engine light keeps coming
+= have replaced tps but check engine light keeps coming
+< have water changed engine light it has power pressure
+
+Epoch 107 | train loss: 0.108
+ val loss: 2.161 | time: 6.519
+| sentence accuracy:0.225| token accuracy:0.707
+> so it does not have to be at topdeadcenter
+= so it does not have to be at topdeadcenter
+< so it does not have to be running at
+
+Epoch 108 | train loss: 0.107
+ val loss: 2.161 | time: 6.524
+| sentence accuracy:0.230| token accuracy:0.708
+> hello the port closest to the suction port is
+= hello the port closest to the suction port is
+< hello the 48re her to the flywheel is
+
+Epoch 109 | train loss: 0.102
+ val loss: 2.160 | time: 6.513
+| sentence accuracy:0.235| token accuracy:0.713
+> how to remove a purge canister
+= how to remove a purge canister
+< how to remove a panel shop
+
+Epoch 110 | train loss: 0.101
+ val loss: 2.157 | time: 6.529
+| sentence accuracy:0.225| token accuracy:0.713
+> checked both wires and power is present
+= checked both wires and power is present
+< checked both both and ground is power
+
+Epoch 111 | train loss: 0.100
+ val loss: 2.165 | time: 6.523
+| sentence accuracy:0.235| token accuracy:0.715
+> the engine cranks but does not start
+= the engine cranks but does not start
+< the engine cranks but does not start
+
+Epoch 112 | train loss: 0.098
+ val loss: 2.161 | time: 6.517
+| sentence accuracy:0.220| token accuracy:0.716
+> no
+= no
+< no
+
+Epoch 113 | train loss: 0.096
+ val loss: 2.150 | time: 6.527
+| sentence accuracy:0.225| token accuracy:0.713
+> no fuel pressure
+= no fuel pressure
+< no fuel pressure
+
+Epoch 114 | train loss: 0.095
+ val loss: 2.149 | time: 6.521
+| sentence accuracy:0.225| token accuracy:0.712
+> no you shouldnt mix them
+= no you shouldnt mix them
+< no you didnt list them
+
+Epoch 115 | train loss: 0.092
+ val loss: 2.143 | time: 6.531
+| sentence accuracy:0.235| token accuracy:0.713
+> yes its safe to drive
+= yes its safe to drive
+< yes its time to take
+
+Epoch 116 | train loss: 0.092
+ val loss: 2.135 | time: 6.535
+| sentence accuracy:0.235| token accuracy:0.713
+> hood
+= hood
+< 6h8vsk19hvl224832
+
+Epoch 117 | train loss: 0.089
+ val loss: 2.149 | time: 6.532
+| sentence accuracy:0.225| token accuracy:0.713
+> num
+= num
+< num
+
+Epoch 118 | train loss: 0.089
+ val loss: 2.139 | time: 6.535
+| sentence accuracy:0.225| token accuracy:0.713
+> i turned the motor over by hand to make
+= i turned the motor over by hand to make
+< i will the motor motor out to turn with
+
+Epoch 119 | train loss: 0.088
+ val loss: 2.144 | time: 6.530
+| sentence accuracy:0.230| token accuracy:0.714
+> no fuel pressure
+= no fuel pressure
+< no fuel pressure
+
+Epoch 120 | train loss: 0.085
+ val loss: 2.149 | time: 6.531
+| sentence accuracy:0.230| token accuracy:0.715
+> my son bought a k5 blazer and he needs
+= my son bought a k5 blazer and he needs
+< my nephew bought a couple alternator and alternator ago
+
+Epoch 121 | train loss: 0.084
+ val loss: 2.138 | time: 6.523
+| sentence accuracy:0.220| token accuracy:0.715
+> my son bought a k5 blazer and he needs
+= my son bought a k5 blazer and he needs
+< my nephew bought couple shop and went friend
+
+Epoch 122 | train loss: 0.083
+ val loss: 2.124 | time: 6.521
+| sentence accuracy:0.225| token accuracy:0.715
+> thanks for all your help again
+= thanks for all your help again
+< thanks for all your help again
+
+Epoch 123 | train loss: 0.082
+ val loss: 2.141 | time: 6.540
+| sentence accuracy:0.230| token accuracy:0.712
+> thank you i believe that i got it
+= thank you i believe that i got it
+< thank you i located that i got it
+
+Epoch 124 | train loss: 0.081
+ val loss: 2.129 | time: 6.518
+| sentence accuracy:0.220| token accuracy:0.716
+> my car was reading the following codes c0242 p0449
+= my car was reading the following codes c0242 p0449
+< my car was showing problem since were of codes
+
+Epoch 125 | train loss: 0.079
+ val loss: 2.125 | time: 6.523
+| sentence accuracy:0.230| token accuracy:0.714
+> i bought a new relay for the motor hoping
+= i bought a new relay for the motor hoping
+< i bought a new relay for the relay
+
+Epoch 126 | train loss: 0.079
+ val loss: 2.135 | time: 6.518
+| sentence accuracy:0.230| token accuracy:0.708
+> sorry automatic
+= sorry automatic
+< sorry p0128
+
+Epoch 127 | train loss: 0.077
+ val loss: 2.138 | time: 6.532
+| sentence accuracy:0.230| token accuracy:0.713
+> num
+= num
+< num
+
+Epoch 128 | train loss: 0.076
+ val loss: 2.125 | time: 6.524
+| sentence accuracy:0.235| token accuracy:0.717
+> also while the distributor cap is off turn
+= also while the distributor cap is off turn
+< also replacing stop and the the compressor still
+
+Epoch 129 | train loss: 0.075
+ val loss: 2.124 | time: 6.534
+| sentence accuracy:0.240| token accuracy:0.716
+> yes what its on jack stands under the
+= yes what its on jack stands under the
+< yes what its its on about the the
+
+Epoch 130 | train loss: 0.075
+ val loss: 2.115 | time: 6.532
+| sentence accuracy:0.235| token accuracy:0.716
+> do you have pictures of the track bar
+= do you have pictures of the track bar
+< do you have pictures of the wrong cluster
+
+Epoch 131 | train loss: 0.073
+ val loss: 2.119 | time: 6.532
+| sentence accuracy:0.225| token accuracy:0.716
+> thanks please let us know
+= thanks please let us know
+< thanks please let us know
+
+Epoch 132 | train loss: 0.073
+ val loss: 2.114 | time: 6.527
+| sentence accuracy:0.230| token accuracy:0.718
+> best thing here is to try to match other
+= best thing here is to try to match other
+< ok. glad is there to to hear that fix
+
+Epoch 133 | train loss: 0.072
+ val loss: 2.124 | time: 6.528
+| sentence accuracy:0.230| token accuracy:0.713
+> see if it clears up on its own for
+= see if it clears up on its own for
+< see if it only up on both its own
+
+Epoch 134 | train loss: 0.071
+ val loss: 2.131 | time: 6.522
+| sentence accuracy:0.230| token accuracy:0.715
+> dandy hope thats the solution
+= dandy hope thats the solution
+< dandy wow thats the medic
+
+Epoch 135 | train loss: 0.071
+ val loss: 2.107 | time: 6.524
+| sentence accuracy:0.230| token accuracy:0.717
+> engine stops running at idle and driving i replaced
+= engine stops running at idle and driving i replaced
+< engine running at idle and running speed i
+
+Epoch 136 | train loss: 0.069
+ val loss: 2.116 | time: 6.517
+| sentence accuracy:0.230| token accuracy:0.717
+> my car was reading the following codes c0242 p0449
+= my car was reading the following codes c0242 p0449
+< my car was showing the codes itself were were
+
+Epoch 137 | train loss: 0.068
+ val loss: 2.121 | time: 6.524
+| sentence accuracy:0.230| token accuracy:0.715
+> here is another picture thank you
+= here is another picture thank you
+< here is another picture thank you
+
+Epoch 138 | train loss: 0.068
+ val loss: 2.108 | time: 6.516
+| sentence accuracy:0.225| token accuracy:0.715
+> i have a k num one ton with
+= i have a k num one ton with
+< i have a num num litre ion 2.2
+
+Epoch 139 | train loss: 0.067
+ val loss: 2.119 | time: 6.534
+| sentence accuracy:0.235| token accuracy:0.720
+> that doesnt mean anything most pumps only make a
+= that doesnt mean anything most pumps only make a
+< that doesnt mean anything only only sounds like a
+
+Epoch 140 | train loss: 0.067
+ val loss: 2.100 | time: 6.525
+| sentence accuracy:0.225| token accuracy:0.719
+> where are the circuit breaker and lamp module located
+= where are the circuit breaker and lamp module located
+< where are the camshaft and coolant gauge located located
+
+Epoch 141 | train loss: 0.066
+ val loss: 2.108 | time: 6.532
+| sentence accuracy:0.220| token accuracy:0.714
+> good morning thank you so much for your response
+= good morning thank you so much for your response
+< good luck thank you so much for your reply
+
+Epoch 142 | train loss: 0.065
+ val loss: 2.110 | time: 6.521
+| sentence accuracy:0.235| token accuracy:0.720
+> what was that fault code a real common problem
+= what was that fault code a real common problem
+< what would that code about a code h ave
+
+Epoch 143 | train loss: 0.065
+ val loss: 2.115 | time: 6.521
+| sentence accuracy:0.230| token accuracy:0.716
+> that is the only code it kicked i can
+= that is the only code it kicked i can
+< that the code is it looks how can i
+
+Epoch 144 | train loss: 0.063
+ val loss: 2.098 | time: 6.522
+| sentence accuracy:0.230| token accuracy:0.714
+> engine stops running at idle and driving i replaced
+= engine stops running at idle and driving i replaced
+< engine running at at idle and higher i
+
+Epoch 145 | train loss: 0.063
+ val loss: 2.111 | time: 6.532
+| sentence accuracy:0.230| token accuracy:0.716
+> how do i scan for codes
+= how do i scan for codes
+< how do i scan for codes
+
+Epoch 146 | train loss: 0.062
+ val loss: 2.105 | time: 6.526
+| sentence accuracy:0.230| token accuracy:0.714
+> what does it do when it is on the
+= what does it do when it is on the
+< what does it do when it is the switch
+
+Epoch 147 | train loss: 0.062
+ val loss: 2.091 | time: 6.531
+| sentence accuracy:0.215| token accuracy:0.715
+> it may be sticking or the passage partially blocked
+= it may be sticking or the passage partially blocked
+< it may be vibration or the outer socket or
+
+Epoch 148 | train loss: 0.061
+ val loss: 2.103 | time: 6.523
+| sentence accuracy:0.225| token accuracy:0.720
+> thanks i will try this
+= thanks i will try this
+< thanks i will try this
+
+Epoch 149 | train loss: 0.061
+ val loss: 2.106 | time: 6.518
+| sentence accuracy:0.230| token accuracy:0.722
+> yep they did something wrong please let us know
+= yep they did something wrong please let us know
+< yep they did pretty too tell us please
+
+Epoch 150 | train loss: 0.061
+ val loss: 2.114 | time: 6.535
+| sentence accuracy:0.225| token accuracy:0.717
+> thats ok ive seen them plenty of times
+= thats ok ive seen them plenty of times
+< ok ok ive never seen of of them
+
+Epoch 151 | train loss: 0.060
+ val loss: 2.103 | time: 6.520
+| sentence accuracy:0.235| token accuracy:0.720
+> auto zone did not have hook up the flash
+= auto zone did not have hook up the flash
+< some vehicle did have not have some power to
+
+Epoch 152 | train loss: 0.059
+ val loss: 2.104 | time: 6.524
+| sentence accuracy:0.230| token accuracy:0.716
+> try resetting security system if no manual look online
+= try resetting security system if no manual look online
+< try resetting security system if no manual look online
+
+Epoch 153 | train loss: 0.060
+ val loss: 2.111 | time: 6.525
+| sentence accuracy:0.235| token accuracy:0.717
+> also while the distributor cap is off turn
+= also while the distributor cap is off turn
+< also then the stop switch is off still
+
+Epoch 154 | train loss: 0.059
+ val loss: 2.102 | time: 6.510
+| sentence accuracy:0.230| token accuracy:0.716
+> what is the fuel pressure
+= what is the fuel pressure
+< what is the fuel pressure
+
+Epoch 155 | train loss: 0.058
+ val loss: 2.081 | time: 6.535
+| sentence accuracy:0.230| token accuracy:0.716
+> okay so an a4 droptop looking at the way
+= okay so an a4 droptop looking at the way
+< okay so very helpful great information for for a
+
+Epoch 156 | train loss: 0.057
+ val loss: 2.079 | time: 6.515
+| sentence accuracy:0.230| token accuracy:0.719
+> okay that line runs to the tcm and to
+= okay that line runs to the tcm and to
+< okay that feed to to the bcm and and
+
+Epoch 157 | train loss: 0.057
+ val loss: 2.072 | time: 6.520
+| sentence accuracy:0.235| token accuracy:0.726
+> okay thanks what about the relay switch
+= okay thanks what about the relay switch
+< okay thanks what the relay before switch
+
+Epoch 158 | train loss: 0.057
+ val loss: 2.097 | time: 6.529
+| sentence accuracy:0.225| token accuracy:0.716
+> i would start with a compression test to see
+= i would start with a compression test to see
+< i would start with a test light to to
+
+Epoch 159 | train loss: 0.056
+ val loss: 2.095 | time: 6.522
+| sentence accuracy:0.225| token accuracy:0.720
+> is it a constant miss like those two cylinders
+= is it a constant miss like those two cylinders
+< is it a led less than half half one
+
+Epoch 160 | train loss: 0.056
+ val loss: 2.100 | time: 6.513
+| sentence accuracy:0.220| token accuracy:0.720
+> do you have rear disc or drum brakes
+= do you have rear disc or drum brakes
+< do you have rear rear or right miles
+
+Epoch 161 | train loss: 0.056
+ val loss: 2.084 | time: 6.524
+| sentence accuracy:0.225| token accuracy:0.719
+> check your fuel pressure if its within specsstart here
+= check your fuel pressure if its within specsstart here
+< check your pressure if its your clutch are to
+
+Epoch 162 | train loss: 0.055
+ val loss: 2.081 | time: 6.517
+| sentence accuracy:0.235| token accuracy:0.724
+> check the drl relay then have it scanned for
+= check the drl relay then have it scanned for
+< check the fuses then then have it scanned for
+
+Epoch 163 | train loss: 0.055
+ val loss: 2.088 | time: 6.526
+| sentence accuracy:0.245| token accuracy:0.719
+> no headlights or tail lights no power to head
+= no headlights or tail lights no power to head
+< no power or no brake lights on fuel rail
+
+Epoch 164 | train loss: 0.054
+ val loss: 2.083 | time: 6.527
+| sentence accuracy:0.230| token accuracy:0.719
+> can you please help
+= can you please help
+< can you please help
+
+Epoch 165 | train loss: 0.053
+ val loss: 2.088 | time: 6.526
+| sentence accuracy:0.230| token accuracy:0.716
+> check fluid level if you can if dark brown
+= check fluid level if you can if dark brown
+< check fluid if you you can try in fluid
+
+Epoch 166 | train loss: 0.053
+ val loss: 2.085 | time: 6.530
+| sentence accuracy:0.235| token accuracy:0.719
+> what was that fault code a real common problem
+= what was that fault code a real common problem
+< what was that code a a code reader when
+
+Epoch 167 | train loss: 0.053
+ val loss: 2.083 | time: 6.541
+| sentence accuracy:0.230| token accuracy:0.719
+> there is an auxiliary breaker on the passenger side
+= there is an auxiliary breaker on the passenger side
+< there is an air controller on the passenger side
+
+Epoch 168 | train loss: 0.053
+ val loss: 2.085 | time: 6.523
+| sentence accuracy:0.225| token accuracy:0.719
+> this is consistent with coolant in the combustion chamber
+= this is consistent with coolant in the combustion chamber
+< this is with with the in the coolant lights
+
+Epoch 169 | train loss: 0.052
+ val loss: 2.093 | time: 6.527
+| sentence accuracy:0.230| token accuracy:0.717
+> my truck surges at idle and i am not
+= my truck surges at idle and i am not
+< my truck shutters been miles and when i
+
+Epoch 170 | train loss: 0.053
+ val loss: 2.091 | time: 6.531
+| sentence accuracy:0.230| token accuracy:0.715
+> my son bought a k5 blazer and he needs
+= my son bought a k5 blazer and he needs
+< my brother bought a couple alternator and now he
+
+Epoch 171 | train loss: 0.052
+ val loss: 2.085 | time: 6.525
+| sentence accuracy:0.230| token accuracy:0.718
+> what was that fault code a real common problem
+= what was that fault code a real common problem
+< what was that code a code reader before it
+
+Epoch 172 | train loss: 0.052
+ val loss: 2.082 | time: 6.517
+| sentence accuracy:0.235| token accuracy:0.713
+> not a problem thanks for choosing 2carpros
+= not a problem thanks for choosing 2carpros
+< not a problem thanks for using 2carpros
+
+Epoch 173 | train loss: 0.052
+ val loss: 2.092 | time: 6.528
+| sentence accuracy:0.235| token accuracy:0.725
+> do you have continuity down to the ignition switch
+= do you have continuity down to the ignition switch
+< do you have switched loose the switch and
+
+Epoch 174 | train loss: 0.051
+ val loss: 2.080 | time: 6.536
+| sentence accuracy:0.235| token accuracy:0.719
+> most likely a bad blend door actuator in the
+= most likely a bad blend door actuator in the
+< most likely a bad coolant actuator in in the
+
+Epoch 175 | train loss: 0.050
+ val loss: 2.074 | time: 6.520
+| sentence accuracy:0.235| token accuracy:0.717
+> so the camshaft and crankshaft is the same thing
+= so the camshaft and crankshaft is the same thing
+< so the idle and hear is the red blue
+
+Epoch 176 | train loss: 0.050
+ val loss: 2.072 | time: 6.510
+| sentence accuracy:0.235| token accuracy:0.714
+> nothing with wire between battery positive and coil positive
+= nothing with wire between battery positive and coil positive
+< nothing with voltage running wire and starter battery battery
+
+Epoch 177 | train loss: 0.050
+ val loss: 2.082 | time: 6.528
+| sentence accuracy:0.235| token accuracy:0.719
+> the code number is po301 what the meaning is
+= the code number is po301 what the meaning is
+< the code number is po301 what the meaning is
+
+Epoch 178 | train loss: 0.049
+ val loss: 2.074 | time: 6.527
+| sentence accuracy:0.235| token accuracy:0.724
+> but the clicking i hear under the dash on
+= but the clicking i hear under the dash on
+< but the i i removed the the hood on
+
+Epoch 179 | train loss: 0.049
+ val loss: 2.067 | time: 6.529
+| sentence accuracy:0.235| token accuracy:0.726
+> my son bought a k5 blazer and he needs
+= my son bought a k5 blazer and he needs
+< my brother bought a couple ago and went he
+
+Epoch 180 | train loss: 0.049
+ val loss: 2.071 | time: 6.526
+| sentence accuracy:0.235| token accuracy:0.720
+> i checked the catalyst it also has good exhaust
+= i checked the catalyst it also has good exhaust
+< i checked the alternator it has good good but
+
+Epoch 181 | train loss: 0.049
+ val loss: 2.076 | time: 6.532
+| sentence accuracy:0.230| token accuracy:0.718
+> i smell the oil like its coming out the
+= i smell the oil like its coming out the
+< i cleaned the oil pan like its the noise
+
+Epoch 182 | train loss: 0.049
+ val loss: 2.079 | time: 6.525
+| sentence accuracy:0.235| token accuracy:0.722
+> no headlights or tail lights no power to head
+= no headlights or tail lights no power to head
+< no power or no lights no power to coils
+
+Epoch 183 | train loss: 0.048
+ val loss: 2.075 | time: 6.532
+| sentence accuracy:0.230| token accuracy:0.717
+> i changed the battery on my van it is
+= i changed the battery on my van it is
+< i changed the starter on my truck it is
+
+Epoch 184 | train loss: 0.048
+ val loss: 2.072 | time: 6.533
+| sentence accuracy:0.230| token accuracy:0.723
+> any idea where the engine fuse module is located
+= any idea where the engine fuse module is located
+< any says where engine where where is is the
+
+Epoch 185 | train loss: 0.048
+ val loss: 2.071 | time: 6.529
+| sentence accuracy:0.235| token accuracy:0.723
+> dont let people make you think that an electric
+= dont let people make you think that an electric
+< dont dont tell you dont that an issue you
+
+Epoch 186 | train loss: 0.047
+ val loss: 2.065 | time: 6.522
+| sentence accuracy:0.235| token accuracy:0.720
+> it doesnt matter if ther eis no coolant in
+= it doesnt matter if ther eis no coolant in
+< it doesnt as if codes when starting in other
+
+Epoch 187 | train loss: 0.047
+ val loss: 2.067 | time: 6.541
+| sentence accuracy:0.235| token accuracy:0.720
+> i changed the battery on my van it is
+= i changed the battery on my van it is
+< i changed the starter on my truck it is
+
+Epoch 188 | train loss: 0.047
+ val loss: 2.065 | time: 6.528
+| sentence accuracy:0.235| token accuracy:0.719
+> what was that fault code a real common problem
+= what was that fault code a real common problem
+< what was that that code a a code problem
+
+Epoch 189 | train loss: 0.047
+ val loss: 2.065 | time: 6.526
+| sentence accuracy:0.235| token accuracy:0.723
+> rats too bad this didnt come up sooner
+= rats too bad this didnt come up sooner
+< most martin even this job up goes up
+
+Epoch 190 | train loss: 0.046
+ val loss: 2.062 | time: 6.522
+| sentence accuracy:0.230| token accuracy:0.722
+> the engine cranks but does not start
+= the engine cranks but does not start
+< the engine cranks but does not start
+
+Epoch 191 | train loss: 0.046
+ val loss: 2.061 | time: 6.546
+| sentence accuracy:0.230| token accuracy:0.722
+> i have driven it about num miles
+= i have driven it about num miles
+< i have it put into num num
+
+Epoch 192 | train loss: 0.046
+ val loss: 2.064 | time: 6.529
+| sentence accuracy:0.235| token accuracy:0.722
+> here is another picture thank you
+= here is another picture thank you
+< here is another picture thank you
+
+Epoch 193 | train loss: 0.046
+ val loss: 2.054 | time: 6.520
+| sentence accuracy:0.230| token accuracy:0.722
+> codes are p0731 p0733 p0734 p0745
+= codes are p0731 p0733 p0734 p0745
+< codes are p0731 p0733 p0734 p0745
+
+Epoch 194 | train loss: 0.046
+ val loss: 2.051 | time: 6.534
+| sentence accuracy:0.230| token accuracy:0.726
+> thank you
+= thank you
+< thank you
+
+Epoch 195 | train loss: 0.045
+ val loss: 2.060 | time: 6.536
+| sentence accuracy:0.230| token accuracy:0.719
+> do you have abs on your car
+= do you have abs on your car
+< do you have any option replacing the
+
+Epoch 196 | train loss: 0.046
+ val loss: 2.058 | time: 6.532
+| sentence accuracy:0.230| token accuracy:0.726
+> your car has obd2 so it shouldnt apply we
+= your car has obd2 so it shouldnt apply we
+< your car has been so so it said you
+
+Epoch 197 | train loss: 0.045
+ val loss: 2.060 | time: 6.515
+| sentence accuracy:0.230| token accuracy:0.720
+> the code number is po301 what the meaning is
+= the code number is po301 what the meaning is
+< the code number is po301 what the meaning is
+
+Epoch 198 | train loss: 0.044
+ val loss: 2.044 | time: 6.525
+| sentence accuracy:0.235| token accuracy:0.728
+> i have tried bleeding that way too
+= i have tried bleeding that way too
+< i have tried tried that too because
+
+Epoch 199 | train loss: 0.044
+ val loss: 2.057 | time: 6.520
+| sentence accuracy:0.235| token accuracy:0.720
+> an employee was driving truck and suddenly truck started
+= an employee was driving truck and suddenly truck started
+< four truck was truck truck and truck shuts over
+
+Epoch 200 | train loss: 0.044
+ val loss: 2.055 | time: 6.516
+| sentence accuracy:0.230| token accuracy:0.720
+> how do i know which mode i am in
+= how do i know which mode i am in
+< how do i know where i am at this
+
+Epoch 201 | train loss: 0.045
+ val loss: 2.052 | time: 6.513
+| sentence accuracy:0.230| token accuracy:0.723
+> possibly yes
+= possibly yes
+< yes yes
+
+Epoch 202 | train loss: 0.044
+ val loss: 2.057 | time: 6.529
+| sentence accuracy:0.230| token accuracy:0.721
+> thats ok ive seen them plenty of times
+= thats ok ive seen them plenty of times
+< thats well ive never seen of of them
+
+Epoch 203 | train loss: 0.044
+ val loss: 2.045 | time: 6.525
+| sentence accuracy:0.225| token accuracy:0.722
+> thanks hmac300
+= thanks hmac300
+< thanks hmac300
+
+Epoch 204 | train loss: 0.043
+ val loss: 2.036 | time: 6.516
+| sentence accuracy:0.235| token accuracy:0.727
+> thanks please let us know
+= thanks please let us know
+< thanks please let us know
+
+Epoch 205 | train loss: 0.043
+ val loss: 2.051 | time: 6.527
+| sentence accuracy:0.230| token accuracy:0.719
+> have not done compression test yet we got it
+= have not done compression test yet we got it
+< have not done done mechanic said it scanned
+
+Epoch 206 | train loss: 0.043
+ val loss: 2.039 | time: 6.526
+| sentence accuracy:0.235| token accuracy:0.722
+> im looking into getting jaguar guides off a num
+= im looking into getting jaguar guides off a num
+< im using servo about about a regular from
+
+Epoch 207 | train loss: 0.043
+ val loss: 2.050 | time: 6.524
+| sentence accuracy:0.230| token accuracy:0.716
+> scan for an aabs code and check for a
+= scan for an aabs code and check for a
+< scan for an auto leak check for a and
+
+Epoch 208 | train loss: 0.043
+ val loss: 2.049 | time: 6.521
+| sentence accuracy:0.230| token accuracy:0.719
+> what is the fuel pressure
+= what is the fuel pressure
+< what is the fuel pressure
+
+Epoch 209 | train loss: 0.042
+ val loss: 2.034 | time: 6.516
+| sentence accuracy:0.230| token accuracy:0.724
+> possibly yes
+= possibly yes
+< yes yes
+
+Epoch 210 | train loss: 0.043
+ val loss: 2.042 | time: 6.532
+| sentence accuracy:0.230| token accuracy:0.723
+> is the entire wiring harness to the injectors different
+= is the entire wiring harness to the injectors different
+< is the wiring wiring harness another the the flywheel
+
+Epoch 211 | train loss: 0.042
+ val loss: 2.044 | time: 6.528
+| sentence accuracy:0.235| token accuracy:0.717
+> hello steve i have bye pass the faulty wire
+= hello steve i have bye pass the faulty wire
+< hello hello i have found the valve of the
+
+Epoch 212 | train loss: 0.042
+ val loss: 2.047 | time: 6.521
+| sentence accuracy:0.235| token accuracy:0.716
+> there are no codes everything comes out as clean
+= there are no codes everything comes out as clean
+< there are no codes present out as all dead
+
+Epoch 213 | train loss: 0.042
+ val loss: 2.036 | time: 6.507
+| sentence accuracy:0.235| token accuracy:0.722
+> its turning over and starting now but will only
+= its turning over and starting now but will only
+< its turning over and starting now but will only
+
+Epoch 214 | train loss: 0.042
+ val loss: 2.041 | time: 6.514
+| sentence accuracy:0.225| token accuracy:0.718
+> hood
+= hood
+< limited
+
+Epoch 215 | train loss: 0.042
+ val loss: 2.041 | time: 6.525
+| sentence accuracy:0.230| token accuracy:0.723
+> ok so tried this and it worked i was
+= ok so tried this and it worked i was
+< ok so take it and i said i was
+
+Epoch 216 | train loss: 0.041
+ val loss: 2.040 | time: 6.519
+| sentence accuracy:0.225| token accuracy:0.718
+> sorry to reply late but its my day off
+= sorry to reply late but its my day off
+< sorry to know down but my axle wont a
+
+Epoch 217 | train loss: 0.042
+ val loss: 2.050 | time: 6.533
+| sentence accuracy:0.225| token accuracy:0.720
+> how to remove a purge canister
+= how to remove a purge canister
+< how to remove a panel shop
+
+Epoch 218 | train loss: 0.041
+ val loss: 2.032 | time: 6.519
+| sentence accuracy:0.230| token accuracy:0.723
+> where are the circuit breaker and lamp module located
+= where are the circuit breaker and lamp module located
+< where are the camshaft sensors and crankshaft located located
+
+Epoch 219 | train loss: 0.041
+ val loss: 2.035 | time: 6.533
+| sentence accuracy:0.235| token accuracy:0.722
+> hi my car kia spectra i will remove
+= hi my car kia spectra i will remove
+< hi my car listed i will i have
+
+Epoch 220 | train loss: 0.041
+ val loss: 2.038 | time: 6.537
+| sentence accuracy:0.235| token accuracy:0.721
+> yep they did something wrong please let us know
+= yep they did something wrong please let us know
+< yep they do you too please please let
+
+Epoch 221 | train loss: 0.041
+ val loss: 2.037 | time: 6.519
+| sentence accuracy:0.235| token accuracy:0.723
+> normal temperature is around num degrees it
+= normal temperature is around num degrees it
+< air temperature is num inside it located
+
+Epoch 222 | train loss: 0.041
+ val loss: 2.045 | time: 6.529
+| sentence accuracy:0.235| token accuracy:0.721
+> car cranks but will not start just replaced water
+= car cranks but will not start just replaced water
+< car cranks but will not start unless just replaced
+
+Epoch 223 | train loss: 0.041
+ val loss: 2.030 | time: 6.520
+| sentence accuracy:0.225| token accuracy:0.722
+> yes a dvom would do nicely
+= yes a dvom would do nicely
+< yes a body can do anything
+
+Epoch 224 | train loss: 0.041
+ val loss: 2.036 | time: 6.525
+| sentence accuracy:0.225| token accuracy:0.723
+> it sounds like the alternator is not working you
+= it sounds like the alternator is not working you
+< it sounds like the compressor is not working you
+
+Epoch 225 | train loss: 0.040
+ val loss: 2.041 | time: 6.519
+| sentence accuracy:0.225| token accuracy:0.719
+> thanks i will try this
+= thanks i will try this
+< thanks i will try this
+
+Epoch 226 | train loss: 0.039
+ val loss: 2.022 | time: 6.519
+| sentence accuracy:0.225| token accuracy:0.720
+> ok so tried this and it worked i was
+= ok so tried this and it worked i was
+< ok so take that and it i was driving
+
+Epoch 227 | train loss: 0.040
+ val loss: 2.029 | time: 6.528
+| sentence accuracy:0.225| token accuracy:0.722
+> any idea where the engine fuse module is located
+= any idea where the engine fuse module is located
+< any in the engine engine size is correct located
+
+Epoch 228 | train loss: 0.040
+ val loss: 2.035 | time: 6.537
+| sentence accuracy:0.225| token accuracy:0.722
+> engine stops running at idle and driving i replaced
+= engine stops running at idle and driving i replaced
+< engine running at running at idle and i replaced
+
+Epoch 229 | train loss: 0.040
+ val loss: 2.033 | time: 6.506
+| sentence accuracy:0.230| token accuracy:0.722
+> either a blockage of some sort or a head
+= either a blockage of some sort or a head
+< because a picture of a head of a bad
+
+Epoch 230 | train loss: 0.040
+ val loss: 2.021 | time: 6.528
+| sentence accuracy:0.225| token accuracy:0.722
+> i recently replaced a bad blower motor and after
+= i recently replaced a bad blower motor and after
+< i replaced recently a broken wire and turn position
+
+Epoch 231 | train loss: 0.040
+ val loss: 2.025 | time: 6.523
+| sentence accuracy:0.230| token accuracy:0.724
+> okay i just tried to turn the motor and
+= okay i just tried to turn the motor and
+< okay i just recently to unplug the car and
+
+Epoch 232 | train loss: 0.040
+ val loss: 2.033 | time: 6.522
+| sentence accuracy:0.230| token accuracy:0.719
+> thats ok ive seen them plenty of times
+= thats ok ive seen them plenty of times
+< thats ok ive ive seen of of them
+
+Epoch 233 | train loss: 0.040
+ val loss: 2.024 | time: 6.524
+| sentence accuracy:0.225| token accuracy:0.722
+> here is another picture thank you
+= here is another picture thank you
+< here is another picture thank you
+
+Epoch 234 | train loss: 0.040
+ val loss: 2.022 | time: 6.525
+| sentence accuracy:0.220| token accuracy:0.719
+> thank you for all your help it means alot
+= thank you for all your help it means alot
+< thank you for for your help it means alot
+
+Epoch 235 | train loss: 0.039
+ val loss: 2.020 | time: 6.525
+| sentence accuracy:0.225| token accuracy:0.722
+> leaks
+= leaks
+< gle
+
+Epoch 236 | train loss: 0.038
+ val loss: 2.021 | time: 6.526
+| sentence accuracy:0.230| token accuracy:0.726
+> what should be the reading than thank you
+= what should be the reading than thank you
+< what should be the reading than thank you
+
+Epoch 237 | train loss: 0.038
+ val loss: 2.031 | time: 6.531
+| sentence accuracy:0.225| token accuracy:0.724
+> i checked the vacuum hoses and there was no
+= i checked the vacuum hoses and there was no
+< i checked the vacuum hoses and there was no
+
+Epoch 238 | train loss: 0.039
+ val loss: 2.015 | time: 6.521
+| sentence accuracy:0.230| token accuracy:0.722
+> roughly of course
+= roughly of course
+< roughly of course
+
+Epoch 239 | train loss: 0.039
+ val loss: 2.020 | time: 6.526
+| sentence accuracy:0.225| token accuracy:0.725
+> auto zone did not have hook up the flash
+= auto zone did not have hook up the flash
+< some parts did not have some smoke but the
+
+Epoch 240 | train loss: 0.039
+ val loss: 2.021 | time: 6.529
+| sentence accuracy:0.225| token accuracy:0.725
+> how do i scan for codes
+= how do i scan for codes
+< how do i scan for codes
+
+Epoch 241 | train loss: 0.038
+ val loss: 2.015 | time: 6.528
+| sentence accuracy:0.230| token accuracy:0.725
+> cracked my air intake hose can driving cause further
+= cracked my air intake hose can driving cause further
+< recharged my intake air isnt can cause cause one
+
+Epoch 242 | train loss: 0.038
+ val loss: 2.022 | time: 6.520
+| sentence accuracy:0.235| token accuracy:0.719
+> auto temp can be any sensor in the car
+= auto temp can be any sensor in the car
+< auto gauge can be not in the car found
+
+Epoch 243 | train loss: 0.038
+ val loss: 2.004 | time: 6.515
+| sentence accuracy:0.230| token accuracy:0.722
+> dandy hope thats the solution
+= dandy hope thats the solution
+< dandy happy thats the medic
+
+Epoch 244 | train loss: 0.038
+ val loss: 2.024 | time: 6.522
+| sentence accuracy:0.235| token accuracy:0.725
+> do you have power at the relay
+= do you have power at the relay
+< do you have power at the relay
+
+Epoch 245 | train loss: 0.038
+ val loss: 2.013 | time: 6.534
+| sentence accuracy:0.230| token accuracy:0.723
+> where are the circuit breaker and lamp module located
+= where are the circuit breaker and lamp module located
+< where are the camshaft valve and passenger them located
+
+Epoch 246 | train loss: 0.037
+ val loss: 2.017 | time: 6.518
+| sentence accuracy:0.240| token accuracy:0.724
+> no
+= no
+< no
+
+Epoch 247 | train loss: 0.037
+ val loss: 2.026 | time: 6.528
+| sentence accuracy:0.235| token accuracy:0.724
+> have replaced tps but check engine light keeps coming
+= have replaced tps but check engine light keeps coming
+< have replaced changed but but engine light came power
+
+Epoch 248 | train loss: 0.037
+ val loss: 2.013 | time: 6.518
+| sentence accuracy:0.235| token accuracy:0.726
+> leaks
+= leaks
+< gle
+
+Epoch 249 | train loss: 0.037
+ val loss: 2.032 | time: 6.543
+| sentence accuracy:0.225| token accuracy:0.725
+> have not done compression test yet we got it
+= have not done compression test yet we got it
+< have not done done mechanic yet checked it
+
+Epoch 250 | train loss: 0.038
+ val loss: 2.003 | time: 6.514
+| sentence accuracy:0.225| token accuracy:0.724
+> thanks please let us know
+= thanks please let us know
+< thanks please let us know
+
+Epoch 251 | train loss: 0.038
+ val loss: 2.014 | time: 6.531
+| sentence accuracy:0.225| token accuracy:0.724
+> see if it clears up on its own for
+= see if it clears up on its own for
+< see if it only up on under up when
+
+Epoch 252 | train loss: 0.037
+ val loss: 2.009 | time: 6.517
+| sentence accuracy:0.225| token accuracy:0.723
+> okay thanks what about the relay switch
+= okay thanks what about the relay switch
+< okay thanks what it the relay right
+
+Epoch 253 | train loss: 0.037
+ val loss: 2.015 | time: 6.520
+| sentence accuracy:0.230| token accuracy:0.724
+> okay that line runs to the tcm and to
+= okay that line runs to the tcm and to
+< okay that means to the the bcm to take
+
+Epoch 254 | train loss: 0.037
+ val loss: 2.010 | time: 6.521
+| sentence accuracy:0.240| token accuracy:0.723
+> what is the exact problem you are having and
+= what is the exact problem you are having and
+< what is the problem you you are asking and
+
+Epoch 255 | train loss: 0.037
+ val loss: 2.015 | time: 6.530
+| sentence accuracy:0.235| token accuracy:0.724
+> they are out there but they wont be check
+= they are out there but they wont be check
+< they are they but they light did you
+
+Epoch 256 | train loss: 0.037
+ val loss: 2.006 | time: 6.521
+| sentence accuracy:0.235| token accuracy:0.722
+> ok i also found a wire that was frayed
+= ok i also found a wire that was frayed
+< ok i also found a reply wire was done
+
+Epoch 257 | train loss: 0.036
+ val loss: 2.016 | time: 6.528
+| sentence accuracy:0.230| token accuracy:0.727
+> hello the port closest to the suction port is
+= hello the port closest to the suction port is
+< hello the 48re to the the dealership is
+
+Epoch 258 | train loss: 0.036
+ val loss: 1.996 | time: 6.531
+| sentence accuracy:0.235| token accuracy:0.724
+> the clutch plates are grinding turning when system is
+= the clutch plates are grinding turning when system is
+< the air system are out when key is
+
+Epoch 259 | train loss: 0.037
+ val loss: 2.002 | time: 6.504
+| sentence accuracy:0.230| token accuracy:0.722
+> an employee was driving truck and suddenly truck started
+= an employee was driving truck and suddenly truck started
+< four truck was driving truck and ago now my
+
+Epoch 260 | train loss: 0.037
+ val loss: 2.000 | time: 6.534
+| sentence accuracy:0.235| token accuracy:0.724
+> yes i have done that the code is
+= yes i have done that the code is
+< yes i have done that is the code
+
+Epoch 261 | train loss: 0.036
+ val loss: 2.015 | time: 6.511
+| sentence accuracy:0.230| token accuracy:0.722
+> here is my part number
+= here is my part number
+< here is my vin number
+
+Epoch 262 | train loss: 0.036
+ val loss: 2.004 | time: 6.516
+| sentence accuracy:0.230| token accuracy:0.724
+> any idea where the engine fuse module is located
+= any idea where the engine fuse module is located
+< any in the the engine size is located v6
+
+Epoch 263 | train loss: 0.036
+ val loss: 2.015 | time: 6.530
+| sentence accuracy:0.225| token accuracy:0.724
+> check fluid level if you can if dark brown
+= check fluid level if you can if dark brown
+< check fluid fluid if you can try if pic
+
+Epoch 264 | train loss: 0.036
+ val loss: 2.010 | time: 6.528
+| sentence accuracy:0.225| token accuracy:0.727
+> what should i do
+= what should i do
+< what should i do
+
+Epoch 265 | train loss: 0.036
+ val loss: 2.009 | time: 6.520
+| sentence accuracy:0.240| token accuracy:0.726
+> tension er pulley
+= tension er pulley
+< tension er pulley
+
+Epoch 266 | train loss: 0.036
+ val loss: 2.008 | time: 6.518
+| sentence accuracy:0.230| token accuracy:0.719
+> it may be sticking or the passage partially blocked
+= it may be sticking or the passage partially blocked
+< it may be vibration or the wires wire
+
+Epoch 267 | train loss: 0.036
+ val loss: 1.995 | time: 6.509
+| sentence accuracy:0.230| token accuracy:0.727
+> thats ok ive seen them plenty of times
+= thats ok ive seen them plenty of times
+< thats ok ive never seen of of them
+
+Epoch 268 | train loss: 0.035
+ val loss: 2.005 | time: 6.517
+| sentence accuracy:0.230| token accuracy:0.726
+> what is the fuel pressure
+= what is the fuel pressure
+< what is the fuel pressure
+
+Epoch 269 | train loss: 0.036
+ val loss: 2.000 | time: 6.527
+| sentence accuracy:0.235| token accuracy:0.722
+> i bought a new relay for the motor hoping
+= i bought a new relay for the motor hoping
+< i bought a new motor for the motor
+
+Epoch 270 | train loss: 0.036
+ val loss: 1.987 | time: 6.510
+| sentence accuracy:0.235| token accuracy:0.720
+> my pleasure have fun with it
+= my pleasure have fun with it
+< my pleasure have been with it
+
+Epoch 271 | train loss: 0.036
+ val loss: 2.003 | time: 6.533
+| sentence accuracy:0.225| token accuracy:0.722
+> do you have power at the relay
+= do you have power at the relay
+< do you have power at the relay
+
+Epoch 272 | train loss: 0.035
+ val loss: 1.995 | time: 6.532
+| sentence accuracy:0.230| token accuracy:0.722
+> check for loose exhaust covers underneath the car
+= check for loose exhaust covers underneath the car
+< check for loose shields under under the car
+
+Epoch 273 | train loss: 0.035
+ val loss: 2.001 | time: 6.533
+| sentence accuracy:0.230| token accuracy:0.719
+> auto zone did not have hook up the flash
+= auto zone did not have hook up the flash
+< some bcm did not have anything smoke when the
+
+Epoch 274 | train loss: 0.035
+ val loss: 2.001 | time: 6.529
+| sentence accuracy:0.230| token accuracy:0.728
+> not a problem thanks for choosing 2carpros
+= not a problem thanks for choosing 2carpros
+< not a problem thanks using thanks for
+
+Epoch 275 | train loss: 0.035
+ val loss: 1.991 | time: 6.514
+| sentence accuracy:0.235| token accuracy:0.725
+> yes sir thank you so if i jump one
+= yes sir thank you so if i jump one
+< yes sir thank you so if i was one
+
+Epoch 276 | train loss: 0.035
+ val loss: 1.986 | time: 6.534
+| sentence accuracy:0.235| token accuracy:0.727
+> the clutch plates are grinding turning when system is
+= the clutch plates are grinding turning when system is
+< the air valve are out motor when they
+
+Epoch 277 | train loss: 0.035
+ val loss: 1.989 | time: 6.515
+| sentence accuracy:0.230| token accuracy:0.722
+> an employee was driving truck and suddenly truck started
+= an employee was driving truck and suddenly truck started
+< four truck was driving truck and truck went now
+
+Epoch 278 | train loss: 0.035
+ val loss: 1.989 | time: 6.527
+| sentence accuracy:0.230| token accuracy:0.724
+> driving pattern the time required for each diagnosis varies
+= driving pattern the time required for each diagnosis varies
+< right driving the same time for using second youll
+
+Epoch 279 | train loss: 0.035
+ val loss: 1.996 | time: 6.519
+| sentence accuracy:0.230| token accuracy:0.727
+> what was that fault code a real common problem
+= what was that fault code a real common problem
+< what was that be a code reader stored that
+
+Epoch 280 | train loss: 0.035
+ val loss: 1.985 | time: 6.528
+| sentence accuracy:0.240| token accuracy:0.727
+> if its not an option you will spend more
+= if its not an option you will spend more
+< if not an an you will will not an
+
+Epoch 281 | train loss: 0.034
+ val loss: 1.990 | time: 6.539
+| sentence accuracy:0.230| token accuracy:0.723
+> i checked the vacuum hoses and there was no
+= i checked the vacuum hoses and there was no
+< i checked the vacuum hoses and there was no
+
+Epoch 282 | train loss: 0.035
+ val loss: 1.987 | time: 6.519
+| sentence accuracy:0.230| token accuracy:0.723
+> here is my part number
+= here is my part number
+< here is my vin number
+
+Epoch 283 | train loss: 0.034
+ val loss: 1.988 | time: 6.517
+| sentence accuracy:0.230| token accuracy:0.723
+> i mean p1639
+= i mean p1639
+< i mean p1639
+
+Epoch 284 | train loss: 0.035
+ val loss: 1.996 | time: 6.518
+| sentence accuracy:0.235| token accuracy:0.725
+> yes its safe to drive
+= yes its safe to drive
+< yes its time to take
+
+Epoch 285 | train loss: 0.035
+ val loss: 1.991 | time: 6.518
+| sentence accuracy:0.240| token accuracy:0.726
+> num is ground the dark green goes to
+= num is ground the dark green goes to
+< num is the the original part any time
+
+Epoch 286 | train loss: 0.034
+ val loss: 1.978 | time: 6.522
+| sentence accuracy:0.240| token accuracy:0.728
+> see ppic
+= see ppic
+< see pictures
+
+Epoch 287 | train loss: 0.034
+ val loss: 1.988 | time: 6.513
+| sentence accuracy:0.235| token accuracy:0.723
+> driving pattern the time required for each diagnosis varies
+= driving pattern the time required for each diagnosis varies
+< right included the same time for using three
+
+Epoch 288 | train loss: 0.034
+ val loss: 1.980 | time: 6.533
+| sentence accuracy:0.240| token accuracy:0.726
+> check fluid level if you can if dark brown
+= check fluid level if you can if dark brown
+< check fluid if if you can jump or gasket
+

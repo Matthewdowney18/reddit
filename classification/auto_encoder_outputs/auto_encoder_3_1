@@ -1,0 +1,32 @@
+nb_epochs: 50
+batch_size: 500
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: /embeddings_min2_max15.npy
+max_len: 15
+min_countmin_count: 2
+weight_decay: 1e-05
+learning_rate: 0.001
+model_group: /auto_encoder
+autoencoder_name: /auto_encoder_3
+autoencoder_version: 1
+
+Train 457662, val: 114122
+Loaded Model:
+lowest_validation_loss: 0.29692945860358827
+description: ['none']
+last_epoch:26
+
+Epoch 026 Example 152 | train loss: 0.284
+Epoch 026 Example 305 | train loss: 0.289
+Epoch 026 Example 457 | train loss: 0.292
+Epoch 026 Example 610 | train loss: 0.295
+Epoch 026 Example 763 | train loss: 0.297
+Epoch 026 Example 915 | train loss: 0.298
+
+ val loss: 0.296 | time: 1477.306
+| sentence accuracy:0.698| token accuracy:0.971
+> well i 'm not very good at violent stuff but i 'll try
+= well i 'm not very good at violent stuff but i 'll try
+< well i 'm not very good at violent stuff but i 'll try
+

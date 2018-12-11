@@ -1,0 +1,55 @@
+nb_epochs: 50
+batch_size: 400
+hidden_size: 256
+embedding_dim: 300
+pretrained_embeddings: None
+max_len: 15
+min_countmin_count: 2
+weight_decay: 1e-05
+model_group: /classifier
+model_name: /classifier_1
+
+Train 457662, val: 114122
+['none']
+Epoch 000 | train loss: 5.283
+ val loss: 3.814 | time: 1675.766
+| sentence accuracy:0.000| token accuracy:0.454
+> as someone who may or may not work for the company i would suggest
+= as someone who may or may not work for the company i would suggest
+< when someone when was was me what friend is is be a for
+
+Epoch 001 | train loss: 3.198
+ val loss: 2.476 | time: 1675.624
+| sentence accuracy:0.006| token accuracy:0.649
+> i do n't know if this is just in chicago but whenever i 'm
+= i do n't know if this is just in chicago but whenever i 'm
+< i do n't know if it is just in myself '' i 'm myself
+
+Epoch 002 | train loss: 2.166
+ val loss: 1.617 | time: 1675.808
+| sentence accuracy:0.053| token accuracy:0.772
+> suffer the pain of discipline or suffer the pain of regret /couragewolf
+= suffer the pain of discipline or suffer the pain of regret /couragewolf
+< whats the pain of pain or experienced the the most are true
+
+Epoch 003 | train loss: 1.476
+ val loss: 1.098 | time: 1676.542
+| sentence accuracy:0.164| token accuracy:0.852
+> dear baseball fans do you miss the days when a <unk> was uncommon
+= dear baseball fans do you miss the days when a <unk> was uncommon
+< dear dead fans do you miss the days when a <unk> was wise
+
+Epoch 004 | train loss: 1.060
+ val loss: 0.827 | time: 1676.747
+| sentence accuracy:0.273| token accuracy:0.892
+> reddit what is the best way to put a cover on a duvet
+= reddit what is the best way to put a cover on a duvet
+< reddit what is the best way to put a cover on a clear
+
+Epoch 005 | train loss: 0.822
+ val loss: 0.663 | time: 1676.678
+| sentence accuracy:0.375| token accuracy:0.918
+> what are you looking to buy for black friday this year
+= what are you looking to buy for black friday this year
+< what are you looking to buy for black friday this year
+

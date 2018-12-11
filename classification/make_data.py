@@ -4,7 +4,7 @@ import csv
 import re
 
 '''
-this file takes the csv of the reddit dataset, and it prepares it for training.
+this file takes the csv of the reddit_classification dataset, and it prepares it for training.
 first it strips the text of urls numbers, and then it takes out puncuation, 
 lower cases the words, and then it tokenizes, and joins the tokens with 
 spaces to make it easy to do things ye dawg 
@@ -59,13 +59,15 @@ def make_data(dataset_path, data_train_path):
     sentence_2 = process_sentence(sentence_2)
     sentence_1 = process_sentence(sentence_1)
     data = [list(x) for x in zip(sentence_1, sentence_2, labels)]
+    #data = [list(x) for x in zip(sentence_1, sentence_2)]
     print_file(data, data_train_path)
+
 
 def main():
     dataset_path = '/home/mattd/datasets/AskReddit/'
-    train_data_path = "/home/mattd/PycharmProjects/reddit/data"
-    make_data('{}{}'.format(dataset_path, 'train.csv'),
-              '{}{}'.format(train_data_path, 'train.csv'))
+    train_data_path = "/home/mattd/PycharmProjects/reddit/data/"
+    make_data('{}{}'.format(dataset_path, 'validation.csv'),
+              '{}{}'.format(train_data_path, 'validation.csv'))
 
 
 if __name__ == '__main__':

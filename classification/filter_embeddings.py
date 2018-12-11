@@ -2,7 +2,7 @@ from vecto import embeddings
 import numpy as np
 import pickle
 
-from dataset import SentenceDataset
+from classification.dataset import PairsDataset
 
 
 def get_vectors(filename):
@@ -17,17 +17,18 @@ def get_vectors(filename):
 
 
 def main():
-    max_len = 20
+    max_len = 30
     min_count = 2
 
-    embeddings_dir = '/home/mattd/embeddings/reddit/'
-
-    dataset_path = '/home/mattd/datasets/AskReddit/'
+    embeddings_dir = '/home/mattd/embeddings/reddit_2/'
+    #dataset_path = '/home/mattd/datasets/AskReddit/'
+    dataset_path = "/home/mattd/PycharmProjects/reddit/data/"
     dataset_train_filename = "{}train.csv".format(dataset_path)
     dataset_val_filename = "{}validation.csv".format(dataset_path)
+    save_dir = "/home/mattd/PycharmProjects/reddit/embeddings/"
 
-    dataset_train = SentenceDataset(dataset_train_filename, max_len, min_count)
-    dataset_val = SentenceDataset(dataset_val_filename, max_len, min_count,
+    dataset_train = PairsDataset(dataset_train_filename, max_len, min_count)
+    dataset_val = PairsDataset(dataset_val_filename, max_len, min_count,
                                   dataset_train.vocab)
     #dataset.add_file(eng_fr_filename2)
 
@@ -40,7 +41,8 @@ def main():
     for i, token in enumerate(dataset_val.vocab.token2id):
         if vectors.has_word(token):
             embs_matrix[i] = vectors.get_vector(token)
-    np.save('embeddings_min{}_max{}'.format(min_count, max_len), embs_matrix)
+    np.save('{}embeddings_min{}_max{}'.format(save_dir, min_count, max_len),
+            embs_matrix)
 
 
 if __name__ == '__main__':

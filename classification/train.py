@@ -4,20 +4,20 @@ import torch.utils.data
 import time
 from tqdm import tqdm
 
-from dataset import PairsDataset
-from model import Seq2SeqModel
-from utils import variable, cuda, argmax, get_sentence_from_indices, \
-    get_pretrained_embeddings, save_checkpoint, load_checkpoint, freeze_layer, \
+from classification.dataset import PairsDataset
+from classification.model import Seq2SeqModel
+from utils import variable, cuda, get_sentence_from_indices, \
+    get_pretrained_embeddings, save_checkpoint, load_checkpoint, \
     classifier_accuracy
 
 
 def main():
-    num_training_examples = 300000
+    num_training_examples = -1
     nb_epochs = 100
     batch_size = 1000
     hidden_size = 256
     embedding_dim = 300
-    pretrained_embeddings = "/embeddings_2/embeddings_min2_max30.npy"
+    pretrained_embeddings = "/embeddings/embeddings_min2_max30.npy"
     #pretrained_embeddings = None
     max_grad_norm = 5
     max_len = 30
@@ -30,7 +30,7 @@ def main():
     model_version = 0
     autoencoder_name = "/auto_encoder_2_1"
     project_file = "/home/mattd/PycharmProjects/reddit"
-    dataset_path = "/home/mattd/PycharmProjects/reddit/data/"
+    dataset_path = "{}/data/".format(project_file)
 
 
     if use_autoencoder_model:
@@ -117,8 +117,9 @@ def main():
     #print previous model info
     if found_model:
         string = 'Loaded Model:\nlowest_validation_loss: {}\ndescription: {}' \
-                 '\nlast_epoch:{}\n'.format(lowest_loss, description,
-                                            last_epoch)
+                 '\nlast_epoch:{}\n Metrics:{}\n'.format(lowest_loss,
+                    description, last_epoch, str(metrics))
+
     else: 
         string = 'No model found at {}\n'.format(model_filename)
         new_model_filename = model_filename

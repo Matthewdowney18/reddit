@@ -3,10 +3,10 @@ import torch
 import torch.utils.data
 import pandas as pd
 
-from dataset import PairsDataset
-from model import Seq2SeqModel
+from classification.dataset import PairsDataset
+from classification.model import Seq2SeqModel
 
-from utils import cuda, get_pretrained_embeddings, load_checkpoint
+from utils import cuda, load_checkpoint
 
 def main():
     hidden_size = 256
