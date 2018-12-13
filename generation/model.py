@@ -178,15 +178,15 @@ class Seq2SeqModelAttention(torch.nn.Module):
         """
         super().__init__()
 
-        #self.embedding_dim = embeddings.shape[1]
-        self.embedding_dim = 300
+        self.embeddings = embeddings
+        self.embedding_dim = embedding_dim
         self.hidden_size = hidden_size
-        self.combined_hidden_size = hidden_size *2
+        self.combined_hidden_size = hidden_size * 2
         self.padding_idx = padding_idx
         self.init_idx = init_idx
         self.max_len = max_len
-        #self.teacher_forcing = teacher_forcing
-        self.vocab_size = embeddings.shape[0]
+        # self.teacher_forcing = teacher_forcing
+        self.vocab_size = vocab_size
 
         self.drop = nn.Dropout(p=0.5)
 
@@ -207,7 +207,6 @@ class Seq2SeqModelAttention(torch.nn.Module):
         self.dec = nn.LSTMCell(self.combined_hidden_size,
                                self.combined_hidden_size)
         self.lin = nn.Linear(self.combined_hidden_size, self.vocab_size)
-
 
     def zero_state(self, batch_size):
         """
