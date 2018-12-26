@@ -4,6 +4,7 @@ from torch.autograd import Variable
 import os
 from torch.nn import Parameter
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from nltk.translate import bleu_score
 
 
 def get_sequences_lengths(sequences, masking=0, dim=1):
@@ -109,6 +110,8 @@ def load_checkpoint(filename, model, optimizer, use_autoencoder_model=False):
             val_loss = []
         if "metrics" in checkpoint:
             metrics = checkpoint["metrics"]
+        else:
+            metrics = None
         if use_autoencoder_model:
             epoch = 0
             train_loss = []
@@ -124,6 +127,7 @@ def load_checkpoint(filename, model, optimizer, use_autoencoder_model=False):
         train_loss = []
         val_loss = []
         found_model = False
+        metrics = None
     return model, optimizer, loss, description, epoch, train_loss, val_loss,\
            found_model, metrics
 
@@ -167,3 +171,19 @@ def classifier_accuracy(targets, predicted):
     recall = recall_score(targets, predicted)
     f1 = f1_score(targets, predicted)
     return accuracy, precision, recall, f1
+
+
+def bleu(targets, predicted, n_grams=4):
+    '''
+    '''
+    reference = [[[str(x.item())for x in row if x.item() != 0]]
+                 for row in targets]
+    hypothosis = [[str(x.item()) for x in row if x.item() != 0]
+                 for row in predicted]
+    weights = [1/n_grams] * n_grams
+
+    chencherry = bleu_score.SmoothingFunction()
+    bleu_1 = bleu_score.corpus_bleu(
+        reference, hypothosis, weights=weights,
+        smoothing_function=chencherry.method1)
+    return bleu_1
