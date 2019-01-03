@@ -91,17 +91,20 @@ def load_params(filename):
     if os.path.isfile(filename):
         checkpoint = torch.load(filename)
         params = checkpoint["params"]
-        files = checkpoint["files"]
+        files = checkpoint["file"]
     else:
         print("no file found at {}".format(filename))
     return params, files
 
 
-def load_checkpoint(filename, model, optimizer, use_autoencoder_model=False):
+def load_checkpoint(filename, model, optimizer, use_best_model = True):
     if os.path.isfile(filename):
         checkpoint = torch.load(filename)
-        model.load_state_dict(checkpoint['state_dict'])
-        if not use_autoencoder_model:
+        if use_best_model:
+            model.load_state_dict(checkpoint['best_model'])
+            optimizer.load_state_dict(checkpoint['best_optimizer'])
+        else:
+            model.load_state_dict(checkpoint['model'])
             optimizer.load_state_dict(checkpoint['optimizer'])
     return model, optimizer
 

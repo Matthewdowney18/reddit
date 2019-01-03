@@ -17,7 +17,7 @@ def main():
     file = {
     "model_group" : "/seq_len_exp",
     "model_name" : "/generation_0",
-    "model_version" : 0,
+    "model_version" : 1,
     "project_file": "/home/mattd/PycharmProjects/reddit/generation"}
 
     file["dataset_path"] = "{}/data/".format(file["project_file"])
@@ -47,13 +47,13 @@ def main():
         "embedding_dim" : 300,
         "pretrained_embeddings" : True,
         "max_grad_norm" : 5,
-        "max_len" : 20,
+        "max_len" : 5,
         "min_count" : 2,
         "weight_decay" : 0.00001,
         "learning_rate" : 0.001,
         }
 
-    params["num_training_examples"] = 1000
+    params["num_training_examples"] = 2000
     params["num_val_examples"] = 1000
     params["nb_epochs"] = 2
 
@@ -130,7 +130,7 @@ def main():
 
     if use_old_model:
         model, optimizer= load_checkpoint(
-            params["old_model_filename"], model, optimizer)
+            file["old_model_filename"], model, optimizer)
 
     lowest_loss = 100
     train_loss = []
