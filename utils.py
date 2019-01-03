@@ -66,70 +66,44 @@ def get_pretrained_embeddings(embeddings_dir):
     return emb_tensor
 
 
-def get_description(description_filename):
-    if os.path.exists(description_filename):
-        description = list()
-        with open(description_filename, 'r', encoding='utf8') as f:
-            for line in f:
-                description.append(line)
-        return description
-    else:
-        return ['none']
 
-
-def save_checkpoint(model, loss, optimizer, filename, description_filename,
-                    epoch, train_loss, val_loss, metrics):
+def save_checkpoint(best_epoch, best_model, best_optimizer,
+                    epoch, model, optimizer, train_loss, val_loss, metrics,
+                    params, file):
     state = {
-            'state_dict': model.state_dict(),
-            'loss': loss,
-            'optimizer' : optimizer.state_dict(),
-            'description' : get_description(description_filename),
-            'epoch' : epoch,
-            'train_loss' : train_loss,
-            'val_loss' : val_loss,
-            'metrics' : metrics
+        'best_model': best_model.state_dict(),
+        'best_optimizer': best_optimizer.state_dict(),
+        'model': model.state_dict(),
+        'optimizer' : optimizer.state_dict(),
+        'best_epoch': best_epoch,
+        'epoch' : epoch,
+        'train_loss' : train_loss,
+        'val_loss' : val_loss,
+        'metrics' : metrics,
+        'params' : params,
+        'file' : file,
         }
-    torch.save(state, filename)
+    torch.save(state, file["model_filename"])
+
+def load_params(filename):
+    params = {}
+    files = {}
+    if os.path.isfile(filename):
+        checkpoint = torch.load(filename)
+        params = checkpoint["params"]
+        files = checkpoint["files"]
+    else:
+        print("no file found at {}".format(filename))
+    return params, files
 
 
 def load_checkpoint(filename, model, optimizer, use_autoencoder_model=False):
     if os.path.isfile(filename):
         checkpoint = torch.load(filename)
         model.load_state_dict(checkpoint['state_dict'])
-        loss = checkpoint['loss']
-        description = checkpoint['description']
-        if 'epoch' in checkpoint:
-            epoch = checkpoint['epoch']
-        else:
-            epoch = 0
-        if 'train_loss' in checkpoint:
-            train_loss = checkpoint['train_loss']
-            val_loss = checkpoint['val_loss']
-        else:
-            train_loss = []
-            val_loss = []
-        if "metrics" in checkpoint:
-            metrics = checkpoint["metrics"]
-        else:
-            metrics = None
-        if use_autoencoder_model:
-            epoch = 0
-            train_loss = []
-            val_loss = []
-            loss = 500
-        else:
+        if not use_autoencoder_model:
             optimizer.load_state_dict(checkpoint['optimizer'])
-        found_model = True
-    else:
-        loss = 500
-        description = ['none']
-        epoch = 0
-        train_loss = []
-        val_loss = []
-        found_model = False
-        metrics = None
-    return model, optimizer, loss, description, epoch, train_loss, val_loss,\
-           found_model, metrics
+    return model, optimizer
 
 
 def freeze_layer(layer, bool):
@@ -187,3 +161,11 @@ def bleu(targets, predicted, n_grams=4):
         reference, hypothosis, weights=weights,
         smoothing_function=chencherry.method1)
     return bleu_1
+
+def check_files(file):
+    outputs = '{}{}_outputs'.format(file["project_file"], file["model_group"])
+    models = '{}{}s'.format(file["project_file"], file["model_group"])
+    if os.path.isfile(outputs):
+        os.mkdir(outputs)
+    if not os.path.isfile(models):
+        os.mkdir(models)
