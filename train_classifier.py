@@ -8,126 +8,138 @@ from classification.dataset import PairsDataset
 from classification.model import Seq2SeqModel
 from utils import variable, cuda, get_sentence_from_indices, \
     get_pretrained_embeddings, save_checkpoint, load_checkpoint, \
-    classifier_accuracy
+    classifier_accuracy, load_params
 
 
 def main():
-    num_training_examples = -1
-    nb_epochs = 100
-    batch_size = 1000
-    hidden_size = 256
-    embedding_dim = 300
-    pretrained_embeddings = "/embeddings/embeddings_min2_max30.npy"
-    #pretrained_embeddings = None
-    max_grad_norm = 5
-    max_len = 30
-    min_count = 2
-    weight_decay = 0.00001
-    learning_rate = 0.005
-    use_autoencoder_model = False
-    model_group = "/classifier_example"
-    model_name = "/classifier_0_{}".format(num_training_examples)
-    model_version = 0
-    autoencoder_name = "/auto_encoder_2_1"
-    project_file = "/home/mattd/PycharmProjects/reddit"
-    dataset_path = "{}/data/".format(project_file)
+    file = {
+        "model_group": "/seq_len_exp",
+        "model_name": "/generation_6",
+        "old_model_name": None,
+        "model_version": 0,
+        "project_file": "/home/mattd/PycharmProjects/reddit/generation"}
 
+    file["dataset_path"] = "{}/data/".format(file["project_file"])
 
-    if use_autoencoder_model:
-        model_filename = '{}/auto_encoders{}'.format(
-            project_file, autoencoder_name)
-        new_model_filename = '{}{}s{}_{}'.format(
-            project_file, model_group, model_name, model_version)
-    else:
-        model_filename = '{}{}s{}_{}'.format(
-            project_file, model_group, model_name, model_version-1)
+    file["model_filename"] = '{}{}s{}_{}'.format(file["project_file"],
+        file["model_group"], file["model_name"], file["model_version"])
 
-        new_model_filename = '{}{}s{}_{}'.format(
-            project_file, model_group, model_name, model_version)
+    file["output_file"] = '{}{}_outputs{}_{}'.format(file["project_file"],
+        file["model_group"], file["model_name"], file["model_version"])
 
-    description_filename = \
-        '{}/description/description_1.txt'.format(project_file)
+    # check_files(file)
 
-    output_file = '{}{}_outputs{}_{}'.format(
-        project_file, model_group, model_name, model_version)
+    use_old_model = file["old_model_name"] is not None
+    params = {}
 
-    string = 'nb_epochs: {}\nbatch_size: {}\nhidden_size: {}\nembedding_dim: ' \
-             '{}\npretrained_embeddings: {}\nmax_len: {}\nmin_countmin_count: ' \
-             '{}\nweight_decay: {}\nlearning_rate: {}\nmodel_group: ' \
-             '{}\nmodel_name: {}\nautoencoder_location: {}\n' \
-             'load model_version: {}\nmodel_filename: {}\nnew_model_filename: ' \
-             '{}\noutput_file: {}\nnum_training_examples: {}\n'.format(
-                nb_epochs, batch_size, hidden_size, embedding_dim,
-                pretrained_embeddings, max_len, min_count, weight_decay,
-                learning_rate, model_group, model_name, autoencoder_name,
-                model_version, model_filename, new_model_filename, output_file,
-                num_training_examples)
+    if use_old_model:
+        file["old_model_filename"] = '{}{}s{}'.format(file["project_file"],
+            file["model_group"], file["old_model_name"])
+        params, old_files = load_params(file["old_model_filename"])
+        use_old_model = old_files != {}
+
+    if not use_old_model:
+        params = {
+            "batch_size": 1000,
+            "hidden_size": 256,
+            "embedding_dim": 300,
+            "pretrained_embeddings": True,
+            "max_grad_norm": 5,
+            "max_len": 30,
+            "min_count": 2,
+            "weight_decay": 0.00001,
+            "learning_rate": 0.005,
+        }
+
+    params["num_training_examples"] = 78260
+    params["num_val_examples"] = -1
+    params["nb_epochs"] = 40
+
+    if params["pretrained_embeddings"]:
+        file["pretrained_embeddings_file"] = \
+            "/embeddings/embeddings_min{}_max{}.npy".format(
+            params["min_count"], params["max_len"])
+
+    string= ""
+    for k, v in file.items():
+        string += "{}: {}\n".format(k, v)
+    for k, v in params.items():
+        string += "{}: {}\n".format(k, v)
+
     print(string)
     output = string + '\n'
 
     # eng_fr_filename = '/mnt/data1/datasets/yelp/merged/train'
-    dataset_train_filename = "{}train.csv".format(dataset_path)
-    dataset_val_filename = "{}validation.csv".format(dataset_path)
+    dataset_train_filename = "{}train.csv".format(file["dataset_path"])
+    dataset_val_filename = "{}validation.csv".format(file["dataset_path"])
 
     dataset_train = PairsDataset(
-        dataset_train_filename, max_len, min_count)
-    dataset_val = PairsDataset(dataset_val_filename, max_len, min_count,
-                               dataset_train.vocab)
+        dataset_train_filename, params["max_len"], params["min_count"])
+    dataset_val = PairsDataset(dataset_val_filename,
+        params["max_len"], params["min_count"], dataset_train.vocab)
 
     string = 'Vocab size {}\n'.format(len(dataset_train.vocab))
     string += 'Train {} '.format(len(dataset_train))
 
-    if num_training_examples != -1:
-        dataset_train.prune_examples(num_training_examples)
+    if params["num_training_examples"] != -1:
+        dataset_train.prune_examples(params["num_training_examples"])
         string += '> {}'.format(len(dataset_train))
 
     string += '\nVal: {}'.format(len(dataset_val))
+
+    if params["num_val_examples"] != -1:
+        dataset_val.prune_examples(params["num_val_examples"])
+        string += '-> {}'.format(len(dataset_val))
+
     print(string)
     output += string + '\n'
 
-    if pretrained_embeddings is not None:
-        embeddings_dir = '{}{}'.format(project_file, pretrained_embeddings)
-        pretrained_embeddings = cuda(
-            get_pretrained_embeddings(embeddings_dir))
-        embedding_dim = pretrained_embeddings.shape[1]
+    if params["pretrained_embeddings"]:
+        embeddings_dir = '{}{}'.format(
+            file["project_file"], file["pretrained_embeddings_file"])
+        pretrained_embeddings = cuda(get_pretrained_embeddings(embeddings_dir))
+        params["embedding_dim"] = pretrained_embeddings.shape[1]
+    else:
+        pretrained_embeddings = None
 
     data_loader_train = torch.utils.data.DataLoader(
-        dataset_train, batch_size, shuffle=True)
+        dataset_train, params["batch_size"], shuffle=True)
     data_loader_val = torch.utils.data.DataLoader(
-        dataset_val, batch_size, shuffle=False)
+        dataset_val, params["batch_size"], shuffle=False)
 
     vocab_size = len(dataset_train.vocab)
     padding_idx = dataset_train.vocab[PairsDataset.PAD_TOKEN]
     init_idx = dataset_train.vocab[PairsDataset.INIT_TOKEN]
 
-    model = Seq2SeqModel(hidden_size, padding_idx, init_idx,
-            max_len, vocab_size, embedding_dim, pretrained_embeddings)
+    model = Seq2SeqModel(params["hidden_size"], padding_idx, init_idx,
+        params["max_len"], vocab_size, params["embedding_dim"],
+        pretrained_embeddings)
 
     model = cuda(model)
 
     parameters = list(model.parameters())
     optimizer = torch.optim.Adam(
-        parameters, amsgrad=True, weight_decay=weight_decay, lr=learning_rate)
+        parameters, amsgrad=True, weight_decay=params["weight_decay"],
+         lr=params["learning_rate"])
     criterion = torch.nn.CrossEntropyLoss()
 
-    model, optimizer, lowest_loss, description, last_epoch, train_loss,\
-        val_loss, found_model, metrics = load_checkpoint(model_filename, model,
-        optimizer, use_autoencoder_model)
+    if use_old_model:
+        model, optimizer= load_checkpoint(
+            file["old_model_filename"], model, optimizer)
 
-    #print previous model info
-    if found_model:
-        string = 'Loaded Model:\nlowest_validation_loss: {}\ndescription: {}' \
-                 '\nlast_epoch:{}\n Metrics:{}\n'.format(lowest_loss,
-                    description, last_epoch, str(metrics))
+    lowest_loss = 100
+    train_loss = []
+    val_loss = []
+    best_model = model
+    best_optimizer = optimizer
+    average_epoch_loss = 0
 
-    else: 
-        string = 'No model found at {}\n'.format(model_filename)
-        new_model_filename = model_filename
+    metrics = {"accuracy": [],
+               "precision": [],
+               "recall": [],
+               "f1": []}
 
-    print(string)
-    output = output + string + '\n'
-
-    outfile = open(output_file, 'w')
+    outfile = open(file["output_file"], 'w')
     outfile.write(output)
     outfile.close()
 
@@ -137,7 +149,7 @@ def main():
     intervals = 2
     highest_acc = 0
 
-    for epoch in range(last_epoch, last_epoch+nb_epochs):
+    for epoch in range(0, params["nb_epochs"]):
         start = time.clock()
         string = 'Epoch: {}\n'.format(epoch)
         print(string, end='')
@@ -186,12 +198,13 @@ def main():
 
                 if phase == 'train':
                     loss.backward()
-                    torch.nn.utils.clip_grad_norm_(parameters, max_grad_norm)
+                    torch.nn.utils.clip_grad_norm_(parameters,
+                        params["max_grad_norm"])
                     optimizer.step()
                     if (len(data_loader) / intervals)*j <= i+1:
                         string = (
                             'Example {:03d} | {} loss: {:.3f}'.format(
-                              i, phase, average_epoch_loss))
+                                i, phase, average_epoch_loss))
                         print(string, end='\n')
                         output = output + string + '\n'
                         j += 1
@@ -214,8 +227,8 @@ def main():
                 val_loss.append(average_epoch_loss)
                 string = ' {} loss: {:.3f} | time: {:.3f}'.format(
                     phase, average_epoch_loss, time_taken)
-                string += ' | lowest loss: {:.3f} highest accuracy: {' \
-                          ':.3f}'.format(lowest_loss, highest_acc)
+                string += ' | lowest loss: {:.3f} highest accuracy:' \
+                    ' {:.3f}'.format(lowest_loss, highest_acc)
                 print(string, end='\n')
                 output = output + '\n' + string + '\n'
 
@@ -223,17 +236,21 @@ def main():
                 average_epoch_precision = np.mean(epoch_precision)
                 average_epoch_recall = np.mean(epoch_recall)
                 average_epoch_f1 = np.mean(epoch_f1)
-                metrics = {"accuracy": average_epoch_accuracy,
-                           "precision": average_epoch_precision,
-                           "recall": average_epoch_recall,
-                           "f1": average_epoch_f1}
+                metrics["accuracy"].append(average_epoch_accuracy),
+                metrics["precision"].append(average_epoch_precision)
+                metrics["recall"].append(average_epoch_recall)
+                metrics["f1"].append(average_epoch_f1)
 
                 if average_epoch_loss < lowest_loss:
-                    save_checkpoint(
-                        model, average_epoch_loss, optimizer,
-                        new_model_filename,description_filename,
-                        epoch, train_loss, val_loss, metrics)
+                    best_model = model
+                    best_optimizer = optimizer
+                    best_epoch = epoch
                     lowest_loss = average_epoch_loss
+
+                save_checkpoint(
+                    best_epoch, best_model, best_optimizer,
+                    epoch, model, optimizer, train_loss, val_loss, metrics,
+                    params, file)
 
                 if average_epoch_accuracy > highest_acc:
                     highest_acc = average_epoch_accuracy
@@ -262,14 +279,13 @@ def main():
                 string = string + u'> {}\n'.format(get_sentence_from_indices(
                     sentence_2, dataset_val.vocab, PairsDataset.EOS_TOKEN))
 
-                string = string + u'target:{}|  P false:{:.3f}, P true: {' \
-                                  u':.3f}'.format(
-                    targets, float(outputs[0]), float(outputs[1]))
+                string = string + u'target:{}|  P false:{:.3f}, P true:' \
+                    u' {:.3f}'.format(targets, float(outputs[0]), float(outputs[1]))
                 print(string, end='\n\n')
                 output = output + string + '\n' + '\n'
             else:
                 train_loss.append(average_epoch_loss)
-        outfile = open(output_file, 'w')
+        outfile = open(file["output_file"], 'w')
         outfile.write(output)
         outfile.close()
 
