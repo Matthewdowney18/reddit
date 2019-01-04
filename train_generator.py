@@ -13,11 +13,10 @@ from utils import variable, cuda, argmax, get_sentence_from_indices, \
 
 
 def main():
-
     file = {
     "model_group" : "/seq_len_exp",
-    "model_name" : "/generation_0",
-    "model_version" : 1,
+    "model_name" : "/generation_6",
+    "model_version" : 0,
     "project_file": "/home/mattd/PycharmProjects/reddit/generation"}
 
     file["dataset_path"] = "{}/data/".format(file["project_file"])
@@ -42,25 +41,25 @@ def main():
     if not use_old_model:
         params = {
         "attention" : True,
-        "batch_size" : 400,
+        "batch_size" : 325,
         "hidden_size" : 256,
         "embedding_dim" : 300,
         "pretrained_embeddings" : True,
         "max_grad_norm" : 5,
-        "max_len" : 5,
-        "min_count" : 2,
-        "weight_decay" : 0.00001,
-        "learning_rate" : 0.001,
+        "max_len" : 30,
+        "min_count": 2,
+        "weight_decay": 0.00001,
+        "learning_rate": 0.005,
         }
 
-    params["num_training_examples"] = 2000
-    params["num_val_examples"] = 1000
-    params["nb_epochs"] = 2
+    params["num_training_examples"] = 78260
+    params["num_val_examples"] = -1
+    params["nb_epochs"] = 40
 
     if params["pretrained_embeddings"]:
         file["pretrained_embeddings_file"] = \
             "/embeddings/embeddings_min{}_max{}.npy".format(
-                params["min_count"], params["max_len"])
+            params["min_count"], params["max_len"])
 
     string= ""
     for k, v in file.items():
@@ -233,7 +232,6 @@ def main():
                 time_taken = time.clock() - start
 
                 val_loss.append(average_epoch_loss)
-                train_loss.append(average_epoch_loss)
 
                 string = ' {} loss: {:.3f} | time: {:.3f}'.format(
                     phase, average_epoch_loss, time_taken)
